@@ -9,7 +9,7 @@ Repositório de projeto da disciplina de REQ-T02.
 ## Sobre
 
 ## Documentação
-Para acessar a documentação [clique aqui.](https://mdsreq-fga-unb.github.io/2024.1-RPGym/,  "RPGym")
+Para acessar a documentação [clique aqui.](https://mdsreq-fga-unb.github.io/2024.1-RPGym/)
 
 ## Equipe
 
