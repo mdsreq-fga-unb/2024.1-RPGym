@@ -1,0 +1,66 @@
+/* Reset CSS para remover estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #156a75;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para o título no cabeçalho */
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para a navegação no cabeçalho */
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #156a75;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos para o parágrafo no rodapé */
+footer p {
+    margin: 0;
+}
