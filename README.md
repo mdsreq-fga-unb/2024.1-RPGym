@@ -9,7 +9,7 @@ Este repositório foi criado para armazenar todos os materiais do projeto RPGym 
 
 ## Sobre
 
-O RPGym será um projeto que visará incentivar o público que vão para a academia e necesitam de um incentivo para ir frequentemente através de uma plataforma gamificada.
+O RPGym será um projeto que visará incentivar o público que vão para a academia e necesitam de um incentivo para ir diariamente ou na maior parte das vezes, através de uma plataforma gamificada.
 
 O projeto em questão foi desenvolvido pelos dicentes que cursam a disciplina de Requisitos de Software na Universidade de Brasília (UnB).
 
