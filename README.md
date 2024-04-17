@@ -15,7 +15,7 @@ O projeto em questão foi desenvolvido pelos dicentes que cursam a disciplina de
 
 
 ## Documentação
-Para acessar a documentação [clique aqui.](https://mdsreq-fga-unb.github.io/2024.1-RPGym/, "RPGym")
+Para acessar a documentação [clique aqui.](https://mdsreq-fga-unb.github.io/2024.1-RPGym/)
 
 ## Equipe de facção
 
