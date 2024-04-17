@@ -4,7 +4,7 @@
 Este repositório foi criado para armazenar todos os materiais do projeto RPGym desenvolvidos na disciplina REQ-T02.
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=Em Andamento&color=yellow&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=Andamento&color=yellow&style=for-the-badge"/>
 </p>
 
 ## Sobre
