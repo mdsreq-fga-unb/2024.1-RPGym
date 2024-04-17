@@ -34,9 +34,9 @@ Para acessar a documentação [clique aqui.](https://mdsreq-fga-unb.github.io/20
 
 | Matrícula | Nome                                   | GitHub                                          | E-mail                     |
 | --------- | -------------------------------------- | ----------------------------------------------- | -------------------------- |
-| 202046040 | Dara Maria Barbosa de Sousa               | [daramariabs](https://github.com/daramariabs)       | [email@gmail.com]         |
+| 202046040 | Dara Maria Barbosa de Sousa               | [daramariabs](https://github.com/daramariabs)       | darasousa09@gmail.com         |
 | 211061618 | Davi Rodrigues da Rocha           | [DaviRogs](https://github.com/DaviRogs)     | davirocha12.80@gmail.com       |
-| 202045482 | Genilson Silva de Araújo Júnior | [GenilsonJrs](https://github.com/GenilsonJrs)       | [email@gmail.com]       |
+| 202045482 | Genilson Silva de Araújo Júnior | [GenilsonJrs](https://github.com/GenilsonJrs)       | genilson.junior.99006@gmail.com       |
 | 221022300 | Isaque Colem Bastos de Quental          | [isaquecolem](https://github.com/isaquecolem) | [email@gmail.com] |
-|  202016800 | Lucas Heler Lopes                    | [Akaeboshi](https://github.com/Akaeboshi) | [email@gmail.com]      |
-| 202016963 | Mateus Vinicius Vieira             | [matix0](https://github.com/matix0)         | [email@gmail.com]  |
+|  202016800 | Lucas Heler Lopes                    | [Akaeboshi](https://github.com/Akaeboshi) | lucasheler3@gmail.com      |
+| 202016963 | Mateus Vinicius Vieira             | [matix0](https://github.com/matix0)         | mateusviniciuspw@gmail.com  |
