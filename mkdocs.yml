@@ -1,4 +1,4 @@
-site_name: RPGym
+site_name: Centelha da Revolução
 theme:
   logo: assets/LogoFaccao.png
   favicon: assets/LogoFaccao.png
@@ -12,9 +12,11 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
+    
 extra_css:
   - stylesheets/styles.css
 
 nav:
-  - Sobre: index.md
+  - Inicio: index.md
+  - Facção: faccao/faccao.md
   - Produto: Produto/visao.md
