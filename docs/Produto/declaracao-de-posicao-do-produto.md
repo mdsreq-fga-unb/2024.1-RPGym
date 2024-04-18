@@ -4,7 +4,7 @@
 
 1. Qual é o produto que você se propõe a desenvolver? Um Aplicativo com a temática de gamificação para enriquecer o contexto, sendo voltado para aqueles que querem ou precisam de um incentivo para frequentar a academia e praticar atividade física.
 
-2. O que torna este produto diferente dos seus concorrentes? Não exsite um aplicativo semelhante na disciplina, tornando assim inovadora dentro do propósito.
+2. O que torna este produto diferente dos seus concorrentes? Não existe um aplicativo semelhante na disciplina, tornando assim inovadora dentro do propósito.
 
 3. Quem são os usuários-alvo e clientes do produto? Os possíveis usuários são os alunos da UnB e/ou pessoas que praticam ou desejam praticar atividade física dentro da academia. 
 
