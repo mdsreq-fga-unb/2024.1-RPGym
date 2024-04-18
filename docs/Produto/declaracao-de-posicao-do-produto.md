@@ -19,3 +19,9 @@
 | Ao contrário        | De aplicativos que apenas apresentam exercícios ou realizam datação, esse possui um toque de gamificação, com recompensas e uma sensação de gratificação quanto ao que é feito |
 | Nosso produto       | irá possibilitar ao usuário uma navegação diferente, que induzirá a cumprir com seus objetivos de maneira prática |
 
+## Histórico de Versão
+
+| Data | Versão                                   | Descrição                                          | Autor(es)                     |
+| :------------: | :--------------------------------------: | :-----------------------------------------------: | :--------------------------: |
+17/04/2023 | 1.0 | Criação do documento e da declaração de posição do produto | [Genilson Silva](https://github.com/GenilsonJrs) |
+

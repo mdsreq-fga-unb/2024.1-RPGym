@@ -19,4 +19,6 @@ extra_css:
 nav:
   - Inicio: index.md
   - Facção: faccao/faccao.md
-  - Produto: Produto/visao.md
+  - Visão Geral do Produto:
+    - Declaração de Posição do Produto: Produto/declaracao-de-posicao-do-produto.md
+
