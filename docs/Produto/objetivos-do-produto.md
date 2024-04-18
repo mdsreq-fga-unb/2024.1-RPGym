@@ -24,3 +24,8 @@ Promover um estilo de vida saudável, incentivando a prática regular de exercí
   - Notion,Miro e Google Docs
 - Comunicação
   - WhatsApp,Discord e Google Meet
+
+
+| Data | Versão                                   | Descrição                                          | Autor(es)                     |
+| :------------: | :--------------------------------------: | :-----------------------------------------------: | :--------------------------: |
+17/04/2023 | 1.0 | Declaração de objetivos do produto | [Dara Maria](https://github.com/daramariabs) |
