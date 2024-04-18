@@ -1,8 +1,11 @@
 site_name: Centelha da Revolução
+repo_name: "2024.1-RPGym-DOC"
+repo_url: https://github.com/mdsreq-fga-unb/2024.1-RPGym
 theme:
   logo: assets/LogoFaccao.png
   favicon: assets/LogoFaccao.png
   name: material
+  language: pt
   features:
     - content.code.annotate
     - content.tabs.link
@@ -11,9 +14,28 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
-    
-extra_css:
-  - stylesheets/styles.css
+    - content.code.copy
+    - announce.dismiss
+    - navigation.footer
+    - navigation.indexes
+    - search.highlight
+    - search.share
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: cyan
+      accent: orange
+      # Mudar para o modo claro
+      toggle:
+        icon: material/brightness-7 
+        name: Mudar para o modo escuro
+      # Mudar para o modo escuro
+    - scheme: slate
+      primary: orange
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 nav:
   - Inicio: index.md
