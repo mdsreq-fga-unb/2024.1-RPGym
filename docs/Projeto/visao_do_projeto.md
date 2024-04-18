@@ -1,4 +1,4 @@
-### VISÃO GERAL DO PROJETO
+### Visão geral do Projeto
 
 #### Organização do Projeto
 
