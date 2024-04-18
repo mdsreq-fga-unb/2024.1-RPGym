@@ -13,18 +13,6 @@ Promover um estilo de vida saudável, incentivando a prática regular de exercí
 - Educar os usuários sobre os benefícios da atividade física para a saúde física e mental.
 - Ampliar a base de usuários e aumentar o impacto positivo na saúde da população.
 
-## Tecnologias a Serem Utilizadas
-- Backend
-  - NodeJS
-- Frontend
-   - React
-- Integração Contínua
-  - GitHub Actions
-- Documentação
-  - Notion,Miro e Google Docs
-- Comunicação
-  - WhatsApp,Discord e Google Meet
-
 
 | Data | Versão                                   | Descrição                                          | Autor(es)                     |
 | :------------: | :--------------------------------------: | :-----------------------------------------------: | :--------------------------: |
