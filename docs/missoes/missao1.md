@@ -1,6 +1,6 @@
 ### Entrega Unidade 1
 
-Por o vídeo aqui
+https://youtu.be/AZOcwhYP2zE
 
 ### LIÇÕES APRENDIDAS
 
@@ -8,6 +8,6 @@ Os membros do grupo desde o primeiro contato possuem uma comunicação bem clara
 
 ## Histórico de Versão
 
-| Data | Versão                                   | Descrição                                          | Autor(es)                     |
-| :------------: | :--------------------------------------: | :-----------------------------------------------: | :--------------------------: |
-18/04/2023 | 1.0 | Criação do documento de Visão do Projeto | [Mateus Vieira](https://github.com/matix0) |
+|    Data    | Versão |                 Descrição                 |                Autor(es)                |
+| :--------: | :-----: | :-----------------------------------------: | :-------------------------------------: |
+| 18/04/2023 |   1.0   | Criação do documento de Visão do Projeto | [Mateus Vieira](https://github.com/matix0) |
