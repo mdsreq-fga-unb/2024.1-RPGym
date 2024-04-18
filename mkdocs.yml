@@ -41,5 +41,6 @@ nav:
   - Inicio: index.md
   - Facção: faccao/faccao.md
   - Visão Geral do Produto:
+    - Visão do Produto: Produto/visao.md
     - Declaração de Posição do Produto: Produto/declaracao-de-posicao-do-produto.md
 
