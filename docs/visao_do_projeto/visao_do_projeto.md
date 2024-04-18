@@ -46,3 +46,9 @@ Falta de habilidades técnicas dos membros da equipe | Identificar os pontos for
 Atrasos no Cronograma | Caso a equipe não consiga entregar alguma demanda por completo em uma deadline, fazer um replanejamento para a próxima entrega adicionando o débito pendente
 Débito Técnico | Caso algum membro não consiga entregar uma demanda o mesmo deve entregar uma justificativa do atraso e o P.O deverá incrementar o débito na próxima Sprint
 Comunicação Ineficaz com o Cliente | Caso ocorra da relação equipe/cliente ficar desgastada ou ineficaz, comunicar ao professor para uma possível troca de cliente, visto que o projeto em si parte da equipe e não possui propriedade relacionada a terceiros
+
+## Histórico de Versão
+
+| Data | Versão                                   | Descrição                                          | Autor(es)                     |
+| :------------: | :--------------------------------------: | :-----------------------------------------------: | :--------------------------: |
+18/04/2023 | 1.0 | Criação do documento de Visão do Projeto | [Mateus Vieira](https://github.com/matix0) |
