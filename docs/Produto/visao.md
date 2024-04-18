@@ -1,6 +1,10 @@
-# Visão do Produto e do Projeto
+# Visão Geral do Produto
 
-## 1. Visão do Produto
+## 1.1 Problema
+
+O Problema que identificamos foi em relação a prática de atividades físicas, assunto pertinente na sociedade atual marcada por um período pós confinamento social, identificamos a oportunidade de desenvolver um aplicativo gamificado que serviria como uma forma de tornar a prática de atividades físicas algo mais dinâmico, com um ambiente comunitário e elementos de progressão.
+Ao possuir um ambiente interativo e comunitário, praticar um esporte ou ir a academia acaba por ser mais prazeroso, incentivando assim a prática de atividades físicas que por consequência traz benefícios para a saúde mental e física da população.
+
 
 ### 1.2. Objetivo do Produto
 
@@ -22,6 +26,10 @@ Abaixo o Diagrama de Ishikawa que serviu para orientar nossas ideias a resoluç�
 <p>Figura 1: Diagrama de Ishikawa. Fonte: Centelha da Revolução, 2024.</p>
 </div>
 
-|    Data    | Versão |                                            Descrição                                            |                                                                                                                            Autor(es)                                                                                                                            |
-| :--------: | :----: | :---------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 17/04/2024 |  1.0   |                         Criação do documento, adição do tópico 1.2                         | [Lucas Heler](https://github.com/Akaeboshi) |
+## Histórico de Versão
+
+| Data       | Versão | Descrição                                      | Autor(es)                                           |
+| :--------: | :----: | :--------------------------------------------- | :-------------------------------------------------- |
+| 17/04/2024 |  1.0   | Criação do documento, adição do tópico 1.2    | [Lucas Heler](https://github.com/Akaeboshi)         |
+| 18/04/2023 |  1.1   | Atualização com o problema do produto     | [Mateus Vieira](https://github.com/matix0)         |
+
