@@ -154,4 +154,4 @@ Com coragem, determinação e uma mente brilhante, Bellatrix se tornou uma lenda
 
 | Data | Versão                                   | Descrição                                          | Autor(es)                     |
 | :------------: | :--------------------------------------: | :-----------------------------------------------: | :--------------------------: |
-17/04/2023 | 1.0 | Criação do documento, da história da facção e dos personagens da facção | [Davi Rodrigues](https://github.com/DaviRogs) |
+17/04/2024 | 1.0 | Criação do documento, da história da facção e dos personagens da facção | [Davi Rodrigues](https://github.com/DaviRogs) |

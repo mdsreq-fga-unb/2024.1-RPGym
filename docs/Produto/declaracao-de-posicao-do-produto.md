@@ -23,5 +23,5 @@
 
 | Data | Versão                                   | Descrição                                          | Autor(es)                     |
 | :------------: | :--------------------------------------: | :-----------------------------------------------: | :--------------------------: |
-17/04/2023 | 1.0 | Criação do documento e da declaração de posição do produto | [Genilson Silva](https://github.com/GenilsonJrs) |
+17/04/2024 | 1.0 | Criação do documento e da declaração de posição do produto | [Genilson Silva](https://github.com/GenilsonJrs) |
 
