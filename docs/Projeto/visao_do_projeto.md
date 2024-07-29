@@ -10,25 +10,27 @@ Analista de Qualidade | Garantir a qualidade do produto, garantir o cumprimento 
 Cliente | Fornecer feedbacks para a equipe acerca do desenvolvimento, auxiliar a levantar requisitos do produto | Bruno, Vinicius e Pedro | -
 Analista de Requisitos | Realizar a elicitação de requisitos, desenvolver as histórias de usuário | Isaque Colem | Todos
 
-#### Planejamento das Fases e/ou Iterações do Projeto
+### Planejamento das Fases e/ou Iterações do Projeto
 
 **Sprint** | **Produto (Entrega)** | **Data Início** | **Sprint Review** | **Data Fim**
 --- | --- | --- | --- | ---
 Sprint 0 | Definição do Produto e Projeto | 02/04/24 | 17/04/24 | 19/04/24
-Sprint 1 | A DEFINIR | 22/04/24 | 01/05/24 | 03/05/24
-Sprint 2 | A DEFINIR | 06/05/24 | 15/05/24 | 17/05/24
-Sprint 3 | A DEFINIR | 20/05/24 | 29/05/24 | 31/05/24
-Sprint 4 | A DEFINIR | 03/06/24 | 12/06/24 | 14/06/24
-Sprint 5 | A DEFINIR | 17/06/24 | 26/06/24 | 28/06/24
+Sprint 1 | Atividades e Técnicas de ER; Definição do Backlog do Produto; SAFe e User Story; Definição de MVP | 29/07/24 | 01/08/24 | 01/08/24
+Sprint 2 | DoR e DoD; Fundamentos, conceitos e exercícios: PBB e BDD; User Story Mapping | 02/08/24 | 08/08/24 | 08/08/24
+Sprint 3 | Aspectos humanos e sociais da Engenharia de Requisitos; Modelos de casos de uso | 09/08/24 | 15/08/24 | 15/08/24
+Sprint 4 | Especificação de casos de uso | 16/08/24 | 22/08/24 | 22/08/24
+Sprint 5 | Implementação e entrega do MVP | 23/08/24 | 29/08/24 | 29/08/24
+Sprint 6 | Implementação e entrega do MVP | 30/08/24 | 05/09/24 | 05/09/24
+Sprint 7 | Fechamento de notas; Entrega das menções finais / Revisão de notas | 06/09/24 | 10/09/24 | 10/09/24
 
 #### Matriz de Comunicação
 
 **Descrição** | **Área/Envolvidos** | **Periodicidade** | **Produtos Gerados**
 --- | --- | --- | ---
-Atividades de planejamento (Sprint Planning) | Equipe do Projeto | A cada duas semanas | Documentação da Sprint Planning
+Atividades de planejamento (Sprint Planning) | Equipe do Projeto | A cada uma semanas | Documentação da Sprint Planning
 Acompanhamento diário das atividades, riscos, compromissos, ações pendentes e indicadores (daily) | Equipe do Projeto | Diariamente | Tasks no kanban, relatório diário
-Verificação e Validação do produto (Review) | Equipe, Cliente | A cada duas semanas | Documentação da Sprint Review
-Comunicar situação do projeto | Equipe, Professor | Semanal | Documentação da Sprint, Relatório de Situação do Projeto
+Verificação e Validação do produto (Review) | Equipe, Cliente | A cada uma semanas | Documentação da Sprint Review
+Comunicar situação do projeto | Equipe, Professor, Monitores | Semanal | Documentação da Sprint, Relatório de Situação do Projeto
 
 #### Gerenciamento de Riscos
 
@@ -52,3 +54,4 @@ Comunicação Ineficaz com o Cliente | Caso ocorra da relação equipe/cliente f
 | Data | Versão                                   | Descrição                                          | Autor(es)                     |
 | :------------: | :--------------------------------------: | :-----------------------------------------------: | :--------------------------: |
 18/04/2024 | 1.0 | Criação do documento de Visão do Projeto | [Mateus Vieira](https://github.com/matix0) |
+29/07/2024 | 1.1 | Atualização das Sprints | [Mateus Vieira](https://github.com/matix0) |

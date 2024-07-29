@@ -45,7 +45,9 @@ nav:
     - Declaração de Posição do Produto: Produto/declaracao-de-posicao-do-produto.md
     - Objetivos do Produto: Produto/objetivos-do-produto.md
     - Tecnologias: Produto/tecnologias.md
-  - Visão Geral do Projeto: Projeto/visao_do_projeto.md
+  - Visão Geral do Projeto:
+    - Visão do Projeto: Projeto/visao_do_projeto.md
+    - Processo de Desenvolvimento do Software: processos-de-desenvolvimento/processos-de-desenvolvimento-de-software.md
   - Backlog: backlog/backlog.md
   - Missão 1:
     - Lições aprendidas: missoes/missao1.md

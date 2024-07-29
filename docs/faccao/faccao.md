@@ -49,27 +49,6 @@ Desde então, agora ciente das injustiças perpetradas por sua classe, Caenis co
 <br/>
 
 <center>
-<h3><b> Zal </b></h3>
-</center>
-
-<center>
-<span>
-
-![Zal](../assets/PersonZal.jpg)
-
-</span>
-</center>
-
-<center>
-Em um canto distante da galáxia Calamum Caeruleum, existia Zal, uma soldada endurecida pelo destino que, desde jovem, carregava o peso de um passado dilacerante: a perda de seus pais, vítimas das garras cruéis da ganância humana. Consumida pelo desejo de vingança, ela se tornou uma mercenária implacável, cuja determinação era tão forte quanto sua natureza arrogante.
-
-A tragédia se abateu sobre Zal mais uma vez quando sua irmã foi brutalmente assassinada diante de seus olhos pelo conglomerado Slitherium, que devastava mundos inteiros em suas buscas implacáveis por minerais raros, marcando-a para sempre. Esse evento cruel e traumático só serviu para reforçar sua determinação em encontrar os responsáveis e fazer justiça com suas próprias mãos. Movida por uma mistura de ódio e amor, Zal dedicou sua vida à busca pelo assassino de sua irmã, traçando um caminho repleto de perigos e desafios.
-
-Enquanto Zal percorria os confins da galáxia em sua jornada, sua sede de vingança era como uma chama ardente, guiando-a através das trevas do universo. No entanto, em seu coração, ela mantinha a esperança de que um dia encontraria a redenção e a paz que tanto almejava, mesmo que isso significasse enfrentar os próprios demônios que a assombravam.
-</center>
-<br/>
-
-<center>
 <h3><b> Spiegel </b></h3>
 </center>
 
@@ -155,3 +134,4 @@ Com coragem, determinação e uma mente brilhante, Bellatrix se tornou uma lenda
 | Data | Versão                                   | Descrição                                          | Autor(es)                     |
 | :------------: | :--------------------------------------: | :-----------------------------------------------: | :--------------------------: |
 17/04/2024 | 1.0 | Criação do documento, da história da facção e dos personagens da facção | [Davi Rodrigues](https://github.com/DaviRogs) |
+29/07/2024 | 1.1 | Remoção de membro que deixou a equipe | [Mateus Vieira](https://github.com/matix0) |
