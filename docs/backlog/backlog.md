@@ -1,17 +1,3 @@
-# Backlog
-
-## Definition of Done (DoD) e Definition of Ready (DoR)
-### DoR
-- Todos compreenderam o Requisito?
-- Documentação do levantamento dos requisito feita de forma objetiva e clara, de forma que possa ser consultada depois?
--  A equipe é capaz de realizar o desenvolvimento desse Requisito?
-- O Product Owner aceitou e validou o requisito?
-
-### DoD
-- O Requisito atende aos critérios do backlog?
-- O Requisito causou alguma instabilidade no sistema?
-- O Requisito passou pelos testes?
-
 # Técnicas de Elicitação e Descoberta de requisitos
 
 Para garantir que nosso software atenda às necessidades e expectativas dos stakeholders, utilizamos várias técnicas de elicitação e descoberta de requisitos. A seguir, descrevo as técnicas que usamos no projeto:
@@ -33,11 +19,14 @@ Por fim, conduzimos uma **análise de concorrentes** para identificar funcionali
 
 A combinação dessas técnicas nos permitiu capturar um conjunto abrangente e detalhado de requisitos, garantindo que nosso software será bem-sucedido em atender às necessidades dos usuários e se destacará no mercado.
 
-## SPRINTS 
+# Definition of Done (DoD) e Definition of Ready (DoR)
+## DoR
+- Todos compreenderam o Requisito?
+- Documentação do levantamento dos requisito feita de forma objetiva e clara, de forma que possa ser consultada depois?
+- A equipe é capaz de realizar o desenvolvimento desse Requisito?
+- O Product Owner aceitou e validou o requisito?
 
-### Sprint 0:
-A equipe realizou na Sprint 0 um trabalho de forma mais assíncrona, visto que estávamos entendendo e organizando uma rotina de horários para cada um, não praticamos a cerimônia de relatório diário, mas houveram reuniões de alinhamento nos encontros em sala e também no Discord para a realização das Atividades.
-![Kanban da Sprint 0](../assets/kanbans/sprint1.jpg)
-
-
-
+## DoD
+- O Requisito atende aos critérios do backlog?
+- O Requisito causou alguma instabilidade no sistema?
+- O Requisito passou pelos testes?

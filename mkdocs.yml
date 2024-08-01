@@ -49,9 +49,11 @@ nav:
     - Visão do Projeto: Projeto/visao_do_projeto.md
     - Processo de Desenvolvimento do Software: processos-de-desenvolvimento/processos-de-desenvolvimento-de-software.md
   - Backlog:
-    - Backlog do Produto: backlog/backlog.md
+    - Backlog: backlog/backlog.md
     - Backlog SAFe: backlog/SAFe.md
-  - Missão 1:
-    - Lições aprendidas: missoes/missao1.md
-    - Seminário: missoes/seminario.md
+    - Backlog do Produto: backlog/backlog-do-produto.md
+    - Sprints: backlog/sprints.md
+  - Missões:
+    - Missão 1: missoes/missao1.md
+    - Missão 2: missoes/missao2.md
 
