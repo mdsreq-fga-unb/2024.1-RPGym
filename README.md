@@ -35,7 +35,7 @@ Para acessar a documentação [clique aqui.](https://mdsreq-fga-unb.github.io/20
 | Matrícula | Nome                                   | GitHub                                          | E-mail                     |
 | --------- | -------------------------------------- | ----------------------------------------------- | -------------------------- |
 | 202046040 | Dara Maria Barbosa de Sousa               | [daramariabs](https://github.com/daramariabs)       | darasousa09@gmail.com         |
-| 211061618 | Davi Rodrigues da Rocha           | [DaviRogs](https://github.com/DaviRogs)     | davirocha12.80@gmail.com       |
+| 211061618 | Davi Rodrigues da Rocha           | [DaviRogs](https://github.com/DaviRogs) / [DaviRogs1](https://github.com/DaviRogs1)   | davirocha12.80@gmail.com       |
 | 202045482 | Genilson Silva de Araújo Júnior | [GenilsonJrs](https://github.com/GenilsonJrs)       | genilson.junior.99006@gmail.com       |
 | 221022300 | Isaque Colem Bastos de Quental          | [isaquecolem](https://github.com/isaquecolem) | isaquecolem55@gmail.com |
 |  202016800 | Lucas Heler Lopes                    | [Akaeboshi](https://github.com/Akaeboshi) | lucasheler3@gmail.com      |
