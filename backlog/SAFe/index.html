@@ -1256,80 +1256,110 @@ O SAFe 6.0 é uma base de conhecimento de princípios, práticas e competências
 <tr>
 <td style="text-align: center;">F1</td>
 <td style="text-align: center;">US01</td>
-<td style="text-align: center;">Eu, como usuário, gostaria de realizar meu cadastro de conta para que eu possa acessar e utilizar as funcionalidades na plataforma. Além disso, quero poder editar minhas informações ou excluir minha conta.</td>
-<td style="text-align: center;">- O sistema deve incluir campos obrigatórios como nome, e-mail, senha, gênero e idade.<br>- O sistema deve validar os dados inseridos, garantindo que o e-mail não esteja já em uso ou em formatos inválidos.<br>- O sistema deve incluir todas as informações inseridas do usuário.<br>- O sistema deve ter a possibilidade de editar os campos como nome, e-mail, senha, gênero e idade.<br>- O sistema deve validar as novas informações antes de salvá-las.</td>
-</tr>
-<tr>
-<td style="text-align: center;">F1</td>
-<td style="text-align: center;">US02</td>
-<td style="text-align: center;">Eu, como usuário registrado, quero fazer login na plataforma para acessá-la totalmente.</td>
-<td style="text-align: center;">- O sistema deve permitir o login usando e-mail e senha cadastrados.<br>- O sistema deve validar as credenciais fornecidas, garantindo que correspondam a um usuário existente.<br>- O sistema deve exibir uma mensagem de erro caso as credenciais sejam inválidas.<br>- O sistema deve permitir a recuperação de senha em caso de esquecimento.<br>- O sistema deve redirecionar o usuário para a página inicial após um login bem-sucedido.</td>
-</tr>
-<tr>
-<td style="text-align: center;">F1</td>
-<td style="text-align: center;">US03</td>
-<td style="text-align: center;">Eu, como usuário que esqueceu a senha, quero recuperar a minha senha para poder acessar minha conta novamente.</td>
-<td style="text-align: center;">- O sistema deve permitir que o usuário solicite a recuperação de senha.<br>- O sistema deve enviar um link de recuperação para o e-mail associado à conta do usuário.<br>- O sistema deve validar o link de recuperação para garantir sua autenticidade e validade.<br>- O sistema deve permitir que o usuário crie uma nova senha após acessar o link de recuperação.<br>- O sistema deve confirmar a alteração da senha e permitir o login com a nova senha.</td>
-</tr>
-<tr>
-<td style="text-align: center;">F1</td>
-<td style="text-align: center;">US04</td>
-<td style="text-align: center;">Eu, como usuário, desejo editar minhas informações anteriormente cadastradas.</td>
-<td style="text-align: center;">- O sistema deve permitir a edição de informações como nome, e-mail, senha, gênero e idade.<br>- O sistema deve validar as novas informações antes de salvá-las.<br>- O sistema deve exibir uma mensagem de confirmação de sucesso ou erro após a edição.<br>- O sistema deve garantir que o e-mail atualizado não esteja em uso por outro usuário.<br>- O sistema deve permitir a visualização das informações atualizadas após a edição.</td>
-</tr>
-<tr>
-<td style="text-align: center;">F1</td>
-<td style="text-align: center;">US05</td>
-<td style="text-align: center;">Como usuário, quero ter a opção de deletar minha conta e todos os meus dados pessoais do aplicativo, para que eu tenha controle sobre minhas informações e possa sair da plataforma se desejar.</td>
-<td style="text-align: center;">- O sistema deve oferecer uma opção para deletar a conta do usuário.<br>- O sistema deve solicitar uma confirmação antes de proceder com a exclusão.<br>- O sistema deve garantir que todos os dados pessoais do usuário sejam removidos permanentemente.<br>- O sistema deve exibir uma mensagem de confirmação após a exclusão bem-sucedida.<br>- O sistema deve desativar o acesso à conta imediatamente após a exclusão.</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de realizar meu cadastro de conta no sistema.</td>
+<td style="text-align: center;">- O sistema deve incluir campos obrigatórios como nome, e-mail, senha, gênero e idade.<br>- O sistema deve validar os dados inseridos, garantindo que o e-mail não esteja já em uso ou formatos inválidos.<br>- O sistema deve incluir todas as informações inseridas do usuário.<br>- O email deve ser único.<br>- Deve haver uma mensagem de erro caso algum dado esteja inválido.<br>- Os dados devem ser persistidos.</td>
 </tr>
 <tr>
 <td style="text-align: center;">F2</td>
-<td style="text-align: center;">US06</td>
-<td style="text-align: center;">Eu, como usuário, quero registrar minhas atividades físicas.</td>
-<td style="text-align: center;">- O sistema deve permitir que o usuário registre diferentes tipos de atividades físicas, como corrida, levantamento de peso, etc.<br>- O sistema deve permitir a edição ou exclusão de registros de atividades.</td>
+<td style="text-align: center;">US02</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de inserir e verificar meu peso e altura para visualizar meu IMC.</td>
+<td style="text-align: center;">- O sistema deve coletar os dados de peso, altura, idade e IMC do usuário.<br>- O usuário deve poder inserir e visualizar facilmente seu peso e altura.<br>- O sistema deve armazenar as informações inseridas.<br>- O usuário deve poder visualizar seu IMC calculado com base nos dados inseridos.</td>
 </tr>
 <tr>
 <td style="text-align: center;">F3</td>
-<td style="text-align: center;">US07</td>
-<td style="text-align: center;">Eu, como usuário, quero poder visualizar relatórios das minhas atividades físicas para acompanhar meu progresso.</td>
-<td style="text-align: center;">- O sistema deve gerar relatórios detalhados com base nas atividades físicas registradas.<br>- O sistema deve permitir a filtragem dos relatórios por data, tipo de atividade e outros critérios.<br>- O sistema deve atualizar os relatórios automaticamente com base nas novas atividades registradas.</td>
+<td style="text-align: center;">US03</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de visualizar todos os meus registros de atividades físicas.</td>
+<td style="text-align: center;">- O sistema deve possuir uma lista do histórico com os dias em que o usuário realizou atividades físicas.<br>- O sistema deve mostrar os dados de calorias gastas nos dias em que o usuário fez atividade física.<br>- O sistema deve registrar quantas moedas o usuário adquiriu em cada dia de atividade.<br>- O usuário deve poder visualizar uma lista histórica de suas atividades físicas.<br>- A lista deve estar paginada mensalmente para facilitar a navegação.<br>- Cada registro no histórico deve mostrar o dia, as calorias gastas e as moedas obtidas.</td>
 </tr>
 <tr>
 <td style="text-align: center;">F4</td>
+<td style="text-align: center;">US04</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de ganhar moedas equivalentes ao nível de esforço que fiz de exercício físico no dia, definindo um limite máximo de moedas por dia.</td>
+<td style="text-align: center;">- O sistema deve calcular o nível de calorias gastas pelo usuário no dia.<br>- O sistema deve adicionar moedas ao usuário equivalentes a uma porcentagem baseada no nível de calorias gastas no dia.<br>- O sistema deve possuir um limite máximo de moedas que o usuário pode obter de acordo com as calorias gastas por semana.<br>- O usuário deve poder visualizar a quantidade atual de moedas.<br>- O usuário deve adquirir moedas ao finalizar um exercício.</td>
+</tr>
+<tr>
+<td style="text-align: center;">F9</td>
+<td style="text-align: center;">US05</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de gastar minhas moedas para me inscrever em um dos campeonatos disponíveis.</td>
+<td style="text-align: center;">- O sistema deve exibir uma lista de campeonatos disponíveis.<br>- Cada campeonato deve ter vagas limitadas para inscrições.<br>- O sistema deve indicar o status de cada campeonato: Aberto, Em andamento ou Finalizado.<br>- Para cada campeonato aberto, o sistema deve mostrar o preço da inscrição.<br>- O sistema deve informar o prêmio que será concedido ao final de cada campeonato, independentemente do status.<br>- Campeonatos em andamento devem exibir o tempo restante até serem finalizados.<br>- O sistema deve especificar se o campeonato é Solo ou Em equipe.<br>- O usuário deve poder visualizar a lista de campeonatos.<br>- O usuário deve poder se inscrever em um campeonato.</td>
+</tr>
+<tr>
+<td style="text-align: center;">F10</td>
+<td style="text-align: center;">US06</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de competir com os usuários inscritos no campeonato em que me inscrevi até o tempo estipulado acabar, e receber meu prêmio.</td>
+<td style="text-align: center;">- O sistema deve listar todos os jogadores ou equipes inscritos no campeonato, incluindo a quantidade atual de inscritos e a capacidade máxima permitida.<br>- A lista de jogadores ou equipes deve ser ordenada de forma crescente pela quantidade de pontos obtidos por cada participante.<br>- O sistema deve exibir a data e o horário de início do evento, bem como a situação atual do campeonato (Aberto, Em andamento, Finalizada).<br>- O tempo de término do campeonato deve ser definido pelo responsável e exibido quando o campeonato estiver Em andamento.<br>- Todos os usuários inscritos no campeonato devem receber uma notificação quando o campeonato entrar na situação Em andamento.<br>- O usuário deve poder visualizar a lista de participantes do campeonato.<br>- O usuário deve poder visualizar a quantidade de participantes e a capacidade máxima.<br>- O usuário deve receber uma notificação quando o campeonato começar.<br>- O usuário deve poder visualizar o prêmio do campeonato.</td>
+</tr>
+<tr>
+<td style="text-align: center;">F9</td>
+<td style="text-align: center;">US07</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de criar um grupo e convidar meus amigos para incentivar uns aos outros a praticar exercícios físicos.</td>
+<td style="text-align: center;">- O sistema deve permitir o cadastramento de um novo grupo pelo usuário.<br>- O sistema deve permitir a inserção do nome do grupo.<br>- O sistema deve oferecer a seleção de uma foto pré-definida para o grupo.<br>- O sistema deve gerar um código único para o grupo, que somente o administrador pode copiar e compartilhar para convidar outros usuários.<br>- O sistema deve ter uma lista de pedidos para entrada no grupo, visível apenas para os administradores.<br>- O grupo deve ter uma funcionalidade de chat para os membros conversarem entre si.<br>- O usuário deve poder visualizar os integrantes do grupo.<br>- O usuário administrador deve poder visualizar o código do grupo.<br>- O administrador deve poder visualizar e gerenciar a lista de pedidos para entrar no grupo.<br>- O usuário deve poder enviar e receber mensagens no chat do grupo, visualizando suas próprias mensagens e as mensagens dos outros membros.</td>
+</tr>
+<tr>
+<td style="text-align: center;">F1</td>
 <td style="text-align: center;">US08</td>
-<td style="text-align: center;">Eu, como usuário, quero ganhar pontos por cada atividade física registrada para me motivar a manter uma rotina de exercícios.</td>
-<td style="text-align: center;">- O sistema deve atribuir pontos a cada atividade física registrada com base na intensidade e duração.<br>- O sistema deve atualizar o saldo de pontos do usuário após o registro de cada atividade.<br>- O sistema deve exibir a pontuação acumulada do usuário em um local visível, como no perfil ou em um painel de progresso.<br>- O sistema deve fornecer uma tabela ou gráfico que mostre como os pontos são acumulados ao longo do tempo.<br>- O sistema deve ter um sistema de recompensas ou desafios relacionados à acumulação de pontos para incentivar a continuidade das atividades.</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de recuperar minha conta através do e-mail, redefinindo a senha, caso eu tenha esquecido.</td>
+<td style="text-align: center;">- O sistema deve ter um botão opcional para iniciar o processo de recuperação de conta.<br>- O sistema deve permitir ao usuário inserir o e-mail associado à conta perdida.<br>- O sistema deve verificar se há uma conta registrada com o e-mail inserido.<br>- Se a conta existir, o sistema deve enviar um pedido de redefinição de senha para o e-mail do usuário.<br>- O sistema deve permitir a atualização da senha da conta associada ao e-mail.<br>- O usuário deve conseguir visualizar o botão de recuperação de conta.<br>- O usuário deve conseguir inserir o e-mail da conta vinculada.<br>- O usuário deve receber um e-mail para a redefinição de senha.<br>- O usuário deve conseguir acessar a conta anteriormente perdida usando a nova senha redefinida.</td>
 </tr>
 <tr>
-<td style="text-align: center;">F5</td>
+<td style="text-align: center;">F1</td>
 <td style="text-align: center;">US09</td>
-<td style="text-align: center;">Eu, como usuário, desejo customizar o meu personagem na plataforma.</td>
-<td style="text-align: center;">- O sistema deve oferecer opções de customização para o personagem, como roupas, acessórios e características físicas.<br>- O sistema deve permitir que o usuário visualize as alterações em tempo real enquanto personaliza o personagem.<br>- O sistema deve armazenar as personalizações feitas pelo usuário e aplicá-las ao personagem.<br>- O sistema deve oferecer uma variedade de itens e opções de customização para garantir uma experiência personalizada.<br>- O sistema deve permitir a alteração das personalizações a qualquer momento.</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de acessar as estatísticas de outros usuários, incluindo gráficos das atividades físicas realizadas, moedas ganhas e moedas totais no momento.</td>
+<td style="text-align: center;">- O sistema deve exibir gráficos comparativos das atividades físicas diárias e das moedas adquiridas entre o usuário logado e o usuário do perfil.<br>- O sistema deve mostrar o nome e a data de registro do usuário do perfil.<br>- O sistema deve informar o grupo ao qual o usuário do perfil está participando, se houver.<br>- O sistema deve exibir a quantidade total de moedas do usuário do perfil.<br>- O sistema deve mostrar o histórico dos campeonatos em que o usuário do perfil participou, incluindo as posições alcançadas.<br>- O sistema deve permitir adicionar o usuário do perfil como amigo.<br>- O sistema deve permitir remover o usuário do perfil como amigo.<br>- O sistema deve possibilitar convidar o usuário do perfil para o grupo criado pelo usuário logado, caso ambos sejam amigos.<br>- O usuário deve conseguir visualizar o perfil de outro usuário.<br>- O usuário deve conseguir comparar seu próprio desenvolvimento com o usuário do perfil.<br>- O usuário deve conseguir adicionar e remover o usuário como amigo.<br>- O usuário deve conseguir convidar o usuário para o grupo.</td>
 </tr>
 <tr>
-<td style="text-align: center;">F6</td>
+<td style="text-align: center;">F2</td>
+<td style="text-align: center;">US10</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de criar e personalizar meu personagem da forma que eu desejar.</td>
+<td style="text-align: center;">- O sistema deve oferecer um personagem padrão como ponto de partida.<br>- O sistema deve permitir a escolha de diferentes estilos de cabelo, independentemente do sexo selecionado.<br>- O sistema deve possibilitar a seleção da cor da pele do personagem.<br>- O sistema deve permitir a escolha de características faciais para o personagem.<br>- O sistema deve possibilitar a escolha das vestimentas do personagem.<br>- O sistema deve permitir a alteração da cor das vestimentas escolhidas.<br>- O sistema deve permitir a confirmação das personalizações feitas pelo usuário no personagem.<br>- O usuário deve conseguir visualizar o personagem criado.<br>- O usuário deve poder alterar o cabelo, a cor da pele, as características faciais e as vestimentas do personagem.<br>- O usuário deve poder confirmar as mudanças feitas no personagem.</td>
+</tr>
+<tr>
+<td style="text-align: center;">F7</td>
 <td style="text-align: center;">US11</td>
-<td style="text-align: center;">Eu, como usuário, desejo poder ver minha pontuação para comparar com outros usuários.</td>
-<td style="text-align: center;">O sistema deve rastrear e comparar o desempenho dos participantes em termos de pontos acumulados<br>- O sistema deve exibir tabelas de classificação ou rankings que mostrem a posição dos usuários nas competições.</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de gastar minhas moedas para comprar customizações na loja da plataforma, onde devo encontrar opções para personalizar meu personagem.</td>
+<td style="text-align: center;">- O sistema deve ter uma seção dedicada na loja para customizações do personagem.<br>- A loja deve oferecer uma variedade de estilos de cabelo, cada um com seu preço.<br>- A loja deve ter uma seleção de acessórios, cada um com seu preço.<br>- A loja deve disponibilizar diversas facetas, cada uma com seu preço.<br>- A loja deve ter diferentes vestimentas, cada uma com seu preço.<br>- As moedas usadas na loja devem ser distintas das moedas usadas para inscrição em campeonatos.<br>- O sistema deve processar e efetivar a compra dos itens selecionados pelo usuário.<br>- O usuário deve poder visualizar os itens disponíveis em cada categoria (cabelos, acessórios, facetas, vestimentas).</td>
 </tr>
 <tr>
 <td style="text-align: center;">F7</td>
 <td style="text-align: center;">US12</td>
-<td style="text-align: center;">Eu, como usuário, gostaria de poder comprar itens na loja para customizar minha conta.</td>
-<td style="text-align: center;">- O sistema deve oferecer uma loja virtual onde os usuários possam comprar itens para customizar suas contas.<br>- O sistema deve permitir a visualização de itens disponíveis para compra, incluindo descrições e preços.<br>- O sistema deve permitir que os usuários comprem itens usando pontos acumulados.<br>- O sistema deve aplicar os itens comprados à conta do usuário e permitir a visualização das customizações.<br>- O sistema deve atualizar o inventário e as opções da loja com base nas compras realizadas e nas promoções disponíveis.</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de receber desafios diários e semanais para serem realizados durante o dia/semana. Ao completar um desafio, serei recompensado com moedas de ingresso e moedas para usar na loja.</td>
+<td style="text-align: center;">- O sistema deve atualizar as missões diariamente e semanalmente de forma aleatória para cada usuário.<br>- O sistema deve recompensar o usuário com moedas de ingresso e moedas para a loja ao cumprir um desafio.<br>- Cada desafio deve especificar a quantidade X de moedas de ingresso e Y de moedas para a loja.<br>- Desafios completados não devem poder ser realizados novamente no mesmo dia ou semana.<br>- O sistema deve exibir o progresso dos desafios, mostrando o quanto falta para completar cada um.</td>
 </tr>
 <tr>
 <td style="text-align: center;">F8</td>
 <td style="text-align: center;">US13</td>
-<td style="text-align: center;">Eu, como usuário, gostaria de criar meu próprio grupo para que eu possa adicionar amigos e interagir com eles dentro da plataforma.</td>
-<td style="text-align: center;">- O sistema deve permitir que o usuário crie um novo grupo e defina um nome e descrição para o grupo.<br>- O sistema deve permitir que o usuário convide amigos para o grupo.<br>- O sistema deve fornecer funcionalidades de chat ou mensagens para que os membros do grupo possam se comunicar.<br>- O sistema deve permitir que o usuário gerencie as configurações do grupo, como adicionar ou remover membros.</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de realizar meu login no sistema utilizando meu login e senha previamente cadastrados.</td>
+<td style="text-align: center;">- O sistema deve permitir o acesso ao usuário com login e senha corretos.<br>- Se o login ou a senha estiverem incorretos, o sistema deve exibir uma mensagem de erro informando o usuário.</td>
+</tr>
+<tr>
+<td style="text-align: center;">F8</td>
+<td style="text-align: center;">US14</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de editar minhas informações na plataforma, incluindo nome, e-mail, senha, gênero e idade.</td>
+<td style="text-align: center;">- O sistema deve permitir a edição dos campos nome, e-mail, senha, gênero e idade.<br>- As novas informações devem ser validadas antes de serem salvas.<br>- Deve haver a opção de excluir a conta, com uma confirmação antes da exclusão.</td>
 </tr>
 <tr>
 <td style="text-align: center;">F9</td>
-<td style="text-align: center;">US14</td>
-<td style="text-align: center;">Eu, como usuário, gostaria de participar de desafios para melhorar meu engajamento e desempenho na plataforma.</td>
-<td style="text-align: center;">- O sistema deve oferecer uma variedade de desafios relacionados a atividades físicas.<br>- O sistema deve permitir que o usuário se inscreva em desafios individuais ou em grupo.<br>- O sistema deve rastrear o progresso do usuário em relação aos desafios e fornecer atualizações regulares.<br>- O sistema deve exibir classificações ou rankings baseados no desempenho dos participantes nos desafios.</td>
+<td style="text-align: center;">US15</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de cancelar a inscrição em um dos campeonatos em que me inscrevi.</td>
+<td style="text-align: center;">- O sistema deve permitir o cancelamento da inscrição apenas se o campeonato estiver na situação "Em Aberto".<br>- O usuário deve receber um estorno de 60% das moedas gastas na inscrição</td>
+</tr>
+<tr>
+<td style="text-align: center;">F10</td>
+<td style="text-align: center;">US16</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de editar as informações do meu grupo que criei.</td>
+<td style="text-align: center;">- O sistema deve permitir a edição das informações do grupo (ver US07 - Criação de grupo #22) apenas para o administrador do grupo.<br>- O sistema deve bloquear a edição caso o usuário não seja o administrador.<br>- O sistema deve permitir a edição do nome e da foto do grupo, escolhidas entre as opções pré-definidas.<br>- O sistema deve confirmar e registrar as novas alterações feitas.<br>- O sistema deve oferecer a opção de cancelar o pedido de alteração do grupo.</td>
+</tr>
+<tr>
+<td style="text-align: center;">F11</td>
+<td style="text-align: center;">US17</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de excluir um grupo que criei anteriormente.</td>
+<td style="text-align: center;">- O sistema deve permitir a exclusão do grupo (ver US07 - Criação de grupo #22) apenas se o usuário for o criador do grupo.<br>- O sistema deve expulsar todos os usuários do grupo quando o grupo for excluído.<br>- O sistema deve confirmar o pedido de exclusão antes de efetuar a exclusão.<br>- O sistema deve notificar todos os usuários do grupo sobre a exclusão.<br>- O sistema deve remover o código associado ao grupo do banco de dados, tornando-o disponível para futuros grupos criados por outros usuários.</td>
+</tr>
+<tr>
+<td style="text-align: center;">F12</td>
+<td style="text-align: center;">US18</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de retirar um usuário que está no grupo o qual sou administrador.</td>
+<td style="text-align: center;">- O sistema deve permitir que o usuário administrador do grupo possa expulsar um usuário do grupo.<br>- O sistema deve confirmar o pedido de expulsão do usuário.<br>- O sistema deve eliminar e bloquear o acesso do usuário que foi expulso.</td>
 </tr>
 </tbody>
 </table>
@@ -1348,6 +1378,12 @@ O SAFe 6.0 é uma base de conhecimento de princípios, práticas e competências
 <td style="text-align: center;">01/08/2024</td>
 <td style="text-align: center;"><code>1.0</code></td>
 <td style="text-align: center;">Criação do Framework</td>
+<td style="text-align: center;">Lucas</td>
+</tr>
+<tr>
+<td style="text-align: center;">12/08/2024</td>
+<td style="text-align: center;"><code>1.2</code></td>
+<td style="text-align: center;">Mudanças para melhor adaptação ao Backlog</td>
 <td style="text-align: center;">Lucas</td>
 </tr>
 </tbody>
