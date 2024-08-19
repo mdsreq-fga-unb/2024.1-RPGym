@@ -37,13 +37,12 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-site_name: Seu Nome de Site
-
+site_name: RPGym
 nav:
   - Inicio: index.md
   - Facção: faccao/faccao.md
   - Backlogs:
-    - Visão Geral: backlogs/backlog.md  
+    - Visão Geral: backlogs/backlog-home.md  
     - Backlog do Projeto:
       - Visão Geral do Projeto: backlogs/backlog-do-projeto/visao_do_projeto.md
       - Processo de Desenvolvimento do Software: backlogs/backlog-do-projeto/processos-de-desenvolvimento-de-software.md       
@@ -52,6 +51,7 @@ nav:
           - Visão do Produto: backlogs/backlog-do-produto/visao-do-produto/visao.md
           - Declaração de Posição do Produto: backlogs/backlog-do-produto/visao-do-produto/declaracao-de-posicao-do-produto.md
           - Objetivos do Produto: backlogs/backlog-do-produto/visao-do-produto/objetivos-do-produto.md
+          - Elicitação e Descoberta: backlogs/backlog-do-produto/visao-do-produto/elicitacao-e-descoberta.md
           - Tecnologias: backlogs/backlog-do-produto/visao-do-produto/tecnologias.md        
       - Backlog do Produto: backlogs/backlog-do-produto/backlog-do-produto.md
       - SAFe: backlogs/backlog-do-produto/SAFe.md
