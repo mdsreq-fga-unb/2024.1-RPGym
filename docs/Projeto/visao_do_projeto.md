@@ -15,7 +15,7 @@ Analista de Requisitos | Realizar a elicitação de requisitos, desenvolver as h
 **Sprint** | **Produto (Entrega)** | **Data Início** | **Sprint Review** | **Data Fim**
 --- | --- | --- | --- | ---
 Sprint 0 | Definição do Produto e Projeto | 02/04/24 | 17/04/24 | 19/04/24
-Sprint 1 | Atividades e Técnicas de ER; Definição do Backlog do Produto; SAFe e User Story; Definição de MVP | 29/07/24 | 01/08/24 | 01/08/24
+Sprint 1 | Atividades e Técnicas de ER; Definição do Backlog do Produto; SAFe e User Story; Definição de MVP | 25/07/24 | 01/08/24 | 01/08/24
 Sprint 2 | DoR e DoD; Fundamentos, conceitos e exercícios: PBB e BDD; User Story Mapping | 02/08/24 | 08/08/24 | 08/08/24
 Sprint 3 | Aspectos humanos e sociais da Engenharia de Requisitos; Modelos de casos de uso | 09/08/24 | 15/08/24 | 15/08/24
 Sprint 4 | Especificação de casos de uso | 16/08/24 | 22/08/24 | 22/08/24

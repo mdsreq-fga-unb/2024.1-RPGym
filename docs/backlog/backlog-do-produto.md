@@ -4,82 +4,28 @@
 <p>Os itens no Backlog do produto são chamados de histórias (ou User Stories), e cada uma delas descreve uma necessidade ou requisito de forma que todos na equipe possam entender. Essas histórias são priorizadas de acordo com o valor que entregam ao usuário e ao negócio, permitindo que a equipe de desenvolvimento trabalhe primeiro nas tarefas que trazem maior impacto.</p>
 <p>Um ponto importante sobre o Backlog do produto é que ele não é estático. Conforme o desenvolvimento avança e novas informações são descobertas, itens podem ser adicionados, removidos ou reordenados. Isso permite que a equipe seja ágil e responda rapidamente às mudanças nas necessidades dos usuários ou no mercado.</p>
 
-<center>
-<table border="1" cellpadding="10">
-  <thead>
-    <tr>
-      <th>Tema</th>
-      <th>Épico</th>
-      <th>História</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="19"><strong>RPGym</strong></td>
-      <td rowspan="6"><strong>E01 - Gestão de conta</strong></td>
-      <td>US01 - Realizar o cadastramento do usuário</td>
-    </tr>
-    <tr>
-      <td>US02 - Obter os dados físicos da pessoa</td>
-    </tr>
-    <tr>
-      <td>US03 - Visualizar o histórico de exercícios praticados</td>
-    </tr>
-    <tr>
-      <td>US08 - Recuperar a conta</td>
-    </tr>
-    <tr>
-      <td>US013 - Realizar o login do usuário</td>
-    </tr>
-    <tr>
-      <td>US014 - Edição de dados</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><strong>E02 - Personalização</strong></td>
-      <td>US10 - Criar personagem</td>
-    </tr>
-    <tr>
-      <td>US19 - Editar o personagem</td>
-    </tr>
-    <tr>
-      <td rowspan="5"><strong>E03 - Interação Social</strong></td>
-      <td>US07 - Criação de grupo</td>
-    </tr>
-    <tr>
-      <td>US09 - Acessar as estatísticas de outros usuários</td>
-    </tr>
-    <tr>
-      <td>US16 - Edição das informações do grupo</td>
-    </tr>
-    <tr>
-      <td>US17 - Exclusão do grupo</td>
-    </tr>
-    <tr>
-      <td>US18 - Expulsar usuário do grupo</td>
-    </tr>
-    <tr>
-      <td rowspan="2"><strong>E04 - Economia e Recompensas</strong></td>
-      <td>US04 - Obter moedas por exercícios realizados</td>
-    </tr>
-    <tr>
-      <td>US11 - Gastar em loja de customização</td>
-    </tr>
-    <tr>
-      <td rowspan="4"><strong>E05 - Desafios e Competições</strong></td>
-      <td>US05 - Inscrição dos campeonatos</td>
-    </tr>
-    <tr>
-      <td>US06 - Competir com os usuários do campeonato</td>
-    </tr>
-    <tr>
-      <td>US12 - Receber desafios</td>
-    </tr>
-    <tr>
-      <td>US15 - Cancelamento da inscrição dos campeonatos</td>
-    </tr>
-  </tbody>
-</table>
-</center>
+| **Épico**                      | **História de Usuário**                               |
+|--------------------------------|-------------------------------------------------------|
+| **E01 - Gestão do Usuário**    | US01 - Realizar o cadastramento do usuário            |
+| **E01 - Gestão do Usuário**    | US02 - Obter os dados físicos da pessoa               |
+| **E01 - Gestão do Usuário**    | US03 - Visualizar o histórico de exercícios praticados |
+| **E01 - Gestão do Usuário**    | US08 - Recuperar a conta                              |
+| **E01 - Gestão do Usuário**    | US13 - Realizar o login do usuário                    |
+| **E01 - Gestão do Usuário**    | US14 - Edição de dados                                |
+| **E02 - Personalização**       | US10 - Criar personagem                               |
+| **E02 - Personalização**       | US19 - Editar o personagem                            |
+| **E03 - Interação Social**     | US07 - Criação de grupo                               |
+| **E03 - Interação Social**     | US09 - Acessar as estatísticas de outros usuários     |
+| **E03 - Interação Social**     | US16 - Edição das informações do grupo                |
+| **E03 - Interação Social**     | US17 - Exclusão do grupo                              |
+| **E03 - Interação Social**     | US18 - Expulsar usuário do grupo                      |
+| **E04 - Economia e Recompensas** | US04 - Obter moedas por exercícios realizados         |
+| **E04 - Economia e Recompensas** | US11 - Gastar em loja de customização                 |
+| **E05 - Desafios e Competições** | US05 - Inscrição nos campeonatos                      |
+| **E05 - Desafios e Competições** | US06 - Competir com os usuários do campeonato         |
+| **E05 - Desafios e Competições** | US12 - Receber desafios                              |
+| **E05 - Desafios e Competições** | US15 - Cancelamento da inscrição dos campeonatos      |
+
 
 # MVP 
 
@@ -91,23 +37,36 @@
 
 Chegamos a conclusão que as seguintes US serão realizadas para um minimo produto viável:
 
-| História                                         |
-|--------------------------------------------------|
-| US01 - Realizar o cadastramento do usuário       |
-| US02 - LObter os dados físicos da pessoa         |
-| US03 - Visualizar o histórico de exercícios realizados |
-| US04 - Ibter moedas por exercícios realizados    |
-| US05 - Inscrição dos campeonatos                 |
-| US06 - Competir com os usuários do campeonato    |
-| US07 - Criação de grupo                          |
-| US08 - Recuperar a conta                         |
-| US09 - Acessar as estatísticas de outros usuários|
-| US13 - Realizar o login do usuário               |
-| US14 - Edição de dados                           |
-| US15 - Cancelamento da inscrição dos campeonatos |
-| US16 - Edição das informações do grupo           |
-| US17 - Exclusão do grupo                         |
-| US18 - Expulsar usuário do grupo                 |
+| Épico | História                                          |
+|-------|---------------------------------------------------|
+| E01   | US01 - Realizar o cadastramento do usuário       |
+| E01   | US02 - Obter os dados físicos da pessoa          |
+| E01   | US03 - Visualizar o histórico de exercícios realizados |
+| E04   | US04 - Obter moedas por exercícios realizados     |
+| E05   | US05 - Inscrição nos campeonatos                 |
+| E05   | US06 - Competir com os usuários do campeonato    |
+| E03   | US07 - Criação de grupo                          |
+| E01   | US08 - Recuperar a conta                         |
+| E03   | US09 - Acessar as estatísticas de outros usuários|
+| E01   | US13 - Realizar o login do usuário               |
+| E01   | US14 - Edição de dados                           |
+| E05   | US15 - Cancelamento da inscrição dos campeonatos |
+| E03   | US16 - Edição das informações do grupo           |
+| E03   | US17 - Exclusão do grupo                         |
+| E03   | US18 - Expulsar usuário do grupo                 |
+
+## MVP 2
+
+Funcionalidades que ficariam para implementação futura:
+
+| Épico | História                                          |
+|-------|---------------------------------------------------|
+| E02   | US10 - Criar personagem                          |
+| E02   | US19 - Editar o personagem                       |
+| E04   | US11 - Gastar em loja de customização            |
+| E04   | US12 - Receber desafios                         |
+
+
 
 ## Histórico de Versões
 
@@ -115,3 +74,4 @@ Chegamos a conclusão que as seguintes US serão realizadas para um minimo produ
 | :--------: | :-------: | :------------------: | :--------------: |
 | 01/08/2024 |   `1.0`   |  Criação do Backlog      | Lucas  |
 | 12/08/2024 |   `2.0`   |  Ajustes do Backlog      | Davi R  |
+| 19/08/2024 |   `2.1`   |  Ajustes do Backlog      | Mateus Vieira  |
