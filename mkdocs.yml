@@ -37,23 +37,29 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
+site_name: Seu Nome de Site
+
 nav:
   - Inicio: index.md
   - Facção: faccao/faccao.md
-  - Visão Geral do Produto:
-    - Visão do Produto: Produto/visao.md
-    - Declaração de Posição do Produto: Produto/declaracao-de-posicao-do-produto.md
-    - Objetivos do Produto: Produto/objetivos-do-produto.md
-    - Tecnologias: Produto/tecnologias.md
-  - Visão Geral do Projeto:
-    - Visão do Projeto: Projeto/visao_do_projeto.md
-    - Processo de Desenvolvimento do Software: processos-de-desenvolvimento/processos-de-desenvolvimento-de-software.md
-  - Backlog:
-    - Backlog: backlog/backlog.md
-    - Backlog SAFe: backlog/SAFe.md
-    - Backlog do Produto: backlog/backlog-do-produto.md
-    - Sprints: backlog/sprints.md
+  - Backlogs:
+    - Visão Geral: backlogs/backlog.md  
+    - Backlog do Projeto:
+      - Visão Geral do Projeto: backlogs/backlog-do-projeto/visao_do_projeto.md
+      - Processo de Desenvolvimento do Software: backlogs/backlog-do-projeto/processos-de-desenvolvimento-de-software.md       
+    - Backlog do Produto:
+      - Visão Geral do Produto:
+          - Visão do Produto: backlogs/backlog-do-produto/visao-do-produto/visao.md
+          - Declaração de Posição do Produto: backlogs/backlog-do-produto/visao-do-produto/declaracao-de-posicao-do-produto.md
+          - Objetivos do Produto: backlogs/backlog-do-produto/visao-do-produto/objetivos-do-produto.md
+          - Tecnologias: backlogs/backlog-do-produto/visao-do-produto/tecnologias.md        
+      - Backlog do Produto: backlogs/backlog-do-produto/backlog-do-produto.md
+      - SAFe: backlogs/backlog-do-produto/SAFe.md
+    - Backlog da Sprint:
+      - Cronograma: backlogs/backlog-da-sprint/cronograma.md
+      - Backlog da Sprint: backlogs/backlog-da-sprint/backlog-da-sprint.md    
   - Missões:
     - Missão 1: missoes/missao1.md
     - Missão 2: missoes/missao2.md
+
 

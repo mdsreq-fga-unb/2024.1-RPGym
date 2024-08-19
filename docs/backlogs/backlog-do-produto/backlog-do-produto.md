@@ -4,6 +4,41 @@
 <p>Os itens no Backlog do produto são chamados de histórias (ou User Stories), e cada uma delas descreve uma necessidade ou requisito de forma que todos na equipe possam entender. Essas histórias são priorizadas de acordo com o valor que entregam ao usuário e ao negócio, permitindo que a equipe de desenvolvimento trabalhe primeiro nas tarefas que trazem maior impacto.</p>
 <p>Um ponto importante sobre o Backlog do produto é que ele não é estático. Conforme o desenvolvimento avança e novas informações são descobertas, itens podem ser adicionados, removidos ou reordenados. Isso permite que a equipe seja ágil e responda rapidamente às mudanças nas necessidades dos usuários ou no mercado.</p>
 
+## Requisitos
+### Requisitos Funcionais
+| **Número** | **Requisito**                                                                                                                                                                   |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| RF01       | O sistema deve permitir ao usuário realizar o cadastro de conta, incluindo campos obrigatórios como nome, e-mail, senha, gênero e idade.                        |
+| RF02       | O sistema deve validar os dados inseridos no cadastro, garantindo que o e-mail não esteja em uso e que os formatos sejam válidos.                                 |
+| RF03       | O sistema deve permitir ao usuário inserir e verificar seu peso e altura para visualizar seu IMC.                                                                      |
+| RF04       | O sistema deve armazenar as informações de peso, altura e IMC do usuário e permitir a visualização dessas informações.                                                |
+| RF05       | O sistema deve permitir ao usuário visualizar todos os registros de suas atividades físicas, incluindo dias, calorias gastas e moedas adquiridas.                   |
+| RF06       | O sistema deve calcular e adicionar moedas ao usuário com base nas calorias gastas, respeitando um limite máximo diário de moedas.                                   |
+| RF07       | O sistema deve permitir ao usuário visualizar e gastar moedas em campeonatos disponíveis, com informações sobre status, preço e prêmio.                            |
+| RF08       | O sistema deve permitir ao usuário competir com outros participantes dos campeonatos e receber um prêmio baseado na classificação.                                   |
+| RF09       | O sistema deve permitir ao usuário criar um grupo, convidar amigos e gerenciar as informações do grupo, incluindo chat e lista de pedidos para entrada.           |
+| RF10       | O sistema deve permitir ao usuário recuperar sua conta através do e-mail e redefinir a senha.                                                                         |
+| RF11       | O sistema deve permitir ao usuário acessar estatísticas de outros usuários, incluindo gráficos de atividades físicas, moedas e participação em campeonatos.       |
+| RF12       | O sistema deve permitir ao usuário criar e personalizar seu personagem virtual, com opções para cabelo, cor da pele, características faciais e vestimentas.         |
+| RF13       | O sistema deve permitir ao usuário gastar moedas para comprar customizações na loja, com diversas opções e preços.                                                   |
+| RF14       | O sistema deve permitir ao usuário receber desafios diários e semanais, recompensando-o com moedas de ingresso e moedas para loja.                                   |
+| RF15       | O sistema deve permitir ao usuário realizar login com suas credenciais e exibir uma mensagem de erro caso o login ou senha estejam incorretos.                     |
+| RF16       | O sistema deve permitir ao usuário editar suas informações de conta, como nome, e-mail, senha, gênero e idade, e excluir a conta.                                 |
+| RF17       | O sistema deve permitir ao usuário cancelar a inscrição em campeonatos, com reembolso de 60% das moedas gastas, se o campeonato estiver aberto.                   |
+| RF18       | O sistema deve permitir ao usuário excluir um grupo que criou, expulsar todos os membros e remover o código do grupo do banco de dados.                           |
+| RF19       | O sistema deve permitir ao usuário expulsar um membro do grupo, se o usuário for o administrador, e confirmar a expulsão.                                           |
+
+### Requisitos Não Funcionais
+| **Número** | **Requisito**                                                                                                                                                                   |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| RNF01      | O sistema deve ser capaz de suportar uma alta carga de usuários simultâneos sem degradação significativa no desempenho.                                           |
+| RNF02      | O sistema deve garantir a segurança dos dados dos usuários, incluindo criptografia de senhas e proteção contra acessos não autorizados.                          |
+| RNF03      | O sistema deve ter uma interface intuitiva e fácil de usar, com feedback claro para ações do usuário.                                                              |
+| RNF04      | O sistema deve ser acessível em diferentes dispositivos e navegadores, garantindo compatibilidade com a maioria das plataformas.                                    |
+| RNF05      | O sistema deve ter tempos de resposta rápidos, com um tempo de carregamento de página não superior a 3 segundos em condições normais de rede.                   |
+
+## User Story Mapping
+
 | **Épico**                      | **História de Usuário**                               | **Prioridade** |
 |--------------------------------|-------------------------------------------------------|----------------|
 | **E01 - Gestão do Usuário**    | US01 - Realizar o cadastramento do usuário            | Alta           |
