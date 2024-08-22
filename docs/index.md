@@ -9,14 +9,12 @@ O projeto em questão foi desenvolvido pelos dicentes que cursam a disciplina de
 <center>
 <span>
 
-| Membro | Nome                                   | Personagem                                          | GitHub                     |
-| :------------: | :--------------------------------------: | :-----------------------------------------------: | :--------------------------: |
-<img src="https://github.com/daramariabs.png" alt="drawing" width="100px"/> | Dara Maria barbosa de Sousa | Bellatrix | [daramariabs](https://github.com/daramariabs) |
-<img src="https://github.com/DaviRogs.png" alt="drawing" width="100px"/> | Davi Rodrigues da Rocha | Orion | [DaviRogs](https://github.com/DaviRogs)  |
-<img src="https://github.com/GenilsonJrs.png" alt="drawing" width="100px"/> | Genilson Silva de Araújo Júnior | Zal | [GenilsonJrs](https://github.com/GenilsonJrs) |
-<img src="https://github.com/isaquecolem.png" alt="drawing" width="100px"/> | Isaque Colem Bastos de Quental | O Lâmina | [isaquecolem](https://github.com/isaquecolem) |
-<img src="https://github.com/Akaeboshi.png" alt="drawing" width="100px"/> | Lucas Heler Lopes  | Caenis | [Akaeboshi](https://github.com/Akaeboshi) |
-<img src="https://github.com/matix0.png" alt="drawing" width="100px"/>| Mateus Vinicius Vieira  | Spiegel | [matix0](https://github.com/matix0) |
+|                                     Membro                                     |            Nome            | Personagem |                   GitHub                   |
+| :-----------------------------------------------------------------------------: | :-------------------------: | :--------: | :----------------------------------------: |
+| `<img src="https://github.com/daramariabs.png" alt="drawing" width="100px"/>` | Dara Maria barbosa de Sousa | Bellatrix | [daramariabs](https://github.com/daramariabs) |
+|  `<img src="https://github.com/DaviRogs.png" alt="drawing" width="100px"/>`  |   Davi Rodrigues da Rocha   |   Orion   |    [DaviRogs](https://github.com/DaviRogs)    |
+|  `<img src="https://github.com/Akaeboshi.png" alt="drawing" width="100px"/>`  |      Lucas Heler Lopes      |   Caenis   |   [Akaeboshi](https://github.com/Akaeboshi)   |
+|   `<img src="https://github.com/matix0.png" alt="drawing" width="100px"/>`   |   Mateus Vinicius Vieira   |  Spiegel  |      [matix0](https://github.com/matix0)      |
 
 </span>
 </center>
