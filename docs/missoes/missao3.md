@@ -1,16 +1,10 @@
 # Missão 3
 
-# Apresentação Unidade 3
+## Apresentação Unidade 3
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zUhLnLLlheU" frameborder="0" allowfullscreen></iframe>
 
-# Product Backlog Building (PBB)
-
-O Product Backlog Building (PBB) é um método utilizado para criar e elaborar um Product Backlog de forma colaborativa. O Canvas PBB é uma ferramenta que facilita esse processo. O principal objetivo do PBB é auxiliar na construção e refinamento do Product Backlog, garantindo um entendimento compartilhado do produto entre todos os envolvidos e preparando o backlog para que a equipe possa iniciar o trabalho de forma ágil e eficiente.
-
-O PBB é realizado através de uma dinâmica prática, onde todos os participantes do projeto se envolvem na criação de um backlog eficaz e colaborativo. Essa dinâmica ajuda a esclarecer as histórias de usuário e a organizar o backlog dos times, utilizando o Canvas PBB como uma ferramenta de facilitação.
-
-Como parte de uma atividade proposta pelo professora Critiane, criamos um PBB para o nosso projeto, o RPGym. Utilizamos esse estudo de forma prática para aprender a planejar e estruturar uma solução de forma organizada e colaborativa.
+## Product Backlog Building (PBB)
 
 ### MIRO com o PBB feito pela Centelha da Revolução
 
@@ -19,6 +13,12 @@ Retirados do MIRO, os tópicos abaixo são capturas de cada parte do canvas
 <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVKoWyUpM=/?moveToViewport=-6216,-3099,12440,6432&embedId=491447537868" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
 ![Quadro disponível no MIRO](../assets/missao3/pbb.jpg)
+
+O Product Backlog Building (PBB) é um método utilizado para criar e elaborar um Product Backlog de forma colaborativa. O Canvas PBB é uma ferramenta que facilita esse processo. O principal objetivo do PBB é auxiliar na construção e refinamento do Product Backlog, garantindo um entendimento compartilhado do produto entre todos os envolvidos e preparando o backlog para que a equipe possa iniciar o trabalho de forma ágil e eficiente.
+
+O PBB é realizado através de uma dinâmica prática, onde todos os participantes do projeto se envolvem na criação de um backlog eficaz e colaborativo. Essa dinâmica ajuda a esclarecer as histórias de usuário e a organizar o backlog dos times, utilizando o Canvas PBB como uma ferramenta de facilitação.
+
+Como parte de uma atividade proposta pelo professora Critiane, criamos um PBB para o nosso projeto, o RPGym. Utilizamos esse estudo de forma prática para aprender a planejar e estruturar uma solução de forma organizada e colaborativa.
 
 ### Problemas
 
@@ -204,15 +204,15 @@ Retirados do MIRO, os tópicos abaixo são capturas de cada parte do canvas
 
 Mapa de História de Usuário (USM)
 
-# Mapa de História de Usuário (USM)
+## Mapa de História de Usuário (USM)
 
-## O que é um Mapa de História de Usuário (USM)?
+### O que é um Mapa de História de Usuário (USM)?
 
 O **Mapa de História de Usuário (User Story Map, USM)** é uma técnica visual utilizada para organizar e priorizar as funcionalidades de um produto, com foco na experiência e necessidades do usuário. Ele ajuda as equipes a entenderem o fluxo de trabalho do usuário e como diferentes funcionalidades se conectam para formar uma experiência coesa e significativa.
 
 O USM fornece uma visão ampla do produto, permitindo que as equipes identifiquem quais funcionalidades são essenciais para o MVP (Minimum Viable Product) e quais podem ser desenvolvidas em iterações futuras. Isso facilita o alinhamento entre a equipe de desenvolvimento, stakeholders, e o próprio usuário final.
 
-## Como Aplicar o Mapa de História de Usuário?
+### Como Aplicar o Mapa de História de Usuário?
 
 1. **Identificação das Atividades Principais (Backbone)**
 
@@ -242,22 +242,22 @@ O USM fornece uma visão ampla do produto, permitindo que as equipes identifique
    - **Objetivo:** Usar o mapa como uma ferramenta dinâmica, revisando e atualizando-o conforme o projeto evolui.
    - **Como Fazer:** Realize revisões regulares do USM com toda a equipe e stakeholders, ajustando prioridades e adicionando ou removendo histórias conforme necessário, com base no feedback dos usuários e nas necessidades do negócio.
 
-## Benefícios do USM
+### Benefícios do USM
 
 - **Visão Clara e Compartilhada:** Facilita o entendimento comum entre todos os membros da equipe sobre o que está sendo construído e por quê.
 - **Priorização Eficaz:** Ajuda a priorizar funcionalidades com base no valor para o usuário, permitindo o foco no que realmente importa.
 - **Planejamento de Releases:** Permite o planejamento de sprints e releases de forma estratégica, garantindo que o MVP seja alcançado rapidamente.
 - **Adaptação Contínua:** Mantém o desenvolvimento flexível, permitindo ajustes com base em feedbacks contínuos.
 
-## USM - Centelha da Revolução
+### USM - Centelha da Revolução
 
 ![User Story Mapping](../assets/missao3/usm.jpg)
 
-# Lições Aprendidas
+## Lições Aprendidas
 
 Após readaptar a rotina da equipe, conseguimos por todas as entregas nos trilhos de forma organizada, acabou que pecamos quanto a parte do desenvolvimento mas possuindo a ciência referente à isso, nos organizamos e iniciamos o desenvolvimento do projeto (setup de ambiente e prototipação)
 
-# Histórico de Versão
+## Histórico de Versão
 
 |    Data    | Versão |          Descrição           |                  Autor(es)                   |
 | :--------: | :----: | :--------------------------: | :------------------------------------------: |
