@@ -1,6 +1,7 @@
 ### Apresentação Unidade 3
 <iframe width="560" height="315" src="https://youtu.be/zUhLnLLlheU?si=OU_tlI3v4PPv0Kiq" frameborder="0" allowfullscreen></iframe>
 
+
 # PBB
 
 O Product Backlog Building (PBB) é um método utilizado para criar e elaborar um Product Backlog de forma colaborativa. O Canvas PBB é uma ferramenta que facilita esse processo. O principal objetivo do PBB é auxiliar na construção e refinamento do Product Backlog, garantindo um entendimento compartilhado do produto entre todos os envolvidos e preparando o backlog para que a equipe possa iniciar o trabalho de forma ágil e eficiente.
@@ -170,3 +171,58 @@ Retirados do MIRO, os tópicos abaixo são capturas de cada parte do canvas
 * Gastar em loja de customização;
 * Criar personagem;
 * Editar personagem.
+
+
+ Mapa de História de Usuário (USM)
+
+## O que é um Mapa de História de Usuário (USM)?
+
+O **Mapa de História de Usuário (User Story Map, USM)** é uma técnica visual utilizada para organizar e priorizar as funcionalidades de um produto, com foco na experiência e necessidades do usuário. Ele ajuda as equipes a entenderem o fluxo de trabalho do usuário e como diferentes funcionalidades se conectam para formar uma experiência coesa e significativa.
+
+O USM fornece uma visão ampla do produto, permitindo que as equipes identifiquem quais funcionalidades são essenciais para o MVP (Minimum Viable Product) e quais podem ser desenvolvidas em iterações futuras. Isso facilita o alinhamento entre a equipe de desenvolvimento, stakeholders, e o próprio usuário final.
+
+## Como Aplicar o Mapa de História de Usuário?
+
+1. **Identificação das Atividades Principais (Backbone)**
+   - **Objetivo:** Identificar as atividades principais que o usuário realiza no sistema.
+   - **Como Fazer:** Defina as metas principais que o produto deve alcançar do ponto de vista do usuário. Essas metas são as atividades que o usuário realiza e são colocadas na parte superior do mapa, em ordem sequencial.
+   - **Exemplo:** Em um aplicativo de fitness, as atividades principais poderiam ser "Gerenciar Usuário", "Interagir com a Comunidade", e "Participar de Desafios".
+
+2. **Desenvolvimento das Histórias de Usuário**
+   - **Objetivo:** Especificar as histórias de usuário que detalham as tarefas necessárias para completar cada atividade principal.
+   - **Como Fazer:** Para cada atividade principal, identifique as tarefas específicas que os usuários precisam realizar. Cada tarefa se transforma em uma história de usuário, que descreve uma funcionalidade específica do sistema.
+   - **Exemplo:** Para a atividade "Gerenciar Usuário", as histórias de usuário poderiam incluir "Realizar Login", "Editar Perfil", e "Recuperar Senha".
+
+3. **Organização das Histórias em Níveis (Esqueleto e Detalhes)**
+   - **Objetivo:** Organizar as histórias em um mapa hierárquico, onde as mais importantes ficam no topo (esqueleto) e as menos essenciais, abaixo (detalhes e incrementos de valor).
+   - **Como Fazer:** As histórias de usuário no topo representam as funcionalidades mínimas necessárias para o MVP. À medida que se desce no mapa, as histórias adicionam detalhes ou incrementos de valor, que podem ser implementados em iterações futuras.
+   - **Exemplo:** No nível superior da atividade "Interagir com a Comunidade", pode-se ter "Criar Grupo" e "Acessar Estatísticas". Em níveis inferiores, podem ser adicionadas "Editar Grupo" e "Expulsar Membro".
+
+4. **Definição do MVP (Minimum Viable Product)**
+   - **Objetivo:** Delimitar quais histórias de usuário serão implementadas no MVP.
+   - **Como Fazer:** Trace uma linha horizontal no mapa para separar as histórias que compõem o MVP das que serão desenvolvidas posteriormente. Tudo que está acima dessa linha faz parte do MVP, garantindo que o produto entregue o mínimo valor necessário para ser útil ao usuário.
+   - **Exemplo:** No exemplo anterior, "Criar Grupo" e "Acessar Estatísticas" fariam parte do MVP, enquanto "Editar Grupo" seria um incremento de valor para futuras iterações.
+
+5. **Colaboração e Refinamento Contínuo**
+   - **Objetivo:** Usar o mapa como uma ferramenta dinâmica, revisando e atualizando-o conforme o projeto evolui.
+   - **Como Fazer:** Realize revisões regulares do USM com toda a equipe e stakeholders, ajustando prioridades e adicionando ou removendo histórias conforme necessário, com base no feedback dos usuários e nas necessidades do negócio.
+
+## Benefícios do USM
+
+* **Visão Clara e Compartilhada:** Facilita o entendimento comum entre todos os membros da equipe sobre o que está sendo construído e por quê.
+* **Priorização Eficaz:** Ajuda a priorizar funcionalidades com base no valor para o usuário, permitindo o foco no que realmente importa.
+* **Planejamento de Releases:** Permite o planejamento de sprints e releases de forma estratégica, garantindo que o MVP seja alcançado rapidamente.
+* **Adaptação Contínua:** Mantém o desenvolvimento flexível, permitindo ajustes com base em feedbacks contínuos.
+
+
+## USM - Centelha da Revolução
+
+![User Story Mapping](../assets/usm.jpg)
+
+
+## Histórico de Versão
+
+|    Data    | Versão |                 Descrição                 |                Autor(es)                |
+| :--------: | :-----: | :-----------------------------------------: | :-------------------------------------: |
+| 22/08/2024 |   1.0   | Adição da Missão |[Mateus Vieira](https://github.com/matix0) |
+| 22/08/2024 |   1.1   | Adição do User Story Mapping | [Dara Maria](https://github.com/daramariabs) |
