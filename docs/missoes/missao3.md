@@ -16,10 +16,10 @@ Retirados do MIRO, os tópicos abaixo são capturas de cada parte do canvas
 
 <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVKoWyUpM=/?moveToViewport=-6216,-3099,12440,6432&embedId=491447537868" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
-![Quadro disponível no MIRO](../assets/pbb.jpg)
+![Quadro disponível no MIRO](../assets/missao3/pbb.jpg)
 
 ### Problemas
-
+![Quadro disponível no MIRO](../assets/missao3/problemas.jpg)
 * Baixa Motivação para Atividade Física;
 * Dificuldade em Criar Hábitos Saudáveis;
 * Sedentarismo pós-confinamento;
@@ -31,10 +31,9 @@ Retirados do MIRO, os tópicos abaixo são capturas de cada parte do canvas
 * Falta de Diversão no Processo de Exercício;
 * Competitividade Desbalanceada.
 
-![Quadro disponível no MIRO](../assets/Screenshot_1.jpg)
 
 ### Expectativas
-
+![Quadro disponível no MIRO](../assets/missao3/expectativas.jpg)
 * Aumento da Motivação para Exercícios;
 * Interface simples;
 * Variedade de Desafios e Missões;
@@ -43,8 +42,6 @@ Retirados do MIRO, os tópicos abaixo são capturas de cada parte do canvas
 * Registro das atividades físicas feitos ou não anteriormente;
 * Competividade com a comunidade RGPym;
 * Visualização do progresso dos outros usuários.
-
-![Quadro disponível no MIRO](../assets/Screenshot_2.jpg)
 
 ### Personas
 
@@ -217,8 +214,11 @@ O USM fornece uma visão ampla do produto, permitindo que as equipes identifique
 
 ## USM - Centelha da Revolução
 
-![User Story Mapping](../assets/usm.jpg)
+![User Story Mapping](../assets/missao3/usm.jpg)
 
+### LIÇÕES APRENDIDAS
+
+Após readaptar a rotina da equipe, conseguimos por todas as entregas nos trilhos de forma organizada, acabou que pecamos quanto a parte do desenvolvimento mas possuindo a ciência referente à isso, nos organizamos e iniciamos o desenvolvimento do projeto (setup de ambiente e prototipação)
 
 ## Histórico de Versão
 
@@ -226,3 +226,4 @@ O USM fornece uma visão ampla do produto, permitindo que as equipes identifique
 | :--------: | :-----: | :-----------------------------------------: | :-------------------------------------: |
 | 22/08/2024 |   1.0   | Adição da Missão |[Mateus Vieira](https://github.com/matix0) |
 | 22/08/2024 |   1.1   | Adição do User Story Mapping | [Dara Maria](https://github.com/daramariabs) |
+| 22/08/2024 |   1.2   | Adição das lições aprendidas |[Mateus Vieira](https://github.com/matix0) |
