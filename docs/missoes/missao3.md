@@ -1,3 +1,6 @@
+### Apresentação Unidade 3
+<iframe width="560" height="315" src="https://youtu.be/zUhLnLLlheU?si=OU_tlI3v4PPv0Kiq" frameborder="0" allowfullscreen></iframe>
+
 # PBB
 
 O Product Backlog Building (PBB) é um método utilizado para criar e elaborar um Product Backlog de forma colaborativa. O Canvas PBB é uma ferramenta que facilita esse processo. O principal objetivo do PBB é auxiliar na construção e refinamento do Product Backlog, garantindo um entendimento compartilhado do produto entre todos os envolvidos e preparando o backlog para que a equipe possa iniciar o trabalho de forma ágil e eficiente.
