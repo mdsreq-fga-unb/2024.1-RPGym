@@ -12,6 +12,8 @@ Retirados do MIRO, os tópicos abaixo são capturas de cada parte do canvas
 
 <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVKoWyUpM=/?moveToViewport=-6216,-3099,12440,6432&embedId=491447537868" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
+![Quadro disponível no MIRO](../assets/pbb.jpg)
+
 ### Problemas
 
 * Baixa Motivação para Atividade Física;
@@ -25,7 +27,7 @@ Retirados do MIRO, os tópicos abaixo são capturas de cada parte do canvas
 * Falta de Diversão no Processo de Exercício;
 * Competitividade Desbalanceada.
 
-<p style="text-align: center;">Fonte: [Miro - Centelha da Revolução](https://miro.com/welcomeonboard/aW5pVmRQcFFRS245NElDczNoRFhzYng2TGRXVTNEQ3ByWlRJdXdxRHRFR1l1VkhkOWx1SERYdDlINWVVT3NGb3wzNDU4NzY0NTI1NjY4NTkzNTM2fDI=?share_link_id=437529689981)</p>
+![Quadro disponível no MIRO](../assets/Screenshot_1.jpg)
 
 ### Expectativas
 
@@ -38,7 +40,7 @@ Retirados do MIRO, os tópicos abaixo são capturas de cada parte do canvas
 * Competividade com a comunidade RGPym;
 * Visualização do progresso dos outros usuários.
 
-<p style="text-align: center;">Fonte: [Miro - Centelha da Revolução](https://miro.com/welcomeonboard/aW5pVmRQcFFRS245NElDczNoRFhzYng2TGRXVTNEQ3ByWlRJdXdxRHRFR1l1VkhkOWx1SERYdDlINWVVT3NGb3wzNDU4NzY0NTI1NjY4NTkzNTM2fDI=?share_link_id=437529689981)</p>
+![Quadro disponível no MIRO](../assets/Screenshot_2.jpg)
 
 ### Personas
 
