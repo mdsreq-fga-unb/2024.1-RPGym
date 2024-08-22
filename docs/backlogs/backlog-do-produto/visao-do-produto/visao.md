@@ -21,7 +21,7 @@ Além disso, o RPGym visa criar uma comunidade engajada de usuários, onde eles 
 
 Abaixo o Diagrama de Ishikawa que serviu para orientar nossas ideias a resolução de um problema comum:
 
-![Diagrama de Ishikawa](../assets/ishikawa.jpg)
+![Diagrama de Ishikawa](../../../assets/ishikawa.jpg)
 <div align="center" style="text-align: center">
 <p>Figura 1: Diagrama de Ishikawa. Fonte: Centelha da Revolução, 2024.</p>
 </div>
