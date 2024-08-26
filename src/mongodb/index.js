@@ -1,5 +1,5 @@
 import connectToDatabase from './db.js';
-import { usuarioSchema } from './models/usuario.js'; 
+import { usuarioSchema } from './models/Usuario.js'; 
 
 let db;
 

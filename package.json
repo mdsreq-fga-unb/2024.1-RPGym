@@ -4,7 +4,8 @@
   "description": "RPGYM",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "serve": "nodemon src/app.js"
   },
   "author": "matix0",
   "license": "ISC",
