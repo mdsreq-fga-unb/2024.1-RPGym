@@ -8,7 +8,7 @@ const DB_PASSWORD = process.env.DB_PASSWORD;
 const DB_CLUSTER = process.env.DB_CLUSTER;
 const DB_NAME = process.env.DB_NAME;
 const password = encodeURIComponent(DB_PASSWORD);
-const DB_URI = `mongodb+srv://${DB_USER}:${password}@${DB_CLUSTER}.mongodb.net/${DB_NAME}?retryWrites=true&w=majority&appName=rpgym`;
+const DB_URI = `mongodb+srv://${DB_USER}:${password}@${DB_CLUSTER}.mongodb.net/?retryWrites=true&w=majority&appName=rpgym`;
 
 const client = new MongoClient(DB_URI, {
   serverApi: ServerApiVersion.v1,

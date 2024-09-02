@@ -5,12 +5,24 @@ const usuarioSchema = {
         type: String,
         required: true
     },
-    genero: {
+    idade: {
+        type: Number,
+        required: true
+    },
+    altura: {
         type: String,
         required: true
     },
-    idade: {
-        type: Number,
+    peso: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    senha: {
+        type: String,
         required: true
     },
     personagemId: {
