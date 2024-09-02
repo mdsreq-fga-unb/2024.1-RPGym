@@ -23,20 +23,20 @@
 
 | **Riscos**                                     | **Mitigação**                                                                                           | **Grau** |
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | -------------- |
-| Membros da equipe saírem da disciplina              | Manter uma comunicação transparente sobre os objetivos e responsabilidades individuais e coletivas            | Baixo          |
+| Membros da equipe saírem da disciplina              | Manter uma comunicação transparente sobre os objetivos e responsabilidades individuais e coletivas            | Médio         |
 | Indisponibilidade do cliente                         | Manter uma comunicação clara levando sempre em consideração os prazos de entrega                            | Baixo          |
-| Problemas de interação da equipe                   | Através dos pilares do SCRUM manter uma equipe transparente que todos tenham direito de fala e sejam ouvidos   | Baixo          |
+| Problemas de interação da equipe                   | Através dos pilares do SCRUM manter uma equipe transparente que todos tenham direito de fala e sejam ouvidos   | Médio         |
 | Falta de habilidades técnicas dos membros da equipe | Identificar os pontos fortes e fracos da equipe como um todo, e buscar preencher essas lacunas de capacitação | Médio         |
 
 #### Aspectos humanos e sociais da Engenharia de Requisitos
 
-<p align="justify"> &emsp;&emsp;A Engenharia de Requisitos é uma disciplina que abrange não apenas os aspectos técnicos do desenvolvimento de software, mas também aspectos humanos e sociais essenciais para o sucesso de um projeto. Na FGA UnB, essa disciplina se destaca como uma das mais humanas do campus, pois envolve a compreensão das necessidades dos usuários e a interação com a sociedade em geral.
+<p align="justify">   A Engenharia de Requisitos é uma disciplina que abrange não apenas os aspectos técnicos do desenvolvimento de software, mas também aspectos humanos e sociais essenciais para o sucesso de um projeto. Na FGA UnB, essa disciplina se destaca como uma das mais humanas do campus, pois envolve a compreensão das necessidades dos usuários e a interação com a sociedade em geral.
 
-<p align="justify"> &emsp;&emsp;No contexto da Engenharia de Requisitos, os aspectos humanos são fundamentais para garantir que o software atenda às demandas e expectativas dos usuários finais. Isso requer habilidades de escuta ativa, empatia e capacidade de se colocar no lugar do usuário para compreender suas necessidades e desejos. Além disso, a comunicação clara e eficaz é essencial para transmitir essas informações aos membros da equipe de desenvolvimento, a fim de evitar mal-entendidos e garantir a entrega de um sistema que atenda às expectativas dos usuários.
+<p align="justify">   No contexto da Engenharia de Requisitos, os aspectos humanos são fundamentais para garantir que o software atenda às demandas e expectativas dos usuários finais. Isso requer habilidades de escuta ativa, empatia e capacidade de se colocar no lugar do usuário para compreender suas necessidades e desejos. Além disso, a comunicação clara e eficaz é essencial para transmitir essas informações aos membros da equipe de desenvolvimento, a fim de evitar mal-entendidos e garantir a entrega de um sistema que atenda às expectativas dos usuários.
 
-<p align="justify"> &emsp;&emsp;Os aspectos sociais da Engenharia de Requisitos referem-se à interação com a sociedade em geral e a consideração de fatores culturais, éticos e legais. Cada projeto de software está inserido em um contexto social específico, e é importante levar em conta as diferentes normas, valores e regulamentações que regem essa sociedade. Isso inclui a consideração de questões de acessibilidade, inclusão e conformidade com regulamentações governamentais, garantindo que o software seja desenvolvido de forma ética e socialmente responsável.
+<p align="justify">   Os aspectos sociais da Engenharia de Requisitos referem-se à interação com a sociedade em geral e a consideração de fatores culturais, éticos e legais. Cada projeto de software está inserido em um contexto social específico, e é importante levar em conta as diferentes normas, valores e regulamentações que regem essa sociedade. Isso inclui a consideração de questões de acessibilidade, inclusão e conformidade com regulamentações governamentais, garantindo que o software seja desenvolvido de forma ética e socialmente responsável.
 
-<p align="justify"> &emsp;&emsp;Na FGA, a Engenharia de Requisitos é valorizada como uma matéria que prepara os estudantes para lidar com esses aspectos humanos e sociais. Os alunos são incentivados a desenvolver habilidades de análise e compreensão das necessidades dos usuários, bem como a considerar os impactos sociais e éticos de suas soluções de software. Isso não apenas contribui para a formação de engenheiros de software mais completos, mas também os prepara para lidar com os desafios do mundo real, onde a interação com os usuários e a sociedade são aspectos fundamentais do desenvolvimento de software bem-sucedido.
+<p align="justify">   Na FGA, a Engenharia de Requisitos é valorizada como uma matéria que prepara os estudantes para lidar com esses aspectos humanos e sociais. Os alunos são incentivados a desenvolver habilidades de análise e compreensão das necessidades dos usuários, bem como a considerar os impactos sociais e éticos de suas soluções de software. Isso não apenas contribui para a formação de engenheiros de software mais completos, mas também os prepara para lidar com os desafios do mundo real, onde a interação com os usuários e a sociedade são aspectos fundamentais do desenvolvimento de software bem-sucedido.
 
 #### Critérios de Replanejamento
 
@@ -49,8 +49,8 @@
 ## Histórico de Versão
 
 |    Data    | Versão |                 Descrição                 |                Autor(es)                |
-| :--------: | :-----: | :-----------------------------------------: | :-------------------------------------: |
+| :--------: | :-----: | :-----------------------------------------: | :--------------------------------------: |
 | 18/04/2024 |   1.0   | Criação do documento de Visão do Projeto | [Mateus Vieira](https://github.com/matix0) |
 | 29/07/2024 |   1.1   |          Atualização das Sprints          | [Mateus Vieira](https://github.com/matix0) |
 | 19/08/2024 |   2.1   |         Atualização do documento         | [Mateus Vieira](https://github.com/matix0) |
-| 22/08/2024 |   2.2   |         Adicionado Aspectos Humanos       | [Lucas Heler](https://github.com/akaeboshi) |
+| 22/08/2024 |   2.2   |         Adicionado Aspectos Humanos         | [Lucas Heler](https://github.com/akaeboshi) |

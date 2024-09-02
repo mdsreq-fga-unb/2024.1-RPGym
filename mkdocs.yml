@@ -54,7 +54,6 @@ nav:
           - Elicitação e Descoberta: backlogs/backlog-do-produto/visao-do-produto/elicitacao-e-descoberta.md
           - Tecnologias: backlogs/backlog-do-produto/visao-do-produto/tecnologias.md        
       - Backlog do Produto: backlogs/backlog-do-produto/backlog-do-produto.md
-      - SAFe: backlogs/backlog-do-produto/SAFe.md
     - Backlog da Sprint:
       - Cronograma: backlogs/backlog-da-sprint/cronograma.md
       - Backlog da Sprint: backlogs/backlog-da-sprint/backlog-da-sprint.md    
@@ -62,5 +61,6 @@ nav:
     - Missão 1: missoes/missao1.md
     - Missão 2: missoes/missao2.md
     - Missão 3: missoes/missao3.md
+    # - Missão 4: missoes/missao4.md
 
 
