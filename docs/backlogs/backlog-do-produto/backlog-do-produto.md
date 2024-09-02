@@ -2,7 +2,6 @@
 
 <p>O Backlog do produto é uma lista dinâmica e priorizada de tudo que precisa ser feito para desenvolver, aprimorar ou corrigir um produto. Ele é essencialmente o "coração" do processo de desenvolvimento, especialmente em metodologias ágeis, como o Scrum.</p>
 <p>Deve ser criado e mantido pelo Product Owner, que é responsável por garantir que ele esteja alinhado com a visão e os objetivos do produto. A lista pode incluir novas funcionalidades, melhorias em funcionalidades existentes, correções de bugs, mudanças técnicas, ou qualquer outro trabalho necessário para a evolução do produto.</p>
-<p>Os itens no Backlog do produto são chamados de histórias (ou User Stories), e cada uma delas descreve uma necessidade ou requisito de forma que todos na equipe possam entender. Essas histórias são priorizadas de acordo com o valor que entregam ao usuário e ao negócio, permitindo que a equipe de desenvolvimento trabalhe primeiro nas tarefas que trazem maior impacto.</p>
 <p>Um ponto importante sobre o Backlog do produto é que ele não é estático. Conforme o desenvolvimento avança e novas informações são descobertas, itens podem ser adicionados, removidos ou reordenados. Isso permite que a equipe seja ágil e responda rapidamente às mudanças nas necessidades dos usuários ou no mercado.</p>
 
 ## Requisitos
