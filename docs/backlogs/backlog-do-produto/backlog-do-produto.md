@@ -140,30 +140,30 @@ _Incentivar o público de academia_
 
 ### MVP 1
 
-| US  | Descrição                                                                                                                                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 01  | Cadastro de Usuário: Implementar cadastro de usuário, incluindo front e back, validação e persistência.                                          |
-| 02  | Cálculo de IMC: Implementar a funcionalidade para cálculo do IMC do usuário, incluindo front, back e persistência.                               |
-| 03  | Registro de Atividades Físicas: Registrar e visualizar atividades físicas, incluindo histórico paginado.                                         |
-| 04  | Cálculo de Moedas: Calcular e exibir moedas baseadas em atividades físicas, incluindo front e back.                                              |
-| 07  | Criação e Gestão de Grupos: Implementar criação, convite e chat de grupos, incluindo persistência e gerenciamento de membros.                    |
-| 08  | Recuperação de Conta: Implementar recuperação de conta via e-mail, incluindo verificação e atualização de senha.                                 |
-| 09  | Perfil de Usuário: Visualizar perfil de outros usuários, incluindo detalhes, gráficos comparativos e funcionalidade de adicionar/remover amigos. |
-| 10  | Personalização de Personagem: Implementar personalização do personagem do usuário, incluindo seleção de características e persistência.          |
-| 13  | Login: Implementar funcionalidade de login, incluindo validação de e-mail e senha.                                                               |
-| 14  | Edição de Informações: Permitir edição de informações pessoais do usuário, validação e exclusão de conta.                                        |
-| 16  | Edição de Informações do Grupo: Permitir edição das informações do grupo, com bloqueio para não-administradores.                                 |
-| 17  | Exclusão de Grupo: Implementar exclusão de grupo, confirmação de exclusão e notificação aos membros.                                             |
-| 18  | Expulsão de Usuário do Grupo: Implementar expulsão de usuário de grupo, com confirmação e bloqueio de acesso.                                    |
+| US  | Descrição                                                                                                                     |
+| --- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 01  | Cadastro de Usuário: Implementar cadastro de usuário, incluindo front e back, validação e persistência.                       | Alta 1
+| 02  | Cálculo de IMC: Implementar a funcionalidade para cálculo do IMC do usuário, incluindo front, back e persistência.            | Baixo 8
+| 03  | Registro de Atividades Físicas: Registrar e visualizar atividades físicas, incluindo histórico paginado.                      | Alta 2
+| 07  | Criação e Gestão de Grupos: Implementar criação, convite e chat de grupos, incluindo persistência e gerenciamento de membros. | Alta 3
+| 09  | Perfil de Usuário: Visualizar perfil de outros usuários.                                                                      | Baixo 9
+| 13  | Login: Implementar funcionalidade de login, incluindo validação de e-mail e senha.                                            | Alta 1
+| 14  | Edição de Informações: Permitir edição de informações pessoais do usuário, validação e exclusão de conta.                     | Média 6
+| 16  | Edição de Informações do Grupo: Permitir edição das informações do grupo.                                                     | Média 7
+| 17  | Exclusão de Grupo: Implementar exclusão de grupo, confirmação de exclusão.                                                    | Alta 4
+| 18  | Expulsão de Usuário do Grupo: Implementar expulsão de usuário de grupo, com confirmação e bloqueio de acesso.                 | Alta 5
 
 ### MVP 2
 
-| US  | Descrição                                                                                                               |
-| --- | ----------------------------------------------------------------------------------------------------------------------- |
-| 05  | Campeonatos: Implementar inscrição e visualização de campeonatos, incluindo status, preço e prêmios.                    |
-| 06  | Participantes de Campeonatos: Visualizar lista de participantes e capacidade do campeonato, notificar inscritos.        |
-| 11  | Loja de Customizações: Implementar seção para customizações na loja, com categorias de itens e persistência de compras. |
-| 12  | Desafios Diários e Semanais: Implementar desafios diários e semanais, atualizar aleatoriamente, e recompensas.          |
+| US  | Descrição                                                                                                                               |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 04  | Cálculo de Moedas: Calcular e exibir moedas baseadas em atividades físicas, incluindo front e back.                                     | Baixo
+| 05  | Campeonatos: Implementar inscrição e visualização de campeonatos, incluindo status, preço e prêmios.                                    | Alto
+| 06  | Participantes de Campeonatos: Visualizar lista de participantes e capacidade do campeonato, notificar inscritos.                        | Média
+| 08  | Recuperação de Conta: Implementar recuperação de conta via e-mail, incluindo verificação e atualização de senha.                        | Alto
+| 10  | Personalização de Personagem: Implementar personalização do personagem do usuário, incluindo seleção de características e persistência. | Alto
+| 11  | Loja de Customizações: Implementar seção para customizações na loja, com categorias de itens e persistência de compras.                 | Baixo
+| 12  | Desafios Diários e Semanais: Implementar desafios diários e semanais, atualizar aleatoriamente, e recompensas.                          | Média
 
 ## Desenvolvimento do Produto
 
