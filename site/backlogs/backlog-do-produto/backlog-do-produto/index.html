@@ -1400,11 +1400,11 @@
 </tr>
 <tr>
 <td>RF05</td>
-<td>O sistema deve permitir ao usuário visualizar todos os registros de suas atividades físicas, incluindo dias, calorias gastas e moedas adquiridas, com opções de filtragem por data e tipo de atividade.</td>
+<td>O sistema deve permitir ao usuário visualizar todos os registros de suas atividades físicas, incluindo dias e moedas adquiridas, com opções de filtragem por data e tipo de atividade.</td>
 </tr>
 <tr>
 <td>RF06</td>
-<td>O sistema deve calcular e adicionar moedas ao usuário com base nas calorias gastas, respeitando um limite máximo diário de moedas e um limite máximo semanal, se aplicável.</td>
+<td>O sistema deve calcular e adicionar moedas ao usuário com base nas atividades feitas, respeitando um limite máximo diário de moedas e um limite máximo semanal, se aplicável.</td>
 </tr>
 <tr>
 <td>RF07</td>
@@ -1416,7 +1416,7 @@
 </tr>
 <tr>
 <td>RF09</td>
-<td>O sistema deve permitir ao usuário criar um grupo, convidar amigos, gerenciar as informações do grupo, e ter funcionalidade de chat e lista de pedidos para entrada.</td>
+<td>O sistema deve permitir ao usuário criar um grupo, gerenciar as informações do grupo, e ter funcionalidade de chat.</td>
 </tr>
 <tr>
 <td>RF10</td>
@@ -1424,7 +1424,7 @@
 </tr>
 <tr>
 <td>RF11</td>
-<td>O sistema deve permitir ao usuário acessar estatísticas de outros usuários, incluindo gráficos de atividades físicas, moedas e participação em campeonatos, com comparações de desempenho e visibilidade de dados.</td>
+<td>O sistema deve permitir ao usuário acessar estatísticas de outros usuários, incluindo as atividades físicas, moedas e participação em campeonatos, com comparações de desempenho.</td>
 </tr>
 <tr>
 <td>RF12</td>
@@ -1436,7 +1436,7 @@
 </tr>
 <tr>
 <td>RF14</td>
-<td>O sistema deve permitir ao usuário receber desafios diários e semanais, recompensando-o com moedas de ingresso e moedas para loja, e atualizar os desafios periodicamente com critérios definidos.</td>
+<td>O sistema deve permitir ao usuário receber desafios diários e semanais, recompensando-o com moedas de ingresso e para loja, e atualizar os desafios periodicamente com critérios definidos.</td>
 </tr>
 <tr>
 <td>RF15</td>
@@ -1670,13 +1670,13 @@
 <td style="text-align: center;">F3</td>
 <td style="text-align: center;">US03</td>
 <td style="text-align: center;">Eu, como usuário, gostaria de visualizar todos os meus registros de atividades físicas.</td>
-<td style="text-align: center;">- O sistema deve possuir uma lista do histórico com os dias em que o usuário realizou atividades físicas.<code>&lt;br&gt;</code>- O sistema deve mostrar os dados de calorias gastas nos dias em que o usuário fez atividade física.<code>&lt;br&gt;</code>- O sistema deve registrar quantas moedas o usuário adquiriu em cada dia de atividade.<code>&lt;br&gt;</code>- O usuário deve poder visualizar uma lista histórica de suas atividades físicas.<code>&lt;br&gt;</code>- A lista deve estar paginada mensalmente para facilitar a navegação.<code>&lt;br&gt;</code>- Cada registro no histórico deve mostrar o dia, as calorias gastas e as moedas obtidas.</td>
+<td style="text-align: center;">- O sistema deve possuir uma lista do histórico com os dias em que o usuário realizou atividades físicas.<code>&lt;br&gt;</code>- O sistema deve registrar quantas moedas o usuário adquiriu em cada dia de atividade.<code>&lt;br&gt;</code>- O usuário deve poder visualizar uma lista histórica de suas atividades físicas.<code>&lt;br&gt;</code>- Cada registro no histórico deve mostrar o dia, a atividade e as moedas obtidas.</td>
 </tr>
 <tr>
 <td style="text-align: center;">F4</td>
 <td style="text-align: center;">US04</td>
 <td style="text-align: center;">Eu, como usuário, gostaria de ganhar moedas equivalentes ao nível de esforço que fiz de exercício físico no dia, definindo um limite máximo de moedas por dia.</td>
-<td style="text-align: center;">- O sistema deve calcular o nível de calorias gastas pelo usuário no dia.<code>&lt;br&gt;</code>- O sistema deve adicionar moedas ao usuário equivalentes a uma porcentagem baseada no nível de calorias gastas no dia.<code>&lt;br&gt;</code>- O sistema deve possuir um limite máximo de moedas que o usuário pode obter de acordo com as calorias gastas por semana.<code>&lt;br&gt;</code>- O usuário deve poder visualizar a quantidade atual de moedas.<code>&lt;br&gt;</code>- O usuário deve adquirir moedas ao finalizar um exercício.</td>
+<td style="text-align: center;">- O sistema deve calcular o nível de atividades feitas pelo usuário no dia.<code>&lt;br&gt;</code>- O sistema deve adicionar moedas ao usuário equivalentes a uma porcentagem baseada nas atividades no dia.<code>&lt;br&gt;</code>- O usuário deve poder visualizar a quantidade atual de moedas.<code>&lt;br&gt;</code>- O usuário deve adquirir moedas ao finalizar um exercício.</td>
 </tr>
 <tr>
 <td style="text-align: center;">F9</td>
@@ -1693,8 +1693,8 @@
 <tr>
 <td style="text-align: center;">F9</td>
 <td style="text-align: center;">US07</td>
-<td style="text-align: center;">Eu, como usuário, gostaria de criar um grupo e convidar meus amigos para incentivar uns aos outros a praticar exercícios físicos.</td>
-<td style="text-align: center;">- O sistema deve permitir o cadastramento de um novo grupo pelo usuário.<code>&lt;br&gt;</code>- O sistema deve permitir a inserção do nome do grupo.<code>&lt;br&gt;</code>- O sistema deve oferecer a seleção de uma foto pré-definida para o grupo.<code>&lt;br&gt;</code>- O sistema deve gerar um código único para o grupo, que somente o administrador pode copiar e compartilhar para convidar outros usuários.<code>&lt;br&gt;</code>- O sistema deve ter uma lista de pedidos para entrada no grupo, visível apenas para os administradores.<code>&lt;br&gt;</code>- O grupo deve ter uma funcionalidade de chat para os membros conversarem entre si.<code>&lt;br&gt;</code>- O usuário deve poder visualizar os integrantes do grupo.<code>&lt;br&gt;</code>- O usuário administrador deve poder visualizar o código do grupo.<code>&lt;br&gt;</code>- O administrador deve poder visualizar e gerenciar a lista de pedidos para entrar no grupo.<code>&lt;br&gt;</code>- O usuário deve poder enviar e receber mensagens no chat do grupo, visualizando suas próprias mensagens e as mensagens dos outros membros.</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de criar um grupo para incentivar uns aos outros a praticar exercícios físicos.</td>
+<td style="text-align: center;">- O sistema deve permitir o cadastramento de um novo grupo pelo usuário.<code>&lt;br&gt;</code>- O sistema deve permitir a inserção do nome do grupo.<code>&lt;br&gt;</code>- O usuário deve poder visualizar os integrantes do grupo.<code>&lt;br&gt;</code></td>
 </tr>
 <tr>
 <td style="text-align: center;">F1</td>
@@ -1705,8 +1705,8 @@
 <tr>
 <td style="text-align: center;">F1</td>
 <td style="text-align: center;">US09</td>
-<td style="text-align: center;">Eu, como usuário, gostaria de acessar as estatísticas de outros usuários, incluindo gráficos das atividades físicas realizadas, moedas ganhas e moedas totais no momento.</td>
-<td style="text-align: center;">- O sistema deve exibir gráficos comparativos das atividades físicas diárias e das moedas adquiridas entre o usuário logado e o usuário do perfil.<code>&lt;br&gt;</code>- O sistema deve mostrar o nome e a data de registro do usuário do perfil.<code>&lt;br&gt;</code>- O sistema deve informar o grupo ao qual o usuário do perfil está participando, se houver.<code>&lt;br&gt;</code>- O sistema deve exibir a quantidade total de moedas do usuário do perfil.<code>&lt;br&gt;</code>- O sistema deve mostrar o histórico dos campeonatos em que o usuário do perfil participou, incluindo as posições alcançadas.<code>&lt;br&gt;</code>- O sistema deve permitir adicionar o usuário do perfil como amigo.<code>&lt;br&gt;</code>- O sistema deve permitir remover o usuário do perfil como amigo.<code>&lt;br&gt;</code>- O sistema deve possibilitar convidar o usuário do perfil para o grupo criado pelo usuário logado, caso ambos sejam amigos.<code>&lt;br&gt;</code>- O usuário deve conseguir visualizar o perfil de outro usuário.<code>&lt;br&gt;</code>- O usuário deve conseguir comparar seu próprio desenvolvimento com o usuário do perfil.<code>&lt;br&gt;</code>- O usuário deve conseguir adicionar e remover o usuário como amigo.<code>&lt;br&gt;</code>- O usuário deve conseguir convidar o usuário para o grupo.</td>
+<td style="text-align: center;">Eu, como usuário, gostaria de acessar as estatísticas de outros usuários.</td>
+<td style="text-align: center;">- O sistema deve mostrar o nome e a data de registro do usuário do perfil.<code>&lt;br&gt;</code>- O sistema deve exibir a quantidade total de moedas do usuário do perfil.<code>&lt;br&gt;</code>- O usuário deve conseguir visualizar o perfil de outro usuário quando em mesmos grupos.</td>
 </tr>
 <tr>
 <td style="text-align: center;">F2</td>
@@ -1762,6 +1762,12 @@
 <td style="text-align: center;">Eu, como usuário, gostaria de retirar um usuário que está no grupo o qual sou administrador.</td>
 <td style="text-align: center;">- O sistema deve permitir que o usuário administrador do grupo possa expulsar um usuário do grupo.<code>&lt;br&gt;</code>- O sistema deve confirmar o pedido de expulsão do usuário.<code>&lt;br&gt;</code>- O sistema deve eliminar e bloquear o acesso do usuário que foi expulso.</td>
 </tr>
+<tr>
+<td style="text-align: center;">F10</td>
+<td style="text-align: center;">US19</td>
+<td style="text-align: center;">Eu, como usuário, conversar com outros usuarios via chat nos grupos que faço parte.</td>
+<td style="text-align: center;">- O sistema deve permitir que o usuário do grupo veja as mensagens de outros usuários.<code>&lt;br&gt;</code>- O usuário deve poder enviar mensagens nesse chat.<code>&lt;br&gt;</code>- O sistema deve armazenar as mensagens por tempo indeterminado.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="mvp">MVP</h2>
@@ -1792,7 +1798,7 @@
 </tr>
 <tr>
 <td>07</td>
-<td>Criação e Gestão de Grupos: Implementar criação, convite e chat de grupos, incluindo persistência e gerenciamento de membros.</td>
+<td>Criação e Gestão de Grupos: Implementar criação incluindo persistência e gerenciamento de membros.</td>
 </tr>
 <tr>
 <td>09</td>
@@ -1857,6 +1863,10 @@
 <td>12</td>
 <td>Desafios Diários e Semanais: Implementar desafios diários e semanais, atualizar aleatoriamente, e recompensas.</td>
 </tr>
+<tr>
+<td>19</td>
+<td>Grupo: Implementar a função de Chat para que os usuários possam conversar entre si.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="desenvolvimento-do-produto">Desenvolvimento do Produto</h2>
@@ -1887,7 +1897,7 @@
 <td>Criar formulário para peso e altura. Tela para exibir IMC calculado.</td>
 <td>Implementar cálculo do IMC e persistência no banco de dados.</td>
 <td>Inserir dados e calcular IMC corretamente. Dados devem ser salvos no banco de dados.</td>
-<td>Alta</td>
+<td>Baixo</td>
 </tr>
 <tr>
 <td><strong>US03 - Registro de Atividades Físicas</strong></td>
@@ -1903,7 +1913,7 @@
 <td>Exibir moedas e feedback visual após adicionar moedas.</td>
 <td>Cálculo baseado em calorias gastas. Limite máximo semanal.</td>
 <td>Cálculo correto das moedas e feedback ao ganhar. Limitação semanal.</td>
-<td>Alta</td>
+<td>Baixo</td>
 </tr>
 <tr>
 <td><strong>US05 - Campeonatos</strong></td>
@@ -1924,9 +1934,9 @@
 <tr>
 <td><strong>US07 - Criação e Gestão de Grupos</strong></td>
 <td>Implementar criação e gestão de grupos.</td>
-<td>Criar grupo, convite de amigos, chat.</td>
+<td>Criar grupo, convite de amigos.</td>
 <td>Persistência e gestão de grupos e membros no banco de dados.</td>
-<td>Criação e gestão de grupos, funcionalidade de chat, persistência de dados.</td>
+<td>Criação e gestão de grupos, persistência de dados.</td>
 <td>Alta</td>
 </tr>
 <tr>
@@ -1943,7 +1953,7 @@
 <td>Visualização de perfil, informações, gráficos comparativos.</td>
 <td>Adicionar/remover amigos, visualização de histórico e comparativos.</td>
 <td>Visualização de perfis com detalhes, gráficos comparativos, adicionar/remover amigos.</td>
-<td>Média</td>
+<td>Baixo</td>
 </tr>
 <tr>
 <td><strong>US10 - Personalização de Personagem</strong></td>
@@ -1951,7 +1961,7 @@
 <td>Personalização de características (cabelo, pele, etc.).</td>
 <td>Persistência e atualização das personalizações.</td>
 <td>Personalização com diferentes características, persistência e exibição correta.</td>
-<td>Média</td>
+<td>Alta</td>
 </tr>
 <tr>
 <td><strong>US11 - Loja de Customizações</strong></td>
@@ -1959,7 +1969,7 @@
 <td>Seção de loja com categorias de itens.</td>
 <td>Compra e atualização de itens, persistência no banco de dados.</td>
 <td>Acesso à loja, compra e atualização de customizações, persistência correta.</td>
-<td>Média</td>
+<td>Baixo</td>
 </tr>
 <tr>
 <td><strong>US12 - Desafios Diários e Semanais</strong></td>
@@ -2017,6 +2027,14 @@
 <td>Expulsão permitida para administradores, bloqueio de acesso, persistência correta.</td>
 <td>Média</td>
 </tr>
+<tr>
+<td><strong>US19 - Chat de Grupo</strong></td>
+<td>Implementar chat de usuário de grupo.</td>
+<td>Opção de enviar, ver outras mensagens.</td>
+<td>Persistência das mensagens enviadas.</td>
+<td>Chat com envio e recebimento de mensagens dos usuários</td>
+<td>Alta</td>
+</tr>
 </tbody>
 </table>
 <h2 id="historico-de-versoes">Histórico de Versões</h2>
@@ -2053,6 +2071,12 @@
 <td style="text-align: center;"><code>2.2</code></td>
 <td style="text-align: center;">Refinamento do Backlog</td>
 <td style="text-align: center;">Mateus Vieira</td>
+</tr>
+<tr>
+<td style="text-align: center;">27/08/2024</td>
+<td style="text-align: center;"><code>2.3</code></td>
+<td style="text-align: center;">Ajustes do Backlog</td>
+<td style="text-align: center;">Lucas Heler</td>
 </tr>
 </tbody>
 </table>
