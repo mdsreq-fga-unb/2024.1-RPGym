@@ -17,5 +17,6 @@ const getAllUsers = () => User.find().exec();
 
 const updateUser = (id, updateData) => User.findByIdAndUpdate(id, updateData, { new: true }).exec();
 
+const deleteUser = (id) => User.deleteOne({ _id: id }).exec();
 
-export { create, getAllUsers, updateUser }; // Exporta a função create
+export { create, getAllUsers, updateUser, deleteUser }; // Exporta a função create

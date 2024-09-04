@@ -1,4 +1,4 @@
-import { create, getAllUsers, updateUser } from "../services/userService.js";
+import { create, getAllUsers, updateUser, deleteUser } from "../services/userService.js";
 
 
 const createControler = async (req, res) => {
@@ -64,4 +64,21 @@ const updateUserController = async (req, res) => {
     }
   };  
 
-  export { createControler, getAllUsersController, updateUserController };
+const deleteUserController = async (req, res) => {
+    const { id } = req.params;
+  
+    try {
+      const result = await deleteUser(id);
+  
+      if (result.deletedCount === 0) {
+        return res.status(404).send({ message: 'Usuário não encontrado.' });
+      }
+  
+      res.status(200).send({ message: 'Usuário excluído com sucesso.' });
+    } catch (error) {
+      console.error("Erro no servidor ao excluir usuário:", error.message);
+      res.status(500).send({ message: "Erro no servidor ao excluir usuário." });
+    }
+  };
+
+export { createControler, getAllUsersController, updateUserController, deleteUserController };
