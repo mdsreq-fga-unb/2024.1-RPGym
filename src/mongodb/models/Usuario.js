@@ -1,34 +1,32 @@
-import { ObjectId } from 'mongodb'; // Usar import ao invés de require
+import mongoose from 'mongoose';
 
-const usuarioSchema = {
-    nome: {
+const userSchema = new mongoose.Schema({
+    name: {
         type: String,
         required: true
     },
-    idade: {
+    age: {
         type: Number,
         required: true
     },
-    altura: {
+    height: {
         type: String,
         required: true
     },
-    peso: {
+    weight: {
         type: String,
         required: true
     },
     email: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
-    senha: {
+    password: {
         type: String,
         required: true
-    },
-    personagemId: {
-        type: ObjectId,
-        ref: 'Personagem'
     }
-};
+});
 
-export { usuarioSchema };
+const User = mongoose.model('User', userSchema)
+export default User;
