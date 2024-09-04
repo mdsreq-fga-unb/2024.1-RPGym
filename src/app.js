@@ -1,23 +1,28 @@
 import express from 'express';
-import { initializeDatabase } from './mongodb/index.js';
-import dotenv from "dotenv";
-import userRoute from './routes/userRoutes.js'; // Use import instead of require
+import dotenv from 'dotenv';
+import userRoute from './routes/userRoutes.js'; // Importa as rotas de usuário
+import { initializeDatabase } from './mongodb/index.js'; // Importa a função para conectar ao MongoDB
 
 dotenv.config();
+
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use("/user", userRoute);
 
+// Função para inicializar o servidor
 const startServer = async () => {
   try {
-    await initializeDatabase();
+    await initializeDatabase(); 
+
+    app.use('/users', userRoute);
+
     app.listen(PORT, () => {
       console.log(`Servidor rodando na porta ${PORT}`);
     });
   } catch (error) {
-    console.error("Erro ao iniciar o servidor:", error);
+    console.error('Erro ao iniciar o servidor:', error.message);
+    process.exit(1);
   }
 };
 

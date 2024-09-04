@@ -27,7 +27,8 @@ const createControler = async (req, res) => {
         },
       });
     } catch (error) {
-      res.status(500).send({ message: 'Erro no servidor ao criar usuário.' });
+      console.error("Erro no servidor ao criar usuário:", error.message); // Log detalhado do erro
+      res.status(500).send({ message: "Erro no servidor ao criar usuário." });
     }
   };
   

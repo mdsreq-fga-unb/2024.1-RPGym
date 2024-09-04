@@ -7,7 +7,8 @@ const create = async (body) => {
       const newUser = await User.create(body);
       return newUser; // Retorna o usuário criado
     } catch (error) {
-      throw new Error(`Erro ao criar usuário: ${error.message}`); // Lança erro em caso de falha
+      console.error("Erro ao criar usuário no banco de dados:", error.message);
+    throw error; // Lança erro em caso de falha
     }
   };
   
