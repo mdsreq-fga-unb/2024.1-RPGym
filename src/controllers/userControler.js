@@ -1,4 +1,4 @@
-import { create, getAllUsers } from "../services/userService.js";
+import { create, getAllUsers, updateUser } from "../services/userService.js";
 
 
 const createControler = async (req, res) => {
@@ -43,4 +43,25 @@ const getAllUsersController = async (req, res) => {
     }
   };
 
-  export { createControler, getAllUsersController };
+const updateUserController = async (req, res) => {
+    const { id } = req.params;
+    const updateData = req.body;
+  
+    try {
+      const user = await updateUser(id, updateData);
+  
+      if (!user) {
+        return res.status(404).send({ message: 'Usuário não encontrado.' });
+      }
+  
+      res.status(200).send({
+        message: 'Usuário atualizado com sucesso',
+        user,
+      });
+    } catch (error) {
+      console.error("Erro no servidor ao atualizar usuário:", error.message);
+      res.status(500).send({ message: "Erro no servidor ao atualizar usuário." });
+    }
+  };  
+
+  export { createControler, getAllUsersController, updateUserController };

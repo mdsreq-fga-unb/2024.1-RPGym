@@ -1,9 +1,8 @@
 import User from "../mongodb/models/Usuario.js"
 
-// Função para criar um novo usuário
 const create = async (body) => {
     try {
-      // Cria um novo documento de usuário no MongoDB usando o modelo User
+      
       const newUser = await User.create(body);
       return newUser; // Retorna o usuário criado
     } catch (error) {
@@ -14,6 +13,9 @@ const create = async (body) => {
   
   // Outras operações de serviço (CRUD) podem ser adicionadas aqui...
   
-const getAllUsers = () => User.find().exec();  
+const getAllUsers = () => User.find().exec(); 
 
-export { create, getAllUsers }; // Exporta a função create
+const updateUser = (id, updateData) => User.findByIdAndUpdate(id, updateData, { new: true }).exec();
+
+
+export { create, getAllUsers, updateUser }; // Exporta a função create
