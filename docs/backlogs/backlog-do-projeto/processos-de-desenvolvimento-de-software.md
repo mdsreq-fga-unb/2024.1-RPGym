@@ -1,4 +1,4 @@
-# PROCESSO DE DESENVOLVIMENTO DE SOFTWARE
+# Processo de Desenvolvimento de Software
 
 ## Framework de Sommerville:
 
@@ -12,54 +12,60 @@
 ### Questões Humanas
 
 1. Qual é o nível de competência dos projetistas e programadores do time de desenvolvimento? Médio.
-2. Como está organizado o time de desenvolvimento? Desenvolvedores Front-End e Back-End e Scrum
-   Master.
-3. Quais são as tecnologias disponíveis para apoiar o desenvolvimento do sistema? ReactJS, NodeJS,
-   Notion,(SQL ou noSQL em processo de escolha), Discord, Google Meet, Google Drive, Trello, Miro,
-   GitHub.
+2. Como está organizado o time de desenvolvimento? Desenvolvedores Front-End e Back-End e Dono do Produto.
+3. Quais são as tecnologias disponíveis para apoiar o desenvolvimento do sistema? ReactJS, NodeJS, Notion, MongoDB, Discord, Trello, Miro, Figma e GitHub.
 
 ### Questões Organizacionais
 
-1. É importante ter uma especificação e um projeto (design) bem detalhados antes de passar para a
-   implementação talvez por motivos contratuais? Não.
-2. É realista uma estratégia de entrega incremental, na qual o software é entregue aos clientes ou outros
-   stakeholders e um rápido feedback é obtido? Sim.
-3. Os representantes do cliente estarão disponíveis e dispostos a participar do time de desenvolvimento?
-   Sim.
+1. É importante ter uma especificação e um projeto (design) bem detalhados antes de passar para a implementação talvez por motivos contratuais? Não.
+2. É realista uma estratégia de entrega incremental, na qual o software é entregue aos clientes ou outros stakeholders e um rápido feedback é obtido? Sim.
+3. Os representantes do cliente estarão disponíveis e dispostos a participar do time de desenvolvimento? Sim.
 4. Existem questões culturais que possam afetar o desenvolvimento do sistema? Não.
 
-| Atividade                 | Método                                                                                     | Ferramenta                                 | Entrega                                                               |
-| ------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | --------------------------------------------------------------------- |
-| Elicitação e Descoberta   | Reuniões com o cliente (Sprint Planning)                                                   | Discord, Notion                            | Ata da reunião com o cliente, Definição do problema                   |
-| Análise e Consenso        | Avaliação da equipe acerca dos requisitos levantados (Entre o desenvolvimento das Sprints) | Discord, Notion                            | Documento com os requisitos levantados                                |
-| Declaração                | Histórias de usuário (Sprint Planning)                                                     | Notion                                     | Documento de requisitos com adição das histórias de usuário           |
-| Representação             | Realizar protótipo do sistema (Sprint Planning)                                            | Figma                                      | Protótipo de baixa fidelidade                                         |
-| Verificação e Validação   | Testes (Desenvolvimento durante as Sprints) Reuniões com o cliente (Sprint Review)         | Discord, Frameworks de testes (a escolher) | Documento de efetividade dos testes Documento de validação do cliente |
-| Organização e Atualização | Reuniões com a equipe (Desenvolvimento durante as Sprints)                                 | Notion, Discord, GitHub, Trello            | Documentação atualizada Repositório no GitHub Kanban atualizado       |
+## Atividades da Engenharia de Requisitos
 
-## SCRUM
+| Atividade                 | Método                                                                                           | Ferramenta                            | Entrega                                                                |
+| ------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------- | ---------------------------------------------------------------------- |
+| Elicitação e Descoberta   | Reuniões com o cliente<br /> (Sprint Planning)                                                   | Discord<br />GitHub Pages             | Diagrama de Ishikawa<br />Documentação de                              |
+| Análise e Consenso        | Avaliação da equipe acerca dos requisitos levantados<br /> (Entre o desenvolvimento das Sprints) | Discord<br />GitHub Pages             | Documento com os requisitos levantados                                 |
+| Declaração                | Histórias de usuário <br />(Sprint Planning)                                                     | Discord<br />GitHub Pages<br />Trello | Backlog do Produto                                                     |
+| Representação             | Realizar protótipo do sistema<br /> (Sprint Planning)                                            | Figma                                 | Protótipo disponível no Backlog do Produto                             |
+| Verificação e Validação   | Coleta de feedbacks com o cliente e com a monitora<br />(Após entrega da Missão)                 | Discord                               | Atualização dos Backlogs conforme feedback                             |
+| Organização e Atualização | Reuniões com a equipe <br />(Desenvolvimento durante as Sprints)                                 | Discord<br />GitHub Pages<br />Trello | Backlog atualizado<br /> Repositório no GitHub<br /> Kanban atualizado |
+
+---
+
+## Abordagem
+
+Buscamos utilizar uma abordagem de desenvolvimento ágil com algumas práticas do framework SCRUM e também do XP.
+
+### SCRUM
+
+Deve ser considerado que o tempo de duração de uma Sprint é de uma semana.
 
 A seguir segue uma lista das cerimônias que serão utilizadas do Scrum:
 
-| Cerimônia       | Descrição                                                                                                                                                                                                          |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Sprint Planning | Reunião realizada no início de cada Sprint, onde serão definidas a entrega da Sprint.                                                                                                                              |
-| Sprint Review   | Reunião realizada ao final de cada sprint, realizaremos uma reunião para analisar a dinâmica de trabalho da equipe e das ferramentas utilizadas, visando melhorar qualquer aspecto que não atenda às expectativas. |
-| Product Backlog | Documento que possui uma lista ordenada em ordem de prioridade dos requisitos do produto que precisam ser desenvolvidos para atender aos objetivos do projeto.                                                     |
+| Cerimônia            | Descrição                                                                                                                                                                                                          |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Sprint Planning      | Reunião realizada no início de cada Sprint, onde serão definidas a entrega da Sprint.                                                                                                                              |
+| Sprint Retrospective | Reunião realizada ao final de cada sprint, realizaremos uma reunião para analisar a dinâmica de trabalho da equipe e das ferramentas utilizadas, visando melhorar qualquer aspecto que não atenda às expectativas. |
+| Product Backlog      | Documento que possui uma lista ordenada em ordem de prioridade dos requisitos do produto que precisam ser desenvolvidos para atender aos objetivos do projeto.                                                     |
 
-## XP
+### XP
 
 A seguir segue uma lista das práticas que serão utilizados do XP:
 
-| Prática                        | Descrição                                                                                                                                                          |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Programação em Pares           | Duas pessoas trabalham juntas em um mesmo código, alternando entre quem está "dirigindo" (escrevendo código) e quem está "navegando" (revisando e dando feedback). |
-| Integração Contínua            | Integrar o código frequentemente, código esse que deve ser integrado ao repositório do GitHub                                                                      |
-| Padrões de codificação         | Estabelecer e seguir diretrizes de codificação para garantir consistência e qualidade no código produzido pela equipe.                                             |
-| Propriedade Coletiva do Código | Todos os membros da equipe são responsáveis por todo o código do projeto, o que promove a colaboração, a transparência e a qualidade do código.                    |
-| Refatoração                    | Melhorar a estrutura interna do código sem alterar seu comportamento externo, mantendo-o limpo e de fácil compreensão.                                             |
+| Prática                        | Descrição                                                                                                                                       |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Integração Contínua            | Integrar o código frequentemente, código esse que deve ser integrado ao repositório do GitHub                                                   |
+| Propriedade Coletiva do Código | Todos os membros da equipe são responsáveis por todo o código do projeto, o que promove a colaboração, a transparência e a qualidade do código. |
 
-|    Data    | Versão |                  Descrição                  |                 Autor(es)                  |
-| :--------: | :----: | :-----------------------------------------: | :----------------------------------------: |
-| 01/07/2024 |  1.1   |  Criação do documento de Visão do Projeto   | [Mateus Vieira](https://github.com/matix0) |
-| 27/08/2024 |  1.2   | Atualização para conformidade com o Projeto | [Mateus Vieira](https://github.com/matix0) |
+---
+
+## Histórico de Versão
+
+|    Data    | Versão |                   Descrição                    |                 Autor(es)                  |
+| :--------: | :----: | :--------------------------------------------: | :----------------------------------------: |
+| 01/07/2024 |  1.1   |    Criação do documento de Visão do Projeto    | [Mateus Vieira](https://github.com/matix0) |
+| 27/08/2024 |  1.2   |  Atualização para conformidade com o Projeto   | [Mateus Vieira](https://github.com/matix0) |
+| 04/09/2024 |  2.0   | Modificação segundo issue aberta pela monitora | [Mateus Vieira](https://github.com/matix0) |
