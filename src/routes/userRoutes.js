@@ -1,10 +1,11 @@
 import express from 'express';
-import { createControler } from '../controllers/userControler.js'; 
+import { createControler, getAllUsersController } from '../controllers/userControler.js'; 
 
 const router = express.Router(); 
 
 // Rota para criar um novo usuário
 router.post('/', createControler);
+router.get("/", getAllUsersController);
 
 // Outras rotas CRUD podem ser adicionadas aqui...
 // Exemplo:

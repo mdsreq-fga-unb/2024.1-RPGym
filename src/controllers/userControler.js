@@ -1,4 +1,4 @@
-import { create } from "../services/userService.js";
+import { create, getAllUsers } from "../services/userService.js";
 
 
 const createControler = async (req, res) => {
@@ -32,4 +32,15 @@ const createControler = async (req, res) => {
     }
   };
   
-  export { createControler };
+const getAllUsersController = async (req, res) => {
+    try {
+      const users = await getAllUsers();
+  
+      res.status(200).send(users);
+    } catch (error) {
+      console.error("Erro no servidor ao obter usuários:", error.message);
+      res.status(500).send({ message: "Erro no servidor ao obter usuários." });
+    }
+  };
+
+  export { createControler, getAllUsersController };

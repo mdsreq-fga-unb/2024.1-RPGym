@@ -14,4 +14,6 @@ const create = async (body) => {
   
   // Outras operações de serviço (CRUD) podem ser adicionadas aqui...
   
-  export { create }; // Exporta a função create
+const getAllUsers = () => User.find().exec();  
+
+export { create, getAllUsers }; // Exporta a função create
