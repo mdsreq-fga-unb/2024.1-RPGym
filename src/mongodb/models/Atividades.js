@@ -21,5 +21,5 @@ const activitySchema = new mongoose.Schema({
   },
 });
 
-const Activity = mongoose.model("Activity", activitySchema);
+const Activity = mongoose.model("activities", activitySchema);
 export default Activity;

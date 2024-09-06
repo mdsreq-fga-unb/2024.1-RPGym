@@ -1,7 +1,8 @@
-import Atividades from "../mongodb/models/Atividades.js";
+import Activity from "../mongodb/models/Atividades.js";
 import User from "../mongodb/models/Usuario.js";
+import moment from "moment";
 
-const registerActivity = async (activityData) => {
+const registerActivity = async (userId, activityData) => {
   const activity = new Activity({
     user: userId,
     ...activityData,
@@ -9,14 +10,16 @@ const registerActivity = async (activityData) => {
   return await activity.save();
 };
 
-const getActivitiesByUserAndDate = async (userId, date) => {
-  const startOfDay = new Date(date.setHours(0, 0, 0, 0));
-  const endOfDay = new Date(date.setHours(23, 59, 59, 999));
+const getActivityDaysByUser = async (userId) => {
+  const activities = await Activity.find({ user: userId });
 
-  return await Atividades.find({
-    user: userId,
-    date: { $gte: startOfDay, $lte: endOfDay },
-  });
+  const days = new Set(
+    activities.map((activity) => moment(activity.date).format("DD/MM/YYYY"))
+  );
+  return {
+    days: Array.from(days),
+    count: days.size,
+  };
 };
 
 const calculateIMC = async (userId) => {
@@ -39,6 +42,6 @@ const calculateIMC = async (userId) => {
 };
 export default {
   registerActivity,
-  getActivitiesByUserAndDate,
+  getActivityDaysByUser,
   calculateIMC,
 };

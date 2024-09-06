@@ -10,19 +10,16 @@ const registerActivity = async (req, res) => {
   }
 };
 
-const getActivitiesByUserAndDate = async (req, res) => {
+const getActivityDaysByUser = async (req, res) => {
   try {
     const { userId } = req.params;
-    const { date } = req.query; // Passar a data como query string
-    const activities = await activityService.getActivitiesByUserAndDate(
-      userId,
-      new Date(date)
-    );
-    return res.status(200).json(activities);
+    const result = await activityService.getActivityDaysByUser(userId);
+    return res.status(200).json(result);
   } catch (error) {
     return res.status(500).json({ error: error.message });
   }
 };
+
 const calculateIMC = async (req, res) => {
   try {
     const { userId } = req.params;
@@ -34,6 +31,6 @@ const calculateIMC = async (req, res) => {
 };
 export default {
   registerActivity,
-  getActivitiesByUserAndDate,
+  getActivityDaysByUser,
   calculateIMC,
 };
