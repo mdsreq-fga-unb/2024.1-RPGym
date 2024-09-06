@@ -10,3 +10,48 @@ yarn-error.log*
 
 # Environment variables
 .env
+
+# Build output
+/dist
+/build
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+jspm_packages/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# NPM package lock file
+package-lock.json
+yarn.lock
+
+# MongoDB local database files
+data/db
+
+# Local configuration files
+*.local
+*.env.local
+
+# Coveralls
+coverage/
+
+# npm package logs
+npm-debug.log*
+
+# Environment variable files
+.env*
+.env.*.local
+
+# Yarn Integrity file
+.yarn-integrity
