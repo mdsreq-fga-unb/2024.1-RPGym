@@ -1,8 +1,27 @@
-import { ObjectId } from 'mongodb';
+import mongoose from "mongoose";
 
-const grupoSchema = {
-    nome: { type: String, required: true },
-    integrantes: [{ type: ObjectId, ref: 'Personagem' }]
-};
+const groupSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  users: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
+  ],
+  creator: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+    required: true,
+  },
+});
 
-export { grupoSchema };
+const Group = mongoose.model("Group", groupSchema);
+export default Group;
