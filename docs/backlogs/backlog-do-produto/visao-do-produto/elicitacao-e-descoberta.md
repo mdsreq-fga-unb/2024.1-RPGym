@@ -28,5 +28,7 @@ A combinação dessas técnicas nos permitiu capturar um conjunto abrangente e d
 
 ## DoD
 - O Requisito atende aos critérios do backlog?
-- O Requisito causou alguma instabilidade no sistema?
-- O Requisito passou pelos testes?
+- Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?
+- O Requisito não causou alguma instabilidade no sistema?
+- Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?
+- O código foi integrado ao repositório principal sem conflitos.
