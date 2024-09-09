@@ -1,8 +1,9 @@
 import express from "express";
 import dotenv from "dotenv";
 import userRoute from "./routes/userRoutes.js";
-import groupRoutes from "./routes/groupRoutes.js";
-import activityRoutes from "./routes/activityRoutes.js";
+import authRoute from "./routes/authRoute.js"
+//import groupRoutes from "./routes/groupRoutes.js";
+//import activityRoutes from "./routes/activityRoutes.js";
 import { initializeDatabase } from "./mongodb/index.js";
 
 dotenv.config();
@@ -18,8 +19,9 @@ const startServer = async () => {
     await initializeDatabase();
 
     app.use("/users", userRoute);
-    app.use("/groups", groupRoutes);
-    app.use("/activities", activityRoutes);
+    app.use("/login", authRoute);
+    //app.use("/groups", groupRoutes);
+    //app.use("/activities", activityRoutes);
 
     app.listen(PORT, () => {
       console.log(`Servidor rodando na porta ${PORT}`);
