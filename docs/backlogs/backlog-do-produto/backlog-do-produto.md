@@ -32,39 +32,22 @@
 
 ### Requisitos Não Funcionais
 
+O padrão URPS+ é uma metodologia para classificar Requisitos Não Funcionais que abrange Usabilidade, Confiabilidade, Performance, Suportabilidade e outros requisitos adicionais que não se encaixam diretamente nesses grupos.
+
+U (Usability): Requisitos de usabilidade. Estão relacionados à Interação Humano-Computação. Envolvem a definição da facilidade de uso, de aprendizado, à eficiência, eficácia e acessibilidade do software;
+R (Reliability): Requisitos de confiabilidade. Especificam a tolerância a falhas, a possibilidade de recuperação de falhas, entre outros;
+P (Performance): Requisitos de desempenho. Especificam limites de tempo, consumo de memória, disco etc.
+S (Supportability): Requisitos de manutenibilidade. Especificam a facilidade de dar manutenção no sistema, sua flexibilidade, entre outros.
++: Outros requisitos não-funcionais.
+
 | **Número** | **Requisito**                                                                                                                                 | **Tipo**           |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| RNF01      | O sistema deve ser capaz de suportar uma alta carga de usuários simultâneos sem degradação significativa no desempenho.                       | Desempenho         |
-| RNF02      | O sistema deve garantir a segurança dos dados dos usuários, incluindo criptografia de senhas e proteção contra acessos não autorizados.       | Segurança          |
-| RNF03      | O sistema deve ter uma interface intuitiva e fácil de usar, com feedback claro para ações do usuário.                                         | Usabilidade        |
-| RNF04      | O sistema deve ser acessível em diferentes dispositivos e navegadores, garantindo compatibilidade com a maioria das plataformas.              | Portabilidade      |
-| RNF05      | O sistema deve ter tempos de resposta rápidos, com um tempo de carregamento de página não superior a 3 segundos em condições normais de rede. | Desempenho         |
-
-
-<!-- ## User Story Mapping
-
-| **Épico**                        | **História de Usuário**                                | **Prioridade** |
-| -------------------------------- | ------------------------------------------------------ | -------------- |
-| **E01 - Gestão do Usuário**      | US01 - Realizar o cadastramento do usuário             | Alta           |
-| **E01 - Gestão do Usuário**      | US02 - Obter os dados físicos da pessoa                | Alta           |
-| **E01 - Gestão do Usuário**      | US03 - Visualizar o histórico de exercícios praticados | Alta           |
-| **E01 - Gestão do Usuário**      | US08 - Recuperar a conta                               | Alta           |
-| **E01 - Gestão do Usuário**      | US13 - Realizar o login do usuário                     | Alta           |
-| **E01 - Gestão do Usuário**      | US14 - Edição de dados                                 | Alta           |
-| **E02 - Personalização**         | US10 - Criar personagem                                | Baixa          |
-| **E02 - Personalização**         | US19 - Editar o personagem                             | Baixa          |
-| **E03 - Interação Social**       | US07 - Criação de grupo                                | Alta           |
-| **E03 - Interação Social**       | US09 - Acessar as estatísticas de outros usuários      | Alta           |
-| **E03 - Interação Social**       | US16 - Edição das informações do grupo                 | Alta           |
-| **E03 - Interação Social**       | US17 - Exclusão do grupo                               | Alta           |
-| **E03 - Interação Social**       | US18 - Expulsar usuário do grupo                       | Alta           |
-| **E04 - Economia e Recompensas** | US04 - Obter moedas por exercícios realizados          | Baixa          |
-| **E04 - Economia e Recompensas** | US11 - Gastar em loja de customização                  | Baixa          |
-| **E05 - Desafios e Competições** | US05 - Inscrição nos campeonatos                       | Alta           |
-| **E05 - Desafios e Competições** | US06 - Competir com os usuários do campeonato          | Alta           |
-| **E05 - Desafios e Competições** | US12 - Receber desafios                                | Baixa          |
-| **E05 - Desafios e Competições** | US15 - Cancelamento da inscrição dos campeonatos       | Alta           |
-| **E01 - Gestão do Usuário**      | US20 - Registro de Atividade                           | Alta           | --> |
+| RNF01      | O sistema deve ser capaz de suportar uma alta carga de usuários simultâneos sem degradação significativa no desempenho.                        | P (Performance)        |
+| RNF02      | O sistema deve garantir a segurança dos dados dos usuários, incluindo criptografia de senhas e proteção contra acessos não autorizados.        | S (Segurança)          |
+| RNF03      | O sistema deve ter uma interface intuitiva e fácil de usar, com feedback claro para ações do usuário.                                            | U (Usabilidade)       |
+| RNF04      | O sistema deve ter tempos de resposta rápidos, com um tempo de carregamento de página não superior a 3 segundos em condições normais de rede.  | P (Performance)         |
+| RNF05      | O sistema deve ser compatível com navegadores como Chrome, Firefox, Safari e Edge, e deve ser otimizado para dispositivos móveis e desktop. | U (Usabilidade))          |
+| RNF06      | O sistema deve funcionar de forma eficiente em dispositivos com diferentes resoluções de tela, de smartphones a monitores 4K. | U (Usabilidade)  |
 
 ## Scale Agile Framework - SAFe
 
@@ -92,7 +75,7 @@ _Incentivar o público de academia_
 | **Épico** | **Capacidade** |        **Descrição**         |
 | :-------: | :------------: | :--------------------------: |
 |    E1     |       C1       |     Administrar usuário      |
-|    E2     |       C2       |     Gerenciar Registros      |
+|    E2     |       C2       |     Gerenciar Registros e Progresso      |
 |    E2     |       C3       |       Gerenciar conta        |
 |    E3     |       C4       | Gerenciar interações sociais |
 
@@ -101,38 +84,37 @@ _Incentivar o público de academia_
 | **Capacidade** | **Funcionalidade** |              **Descrição**              |
 | :------------: | :----------------: | :-------------------------------------: |
 |       C1       |         F1         |        Gerenciamento de usuário         |
-|       C2       |         F2         |         Registro das Atividades         |
-|       C2       |         F3         | Visualização de Relatório dos Registros |
-|       C3       |         F4         |        Visualização da Pontuação        |
+|       C1       |         F2         |     Recuperação de conta e login        |
+|       C2       |         F3         | Registro das Atividades e Acompanhamento de Progresso |
+|       C2       |         F4         |       Pontuação e Moedas                |
 |       C3       |         F5         |          Customização da conta          |
-|       C3       |         F6         |        Visualização de Progresso        |
-|       C3       |         F7         |                  Loja                   |
-|       C4       |         F8         |           Interação em Grupos           |
-|       C4       |         F9         |        Participação de Desafios         |
+|       C3       |         F6         |                  Loja                   |
+|       C4       |         F7         |Interação entre Usuários(Contas e Grupos)|
+|       C4       |         F8         |        Participação de Campeonatos      |
 
 ### User Story
 
 | **Número** | **US** | **Descrição**                                                                                                                                 | **Critérios de Aceitação**                                                                 |
 | ---------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | F1         | US01   | Eu, como usuário, gostaria de realizar meu cadastro de conta no sistema para acessar o sistema.                                              | - Campos obrigatórios: nome (1-50 caracteres), e-mail (formato válido), senha (8-20 caracteres), idade (1-99).<br>- Validação: e-mail deve ser único e ter formato válido.<br>- Mensagens de erro claras para dados inválidos.<br>- Dados devem ser persistidos no banco. |
-| F2         | US02   | Eu, como usuário, gostaria de inserir e verificar meu peso e altura para visualizar meu IMC.                                                | - Campos obrigatórios: peso (número decimal, 0-300 kg), altura (número decimal, 0.5-3 m), idade (número inteiro).<br>- O IMC deve ser calculado e exibido corretamente com base nos dados inseridos.<br>- Dados devem ser armazenados no banco. |
-| F3         | US03   | Eu, como usuário, gostaria de visualizar todos os meus registros de atividades físicas para ter uma referência do meu progresso físico ao longo do tempo. | - Exibição de lista histórica com atividades passadas.<br>- Cada registro deve mostrar a atividade realizada, seu tempo gasto e a descrição da atividade.<br>- Histórico deve ser responsivo para facilitar a navegação. |
+| F3         | US02   | Eu, como usuário, gostaria de inserir e verificar meu peso e altura para visualizar meu IMC.                                                | - Campos obrigatórios: peso (número decimal, 0-300 kg), altura (número decimal, 0.5-3 m), idade (número inteiro).<br>- O IMC deve ser calculado e exibido corretamente com base nos dados inseridos.<br>- Dados devem ser armazenados no banco. |
+| F3         | US03   | Eu, como usuário, gostaria de registrar e visualizar minhas atividades físicas para ter uma referência do meu progresso físico ao longo do tempo. | - Exibição de lista histórica com atividades passadas.<br>- Cada registro deve mostrar a atividade realizada, seu tempo gasto e a descrição da atividade.<br>- Histórico deve ser responsivo para facilitar a navegação.<br>- Deve ter um botão para o cadastro da atividade.|
 | F4         | US04   | Eu, como usuário, gostaria de ganhar moedas equivalentes ao nível de esforço que fiz de exercício físico no dia para gamificar minha experiência de treino e torná-la mais divertida. | - Cálculo de moedas baseado em nível de atividade.<br>- Exibição do saldo de moedas atual do usuário.<br>- Moedas devem ser adicionadas ao finalizar um exercício.<br>- Percentual de moedas baseado nas atividades do dia. |
-| F9         | US05   | Eu, como usuário, gostaria de gastar minhas moedas para me inscrever em um dos campeonatos disponíveis.                                    | - Exibição de lista de campeonatos disponíveis.<br>- Cada campeonato deve mostrar status (Aberto, Em andamento, Finalizado), preço da inscrição, e prêmio.<br>- Capacidade máxima e número de inscritos devem ser visíveis.<br>- Opção de inscrição em campeonatos abertos. |
-| F10        | US06   | Eu, como usuário, gostaria de competir com os usuários inscritos no campeonato em que me inscrevi para competir com os outros e ter a chance de ganhar prêmios. | - Lista de participantes do campeonato com quantidade atual e capacidade máxima.<br>- Ordenação por pontos.<br>- Exibição da data, horário e status do campeonato.<br>- Notificações sobre o status do campeonato.<br>- Informações sobre o prêmio. |
-| F9         | US07   | Eu, como usuário, gostaria de criar um grupo para incentivar uns aos outros a praticar exercícios físicos.                                 | - Campos obrigatórios: nome do grupo (1-50 caracteres).<br>- Visualização dos integrantes do grupo.<br>- Permissão de criação de grupos por usuário administrador. |
-| F1         | US08   | Eu, como usuário, gostaria de recuperar minha conta através do e-mail, redefinindo a senha, caso eu tenha esquecido.                      | - Campo para inserção de e-mail.<br>- Verificação de existência de conta com o e-mail.<br>- Envio de e-mail com link para redefinição de senha.<br>- Atualização de senha através do link enviado.<br>- Mensagens de erro e sucesso claras. |
-| F1         | US09   | Eu, como usuário, gostaria de acessar as estatísticas de outros usuários.                                                                   | - Exibição de nome, data de registro e saldo de moedas do perfil acessado.<br>- Disponível apenas para usuários no mesmo grupo ou com permissão de visualização. |
-| F2         | US10   | Eu, como usuário, gostaria de criar e personalizar meu personagem da forma que eu desejar.                                                | - Escolha de estilos de cabelo, cor da pele, características faciais e vestimentas.<br>- Alteração e confirmação das personalizações.<br>- Visualização do personagem criado. |
-| F7         | US11   | Eu, como usuário, gostaria de gastar minhas moedas em customizações na loja da plataforma para personalizar meu personagem.                | - Seção dedicada para customizações na loja.<br>- Variedade de itens com preços.<br>- Moedas para customização distintas das moedas de campeonatos.<br>- Processamento e confirmação de compra. |
-| F7         | US12   | Eu, como usuário, gostaria de receber desafios diários e semanais para serem realizados durante o dia/semana para ser recompensado com moedas para usar na loja. | - Atualização e visualização de desafios diários e semanais.<br>- Recompensas em moedas de ingresso e moedas para a loja.<br>- Desafios não repetitivos no mesmo período.<br>- Exibição de progresso do desafio. |
-| F8         | US13   | Eu, como usuário, gostaria de realizar meu login no sistema utilizando meu login e senha previamente cadastrados para acessar as funcionalidades do sistema. | - Validação de login e senha.<br>- Mensagem de erro para credenciais incorretas.<br>- Acesso às funcionalidades do sistema após login bem-sucedido. |
-| F8         | US14   | Eu, como usuário, gostaria de editar minhas informações na plataforma para corrigir dados incorretos ou desatualizados.                      | - Campos editáveis: nome, senha, peso, altura, idade.<br>- Validação de novas informações.<br>- Atualização e confirmação das mudanças feitas. |
-| F9         | US15   | Eu, como usuário, gostaria de cancelar a inscrição em um dos campeonatos em que me inscrevi para gerenciar melhor minha participação em campeonatos conforme minhas necessidades. | - Cancelamento apenas para campeonatos em status "Em Aberto".<br>- Estorno de 60% das moedas gastas na inscrição. |
-| F10        | US16   | Eu, como usuário, gostaria de editar as informações do meu grupo que criei para refletir mudanças no propósito ou estilo do grupo.           | - Edição do nome do grupo apenas para o administrador.<br>- Confirmação e registro das alterações.<br>- Opção de cancelar pedido de alteração. |
-| F11        | US17   | Eu, como usuário, gostaria de excluir um grupo que criei anteriormente para eliminar um grupo que foi criado por engano ou já não é mais ativo. | - Exclusão permitida apenas para o criador do grupo.<br>- Expulsão de todos os membros.<br>- Confirmação antes da exclusão.<br>- Remoção do grupo do banco de dados. |
-| F12        | US18   | Eu, como usuário, gostaria de retirar um usuário que está no grupo o qual sou administrador para eliminar um grupo que foi criado por engano ou já não é mais ativo. | - Exclusão do usuário apenas por administradores.<br>- Confirmação do pedido de expulsão.<br>- Bloqueio de acesso do usuário expulso. |
-| F10        | US19   | Eu, como usuário, gostaria de conversar com outros usuários via chat nos grupos que faço parte para gerenciar a dinâmica e a participação do grupo de maneira eficaz. | - Envio e visualização de mensagens no chat.<br>- Armazenamento das mensagens por tempo indeterminado.<br>- Acesso ao chat apenas para membros do grupo. |
+| F4         | US05   | Eu, como usuário, gostaria de gastar minhas moedas para me inscrever em um dos campeonatos disponíveis.                                    | - Exibição de lista de campeonatos disponíveis.<br>- Cada campeonato deve mostrar status (Aberto, Em andamento, Finalizado), preço da inscrição, e prêmio.<br>- Capacidade máxima e número de inscritos devem ser visíveis.<br>- Opção de inscrição em campeonatos abertos. |
+| F8        | US06   | Eu, como usuário, gostaria de competir com outros usuários em capeonatos para batalhar com os outros usuários e ter a chance de ganhar prêmios. | - Lista de participantes do campeonato com quantidade atual e capacidade máxima.<br>- Ordenação por pontos.<br>- Exibição da data, horário e status do campeonato.<br>- Notificações sobre o status do campeonato.<br>- Informações sobre o prêmio. |
+| F7         | US07   | Eu, como usuário, gostaria de criar um grupo para incentivar uns aos outros a praticar exercícios físicos.                                 | - Campos obrigatórios: nome do grupo (1-50 caracteres).<br>- Visualização dos integrantes do grupo.<br>- Permissão de criação de grupos por usuário administrador. |
+| F2         | US08   | Eu, como usuário, gostaria de recuperar minha conta através do e-mail, redefinindo a senha, caso eu tenha esquecido.                      | - Campo para inserção de e-mail.<br>- Verificação de existência de conta com o e-mail.<br>- Envio de e-mail com link para redefinição de senha.<br>- Atualização de senha através do link enviado.<br>- Mensagens de erro e sucesso claras. |
+| F7         | US09   | Eu, como usuário, gostaria de acessar as estatísticas de outros usuários.                                                                   | - Exibição de nome, data de registro e saldo de moedas do perfil acessado.<br>- Disponível apenas para usuários no mesmo grupo ou com permissão de visualização. |
+| F5         | US10   | Eu, como usuário, gostaria de criar e personalizar meu personagem da forma que eu desejar.                                                | - Escolha de estilos de cabelo, cor da pele, características faciais e vestimentas.<br>- Alteração e confirmação das personalizações.<br>- Visualização do personagem criado. |
+| F6         | US11   | Eu, como usuário, gostaria de gastar minhas moedas em customizações na loja da plataforma para personalizar meu personagem.                | - Seção dedicada para customizações na loja.<br>- Variedade de itens com preços.<br>- Moedas para customização distintas das moedas de campeonatos.<br>- Processamento e confirmação de compra. |
+| F3         | US12   | Eu, como usuário, gostaria de receber desafios diários e semanais para serem realizados durante o dia/semana para ser recompensado com moedas para usar na loja. | - Atualização e visualização de desafios diários e semanais.<br>- Recompensas em moedas de ingresso e moedas para a loja.<br>- Desafios não repetitivos no mesmo período.<br>- Exibição de progresso do desafio. |
+| F2         | US13   | Eu, como usuário, gostaria de realizar meu login no sistema utilizando meu login e senha previamente cadastrados para acessar as funcionalidades do sistema. | - Validação de login e senha.<br>- Mensagem de erro para credenciais incorretas.<br>- Acesso às funcionalidades do sistema após login bem-sucedido. |
+| F1         | US14   | Eu, como usuário, gostaria de editar minhas informações na plataforma para corrigir dados incorretos ou desatualizados.                      | - Campos editáveis: nome, senha, peso, altura, idade.<br>- Validação de novas informações.<br>- Atualização e confirmação das mudanças feitas. |
+| F8         | US15   | Eu, como usuário, gostaria de cancelar a inscrição em um dos campeonatos em que me inscrevi para gerenciar melhor minha participação em campeonatos conforme minhas necessidades. | - Cancelamento apenas para campeonatos em status "Em Aberto".<br>- Estorno de 60% das moedas gastas na inscrição. |
+| F7        | US16   | Eu, como usuário, gostaria de editar as informações do meu grupo que criei para refletir mudanças no propósito ou estilo do grupo.           | - Edição do nome do grupo apenas para o administrador.<br>- Confirmação e registro das alterações.<br>- Opção de cancelar pedido de alteração. |
+| F7        | US17   | Eu, como usuário, gostaria de excluir um grupo que criei anteriormente para eliminar um grupo que foi criado por engano ou já não é mais ativo. | - Exclusão permitida apenas para o criador do grupo.<br>- Expulsão de todos os membros.<br>- Confirmação antes da exclusão.<br>- Remoção do grupo do banco de dados. |
+| F7        | US18   | Eu, como usuário, gostaria de retirar um usuário que está no grupo o qual sou administrador para eliminar um grupo que foi criado por engano ou já não é mais ativo. | - Exclusão do usuário apenas por administradores.<br>- Confirmação do pedido de expulsão.<br>- Bloqueio de acesso do usuário expulso. |
+| F7        | US19   | Eu, como usuário, gostaria de conversar com outros usuários via chat nos grupos que faço parte para gerenciar a dinâmica e a participação do grupo de maneira eficaz. | - Envio e visualização de mensagens no chat.<br>- Armazenamento das mensagens por tempo indeterminado.<br>- Acesso ao chat apenas para membros do grupo. |
 
 
 ## MVP
@@ -167,6 +149,7 @@ _Incentivar o público de academia_
 | 10  | Personalização de Personagem: Implementar personalização do personagem do usuário, incluindo seleção de características e persistência. | Alto
 | 11  | Loja de Customizações: Implementar seção para customizações na loja, com categorias de itens e persistência de compras.       | Baixo
 | 12  | Desafios Diários e Semanais: Implementar desafios diários e semanais, atualizar aleatoriamente, e recompensas.              | Média
+| 15  | Cancelar inscrições em Campeonatos              | Média
 | 19  | Chat de Grupo: Implementar a função de Chat para que os usuários possam conversar entre si.                          | Alta
 
 ## Níveis de Prioridade
@@ -306,3 +289,4 @@ Essa abordagem ajustada garante que, mesmo com os desafios enfrentados, a plataf
 | 27/08/2024 |   `2.3`    | Ajustes do Backlog     | Lucas Heler   |
 | 08/09/2024 |   `3.0`    | Modificações do Backlog SAFe  | Lucas Heler  |
 | 08/09/2024 |   `3.1`    | Alterações em medidas das Issues abertas | Lucas Heler  |
+| 09/09/2024 |   `3.2`    | Melhorias no Backlog | Lucas Heler  |
