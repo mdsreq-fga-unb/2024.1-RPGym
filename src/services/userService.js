@@ -1,4 +1,4 @@
-import User from "../mongodb/models/Usuario.js"
+import User from "../mongodb/models/Usuario.js";
 
 const create = async (body) => {
   try {
@@ -9,12 +9,14 @@ const create = async (body) => {
     throw error; // Lança erro em caso de falha
   }
 };
-  
-const getAllUsers = () => User.find().exec(); 
 
-const updateUser = (id, updateData) => User.findByIdAndUpdate(id, updateData, { new: true }).exec();
+// Outras operações de serviço (CRUD) podem ser adicionadas aqui...
+
+const getAllUsers = () => User.find().exec();
+const getUser = (userId) => User.findById(userId).exec();
+const updateUser = (id, updateData) =>
+  User.findByIdAndUpdate(id, updateData, { new: true }).exec();
 
 const deleteUser = (id) => User.deleteOne({ _id: id }).exec();
 
-
-export { create, getAllUsers, updateUser, deleteUser }; // Exporta a função create
+export { create, getAllUsers, getUser, updateUser, deleteUser }; // Exporta a função create

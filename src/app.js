@@ -5,12 +5,13 @@ import authRoute from "./routes/authRoute.js"
 //import groupRoutes from "./routes/groupRoutes.js";
 //import activityRoutes from "./routes/activityRoutes.js";
 import { initializeDatabase } from "./mongodb/index.js";
+import cors from "cors";
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT;
-
+app.use(cors());
 app.use(express.json());
 
 // Função para inicializar o servidor
