@@ -49,9 +49,5 @@ coverage/
 # npm package logs
 npm-debug.log*
 
-# Environment variable files
-.env*
-.env.*.local
-
 # Yarn Integrity file
 .yarn-integrity
