@@ -35,6 +35,24 @@ Aqui está uma explicação breve dentro de cada célula da tabela para cada "at
 | Verificação e Validação   | Coleta de feedbacks com o cliente e com a monitora<br />(Após entrega da Missão): **Recolher feedback para garantir que o sistema atende às expectativas e ajustar conforme necessário.** | Discord                               | Atualização dos Backlogs conforme feedback                             |
 | Organização e Atualização| Reuniões com a equipe <br />(Desenvolvimento durante as Sprints): **Reuniões para revisar e atualizar o progresso, ajustar prioridades e manter o backlog e repositórios atualizados.** | Discord<br />GitHub Pages<br />Trello | Backlog atualizado<br /> Repositório no GitHub<br /> Kanban atualizado |
 
+Uma vez descritas as atividades da Engenharia de Requisitos, é necessário definir uma abordagem ou processo para realizá-las. O International Requirements Engineering Board (IREB), na publicação Handbook for the CPRE Foundation Level according to the IREB Standard de Glinz e autores (2022), apresenta um método para definição de processo de Engenharia de Requisitos baseado na análise das diferentes "facetas" do processo. Deve-se analisar quais extremos de cada eixo correspondem ao que se sabe e ao que é esperado do produto a ser desenvolvido. A partir disso, e com base no ciclo de vida e no processo de software já definidos, estabelece-se um processo a ser seguido para a execução das atividades de Engenharia de Requisitos. Na Figura 1, apresentamos o esquema das facetas do processo.
+<div align="center">
+  
+![Facetas de Software](https://raw.githubusercontent.com/mdsreq-fga-unb/2024.1-RPGym/952b1801286952f7b4bee626769bd712e276240c/docs/assets/facetas.png)
+
+Figura 1: Facetas do processo de Engenharia de Requisitos. Fonte: Glinz et al, 2022.
+
+</div>
+Analisando as descrições das facetas do processo de Engenharia de Requisitos, concluímos que o processo será iterativo, exploratório e orientado ao mercado. Os seguintes aspectos foram levados em consideração nesta análise:
+
+- Os requisitos não são completamente conhecidos desde o início.
+- Podemos realizar ciclos curtos de feedback pela proximidade do time de desenvolvimento com o cliente.
+- Será necessária a priorização e negociação de requisitos devido à duração do projeto.
+- Apesar de haver um cliente, ele é uma referência para o desenvolvimento do projeto, cujo objetivo é ser utilizado por clientes diversos, com usuários potenciais não identificáveis individualmente.
+- Os requisitos serão prioritariamente elicitados pela equipe do projeto, mas com participação do cliente.
+
+A partir dessas observações, e considerando a abordagem e o ciclo de vida ágil, bem como a utilização de processos de desenvolvimento ScrumXP, conclui-se que o processo de Engenharia de Requisitos a ser utilizado será o Orientado a Produto.
+
 ---
 
 ## Abordagem
@@ -62,6 +80,10 @@ A seguir segue uma lista das práticas que serão utilizados do XP:
 | Integração Contínua            | Integrar o código frequentemente, código esse que deve ser integrado ao repositório do GitHub                                                   |
 | Propriedade Coletiva do Código | Todos os membros da equipe são responsáveis por todo o código do projeto, o que promove a colaboração, a transparência e a qualidade do código. |
 
+
+
+
+
 ---
 
 ## Histórico de Versão
@@ -71,4 +93,4 @@ A seguir segue uma lista das práticas que serão utilizados do XP:
 | 01/07/2024 |  1.1   |    Criação do documento de Visão do Projeto    | [Mateus Vieira](https://github.com/matix0) |
 | 27/08/2024 |  1.2   |  Atualização para conformidade com o Projeto   | [Mateus Vieira](https://github.com/matix0) |
 | 04/09/2024 |  2.0   | Modificação segundo issue aberta pela monitora | [Mateus Vieira](https://github.com/matix0) |
-| 04/09/2024 |  2.1   | Modificação segundo issue aberta pela monitora | [Lucas Heler](https://github.com/Akaeboshi) |
+| 09/09/2024 |  2.1   | Modificação segundo issue aberta pela monitora | [Lucas Heler](https://github.com/Akaeboshi) |
