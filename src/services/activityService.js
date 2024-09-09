@@ -23,14 +23,13 @@ const getActivityDaysByUser = async (userId) => {
 };
 
 const calculateIMC = async (userId) => {
-  // Buscar o usuário pelo ID
   const user = await User.findById(userId);
 
   if (!user) {
     throw new Error("Usuário não encontrado");
   }
 
-  const heightInMeters = parseFloat(user.height) / 100; // Converter altura de cm para metros
+  const heightInMeters = parseFloat(user.height) / 100;
   const weight = parseFloat(user.weight);
 
   if (!heightInMeters || !weight) {

@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+import mongoose from "mongoose";
+import dotenv from "dotenv";
 
 dotenv.config();
 
@@ -15,12 +15,12 @@ const DB_URI = `mongodb+srv://${DB_USER}:${password}@${DB_CLUSTER}.mongodb.net/$
 const connectToDatabase = async () => {
   try {
     // Configuração do Mongoose
-    mongoose.connection.on('error', (err) => {
-      console.error('Erro de conexão com o MongoDB:', err);
+    mongoose.connection.on("error", (err) => {
+      console.error("Erro de conexão com o MongoDB:", err);
     });
 
-    mongoose.connection.once('open', () => {
-      console.log('Conectado ao MongoDB com sucesso');
+    mongoose.connection.once("open", () => {
+      console.log("Conectado ao MongoDB com sucesso");
     });
 
     // Conectar ao MongoDB
@@ -28,7 +28,7 @@ const connectToDatabase = async () => {
       serverSelectionTimeoutMS: 30000, // Tempo de timeout para conexão
     });
   } catch (error) {
-    console.error('Erro ao conectar ao MongoDB:', error);
+    console.error("Erro ao conectar ao MongoDB:", error);
   }
 };
 
