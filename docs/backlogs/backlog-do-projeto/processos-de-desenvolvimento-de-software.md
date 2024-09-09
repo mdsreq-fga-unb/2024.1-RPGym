@@ -24,14 +24,16 @@
 
 ## Atividades da Engenharia de Requisitos
 
+Aqui está uma explicação breve dentro de cada célula da tabela para cada "atividade":
+
 | Atividade                 | Método                                                                                           | Ferramenta                            | Entrega                                                                |
 | ------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------- | ---------------------------------------------------------------------- |
-| Elicitação e Descoberta   | Reuniões com o cliente<br /> (Sprint Planning)                                                   | Discord<br />GitHub Pages             | Diagrama de Ishikawa<br />Documentação de                              |
-| Análise e Consenso        | Avaliação da equipe acerca dos requisitos levantados<br /> (Entre o desenvolvimento das Sprints) | Discord<br />GitHub Pages             | Documento com os requisitos levantados                                 |
-| Declaração                | Histórias de usuário <br />(Sprint Planning)                                                     | Discord<br />GitHub Pages<br />Trello | Backlog do Produto                                                     |
-| Representação             | Realizar protótipo do sistema<br /> (Sprint Planning)                                            | Figma                                 | Protótipo disponível no Backlog do Produto                             |
-| Verificação e Validação   | Coleta de feedbacks com o cliente e com a monitora<br />(Após entrega da Missão)                 | Discord                               | Atualização dos Backlogs conforme feedback                             |
-| Organização e Atualização | Reuniões com a equipe <br />(Desenvolvimento durante as Sprints)                                 | Discord<br />GitHub Pages<br />Trello | Backlog atualizado<br /> Repositório no GitHub<br /> Kanban atualizado |
+| Elicitação e Descoberta:    | Reuniões com o cliente<br /> (Sprint Planning): **Coleta de informações e requisitos diretamente com o cliente para entender suas necessidades.** | Discord<br />GitHub Pages             | Diagrama de Ishikawa<br />Documentação de requisitos                   |
+| Análise e Consenso        | Avaliação da equipe acerca dos requisitos levantados<br /> (Entre o desenvolvimento das Sprints): **Revisão dos requisitos coletados e consenso da equipe sobre o que foi identificado.** | Discord<br />GitHub Pages             | Documento com os requisitos levantados                                 |
+| Declaração                | Histórias de usuário <br />(Sprint Planning): **Definição de requisitos como histórias de usuário, que detalham as funcionalidades desejadas.** | Discord<br />GitHub Pages<br />Trello | Backlog do Produto                                                     |
+| Representação             | Realizar protótipo do sistema<br /> (Sprint Planning): **Criação de protótipos para visualizar e validar as funcionalidades do sistema antes do desenvolvimento.** | Figma                                 | Protótipo disponível no Backlog do Produto                             |
+| Verificação e Validação   | Coleta de feedbacks com o cliente e com a monitora<br />(Após entrega da Missão): **Recolher feedback para garantir que o sistema atende às expectativas e ajustar conforme necessário.** | Discord                               | Atualização dos Backlogs conforme feedback                             |
+| Organização e Atualização| Reuniões com a equipe <br />(Desenvolvimento durante as Sprints): **Reuniões para revisar e atualizar o progresso, ajustar prioridades e manter o backlog e repositórios atualizados.** | Discord<br />GitHub Pages<br />Trello | Backlog atualizado<br /> Repositório no GitHub<br /> Kanban atualizado |
 
 ---
 
