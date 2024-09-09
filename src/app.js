@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import userRoute from "./routes/userRoutes.js";
 import authRoute from "./routes/authRoute.js";
-import groupRoutes from "./routes/groupRoutes.js";
+// import groupRoutes from "./routes/groupRoutes.js";
 import activityRoutes from "./routes/activityRoutes.js";
 import { initializeDatabase } from "./mongodb/index.js";
 import cors from "cors";

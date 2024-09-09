@@ -2,41 +2,45 @@ import { login } from "../services/authService.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-const loginControler = async (req, res) => {
+const validateLogin = async (email, password) => {
+  const user = await login(email);
+  if (!user) {
+    throw new Error("Usuário não encontrado.");
+  }
+
+  const isPasswordValid = await bcrypt.compare(password, user.password);
+  if (!isPasswordValid) {
+    throw new Error("Senha incorreta.");
+  }
+
+  return user;
+};
+
+const generateToken = (user) => {
+  return jwt.sign({ id: user._id, email: user.email }, process.env.JWT_SECRET, {
+    expiresIn: "1h",
+  });
+};
+
+const loginController = async (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
-    return res.status(400).send({ message: "Email e senha são obrigatórios." });
+    return res.status(400).json({ message: "Email e senha são obrigatórios." });
   }
 
   try {
-    const user = await login(email);
+    const user = await validateLogin(email, password);
+    const token = generateToken(user);
 
-    if (!user) {
-      return res.status(401).send({ message: "Usuário não encontrado." });
-    }
-
-    const isPasswordValid = await bcrypt.compare(password, user.password);
-
-    if (!isPasswordValid) {
-      console.log("Senha incorreta.");
-      return res.status(401).send({ message: "Senha incorreta." });
-    }
-
-    // Gerar um token JWT (JSON Web Token)
-    const token = jwt.sign(
-      { id: user._id, email: user.email },
-      process.env.JWT_SECRET,
-      { expiresIn: "1h" }
-    );
-
-    res.status(200).send({
+    res.status(200).json({
       message: "Login bem-sucedido",
+      token,
     });
   } catch (error) {
-    console.error("Erro no servidor ao fazer login:", error.message); // Log detalhado do erro
-    res.status(500).send({ message: "Erro no servidor ao fazer login." });
+    console.error("Erro no servidor ao fazer login:", error.message);
+    res.status(401).json({ message: error.message });
   }
 };
 
-export { loginControler };
+export { loginController };
