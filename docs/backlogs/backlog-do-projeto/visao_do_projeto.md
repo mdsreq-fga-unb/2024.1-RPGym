@@ -9,7 +9,7 @@
 | Analista de Qualidade  | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código | Lucas Heler             | Todos                   |
 | Cliente                | Fornecer feedbacks para a equipe acerca do desenvolvimento, auxiliar a levantar requisitos do produto          | Bruno, Vinicius e Pedro | -                       |
 | Analista de Requisitos | Realizar a elicitação de requisitos, desenvolver as histórias de usuário                                   | Davi Rodrigues          | Todos                   |
-| Líder Estela | Acompanhar, Fiscalizar e Organizar os Integrantes do grupo de desenvolvimento.                                   | Júlia Yoshida          | Todos                   |
+| Líder Estela | Acompanhar, Fiscalizar e Organizar os Integrantes do grupo de desenvolvimento. Dar uma garantia de qualidade ao produto/projeto e arealização de feedbacks constantes à facção.   | Júlia Yoshida          | Todos                   |
 
 ## Matriz de Comunicação
 
