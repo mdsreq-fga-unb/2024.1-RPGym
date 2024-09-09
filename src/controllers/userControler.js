@@ -6,16 +6,17 @@ import {
   updateUser,
   deleteUser,
   getUser,
+  getUserByEmail,
 } from "../services/userService.js";
 
 const { ObjectId } = mongoose.Types;
 const createControler = async (req, res) => {
   const { name, age, height, weight, email, password } = req.body;
-
-  if (!name || !age || !height || !weight || !email || !password) {
+  console.log(name, age, height, weight, email, password);
+  if (!name || !age || !email || !password) {
     return res
       .status(400)
-      .send({ message: "Todos os campos não foram preenchidos." });
+      .send({ message: "Todos os campos devem ser preenchidos" });
   }
 
   try {
@@ -76,6 +77,27 @@ const getUserById = async (req, res) => {
     res.status(500).send({ message: "Erro no servidor ao obter o usuário." });
   }
 };
+
+const getUserByEmailController = async (req, res) => {
+  try {
+    const email = req.params.id; // Corrigido para 'email'
+    // console.log("Buscando usuário com email:", email);
+
+    const user = await getUserByEmail({ email: email });
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+
+    // Se necessário, você pode personalizar o formato da resposta
+    res.json({
+      id: user._id,
+    });
+  } catch (error) {
+    console.error("Erro no servidor ao buscar usuário:", error.message); // Melhor detalhamento do erro
+    res.status(500).json({ error: "Server error" });
+  }
+};
+
 const updateUserController = async (req, res) => {
   const { id } = req.params;
   const updateData = req.body;
@@ -120,4 +142,5 @@ export {
   updateUserController,
   deleteUserController,
   getUserById,
+  getUserByEmailController,
 };

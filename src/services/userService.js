@@ -11,9 +11,10 @@ const create = async (body) => {
 };
 const getAllUsers = () => User.find().exec();
 const getUser = (userId) => User.findById(userId).exec();
+const getUserByEmail = (email) => User.findOne(email).exec();
 const updateUser = (id, updateData) =>
   User.findByIdAndUpdate(id, updateData, { new: true }).exec();
 
 const deleteUser = (id) => User.deleteOne({ _id: id }).exec();
 
-export { create, getAllUsers, getUser, updateUser, deleteUser };
+export { create, getAllUsers, getUser, updateUser, deleteUser, getUserByEmail };

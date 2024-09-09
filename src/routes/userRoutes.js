@@ -5,6 +5,7 @@ import {
   updateUserController,
   deleteUserController,
   getUserById,
+  getUserByEmailController,
 } from "../controllers/userControler.js";
 
 const router = express.Router();
@@ -12,6 +13,7 @@ const router = express.Router();
 router.post("/", createControler);
 router.get("/", getAllUsersController);
 router.get("/:id", getUserById);
+router.get("/email/:id", getUserByEmailController);
 router.put("/:id", updateUserController);
 router.delete("/:id", deleteUserController);
 

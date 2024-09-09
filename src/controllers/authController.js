@@ -1,6 +1,7 @@
 import { login } from "../services/authService.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import { getUserByEmail } from "../services/userService.js";
 
 const validateLogin = async (email, password) => {
   const user = await login(email);
@@ -32,10 +33,14 @@ const loginController = async (req, res) => {
   try {
     const user = await validateLogin(email, password);
     const token = generateToken(user);
+    console.log(email);
+    const responseId = await getUserByEmail({ email });
+    const userId = responseId._id;
 
     res.status(200).json({
       message: "Login bem-sucedido",
       token,
+      userId,
     });
   } catch (error) {
     console.error("Erro no servidor ao fazer login:", error.message);
