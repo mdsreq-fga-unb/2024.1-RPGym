@@ -43,7 +43,7 @@ Buscamos utilizar uma abordagem de desenvolvimento ágil com algumas práticas d
 
 ### SCRUM
 
-Deve ser considerado que o tempo de duração de uma Sprint é de uma semana.
+Deve ser considerado que o tempo de duração de uma Sprint é de uma semana. Porém devido a dificuldade nos membros em se organizarem semanalmente nos mesmos horários, houve um acordo em começar/terminar uma sprint no momento mais oportuno, causando algumas incoerências no tempo estipulado de sete dias. Podendo ter um pouco menos ou um pouco mais dias.
 
 A seguir segue uma lista das cerimônias que serão utilizadas do Scrum:
 
