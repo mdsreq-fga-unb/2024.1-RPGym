@@ -587,16 +587,9 @@ O USM fornece uma visão ampla do produto, permitindo que as equipes identifique
    - **Objetivo:** Usar o mapa como uma ferramenta dinâmica, revisando e atualizando-o conforme o projeto evolui.
    - **Como Fazer:** Realize revisões regulares do USM com toda a equipe e stakeholders, ajustando prioridades e adicionando ou removendo histórias conforme necessário, com base no feedback dos usuários e nas necessidades do negócio.
 
-### Benefícios do USM
+### USM - ComumEventos
 
-- **Visão Clara e Compartilhada:** Facilita o entendimento comum entre todos os membros da equipe sobre o que está sendo construído e por quê.
-- **Priorização Eficaz:** Ajuda a priorizar funcionalidades com base no valor para o usuário, permitindo o foco no que realmente importa.
-- **Planejamento de Releases:** Permite o planejamento de sprints e releases de forma estratégica, garantindo que o MVP seja alcançado rapidamente.
-- **Adaptação Contínua:** Mantém o desenvolvimento flexível, permitindo ajustes com base em feedbacks contínuos.
-
-### USM - Centelha da Revolução
-
-![User Story Mapping](../assets/missao3/usm.jpg)
+<iframe width="768" height="432" src="https://miro.com/app/board/uXjVKu-S1ZE=/?moveToWidget=3458764599366838792&cot=14" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
 ## Lições Aprendidas
 
@@ -612,3 +605,4 @@ Após readaptar a rotina da equipe, conseguimos por todas as entregas nos trilho
 | 22/08/2024 |  1.3   | Ajustes no PBB |  [Davi Rodrigues](https://github.com/DaviRogs)  |
 | 03/09/2024 |  1.4   | Acresentando as US's e Critérios de aceitação |  [Davi Rodrigues](https://github.com/DaviRogs)  |
 | 08/09/2024 |  1.4   | Adição do BDD |  [Davi Rodrigues](https://github.com/DaviRogs)  |
+| 09/09/2024 |  1.5   | Adição da correção do USM | [Dara Maria](https://github.com/daramariabs) |
