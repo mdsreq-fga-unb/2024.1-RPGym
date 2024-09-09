@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import bcrypt from "bcrypt";
 import {
   create,
   getAllUsers,
@@ -6,6 +7,7 @@ import {
   deleteUser,
   getUser,
 } from "../services/userService.js";
+
 const { ObjectId } = mongoose.Types;
 const createControler = async (req, res) => {
   const { name, age, height, weight, email, password } = req.body;
@@ -17,7 +19,18 @@ const createControler = async (req, res) => {
   }
 
   try {
-    const user = await create(req.body);
+    // Hash da senha antes de criar o usuário
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // Cria o usuário com a senha hashada
+    const user = await create({
+      name,
+      age,
+      height,
+      weight,
+      email,
+      password: hashedPassword,
+    });
 
     if (!user) {
       return res.status(400).send({ message: "Erro ao criar usuario." });
@@ -31,7 +44,6 @@ const createControler = async (req, res) => {
         height,
         weight,
         email,
-        password,
       },
     });
   } catch (error) {
