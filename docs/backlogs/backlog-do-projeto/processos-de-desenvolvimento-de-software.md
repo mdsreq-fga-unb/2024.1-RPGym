@@ -71,3 +71,4 @@ A seguir segue uma lista das práticas que serão utilizados do XP:
 | 01/07/2024 |  1.1   |    Criação do documento de Visão do Projeto    | [Mateus Vieira](https://github.com/matix0) |
 | 27/08/2024 |  1.2   |  Atualização para conformidade com o Projeto   | [Mateus Vieira](https://github.com/matix0) |
 | 04/09/2024 |  2.0   | Modificação segundo issue aberta pela monitora | [Mateus Vieira](https://github.com/matix0) |
+| 04/09/2024 |  2.1   | Modificação segundo issue aberta pela monitora | [Lucas Heler](https://github.com/Akaeboshi) |
