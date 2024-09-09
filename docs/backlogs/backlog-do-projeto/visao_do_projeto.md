@@ -9,6 +9,7 @@
 | Analista de Qualidade  | Garantir a qualidade do produto, garantir o cumprimento do conceito de pronto, realizar inspeções de código | Lucas Heler             | Todos                   |
 | Cliente                | Fornecer feedbacks para a equipe acerca do desenvolvimento, auxiliar a levantar requisitos do produto          | Bruno, Vinicius e Pedro | -                       |
 | Analista de Requisitos | Realizar a elicitação de requisitos, desenvolver as histórias de usuário                                   | Davi Rodrigues          | Todos                   |
+| Líder Estela | Acompanhar, Fiscalizar e Organizar os Integrantes do grupo de desenvolvimento.                                   | Júlia Yoshida          | Todos                   |
 
 ## Matriz de Comunicação
 
@@ -61,3 +62,4 @@ Na FGA, a Engenharia de Requisitos é valorizada como uma matéria que prepara o
 | 19/08/2024 |   2.1   |            Atualização do documento            | [Mateus Vieira](https://github.com/matix0) |
 | 22/08/2024 |   2.2   |           Adicionado Aspectos Humanos           | [Lucas Heler](https://github.com/akaeboshi) |
 | 04/09/2024 |   2.3   | Modificação segundo issue aberta pela monitora | [Mateus Vieira](https://github.com/matix0) |
+| 09/09/2024 |   2.4   | Modificação segundo issue aberta pela monitora | [Lucas Heler](https://github.com/akaeboshi) |
