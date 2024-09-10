@@ -24,7 +24,7 @@ Seção destinada à informações referentes as nossas Sprints de trabalho, con
 Na reunião realizada no dia 02/04/24, abrimos uma exceção quanto à realização de uma Sprint com duração de 2 semanas para a realização das atividades propostas a serem entregues na [Missão 1](../../missoes/missao1.md), definimos que nesse período iríamos nos conhecer melhor como equipe e adotar uma abordagem proativa de execução de tarefas, com autonomia de escolha para desenvolvimento.
 
 #### Atividades de Engenharia de Requisitos:
-Elicitação de Requisitos: Durante esta sprint inicial, realizamos workshops e sessões de brainstorming com os stakeholders para entender as necessidades e expectativas principais do produto. Entrevistas com partes interessadas chave foram conduzidas para coletar requisitos iniciais e alinhar a visão do projeto.
+**Elicitação de Requisitos**: Durante esta sprint inicial, realizamos workshops e sessões de brainstorming com os stakeholders para entender as necessidades e expectativas principais do produto. Entrevistas com partes interessadas chave foram conduzidas para coletar requisitos iniciais e alinhar a visão do projeto.
 
 
 ![Kanban da Sprint 0](../../assets/kanbans/sprint0.jpg)
@@ -47,15 +47,15 @@ Discutimos sobre como iriamos definir o Backlog do Produto, então realizamos o 
 
 #### Atividades de Engenharia de Requisitos:
 
-Análise de Requisitos: Após a coleta de requisitos, fizemos uma análise detalhada para entender a viabilidade técnica e o impacto de cada requisito no projeto. Os requisitos foram priorizados de acordo com o valor de negócio e esforço necessário.
+**Análise de Requisitos**: Após a coleta de requisitos, fizemos uma análise detalhada para entender a viabilidade técnica e o impacto de cada requisito no projeto. Os requisitos foram priorizados de acordo com o valor de negócio e esforço necessário.
 
-Definição do Backlog do Produto: Com base nos requisitos coletados e analisados, iniciamos a definição do backlog do produto. Transformamos os requisitos em histórias de usuário claras, cada uma com critérios de aceitação bem definidos, para garantir que todos os itens no backlog fossem compreendidos e prontos para desenvolvimento.
+**Definição do Backlog do Produto**: Com base nos requisitos coletados e analisados, iniciamos a definição do backlog do produto. Transformamos os requisitos em histórias de usuário claras, cada uma com critérios de aceitação bem definidos, para garantir que todos os itens no backlog fossem compreendidos e prontos para desenvolvimento.
 
-Especificação de Requisitos: Refinamos as histórias de usuário resultantes, detalhando-as para incluir critérios de aceitação específicos e condições de "Definition of Ready" (DoR) para garantir que todos os itens estivessem prontos para serem puxados para sprints futuras.
+**Especificação de Requisitos**: Refinamos as histórias de usuário resultantes, detalhando-as para incluir critérios de aceitação específicos e condições de "Definition of Ready" (DoR) para garantir que todos os itens estivessem prontos para serem puxados para sprints futuras.
 
-Validação e Verificação: Realizamos uma revisão interna das histórias de usuário e critérios de aceitação para garantir que estivessem alinhados com as necessidades dos stakeholders. Obtemos feedback adicional para garantir a clareza e completude dos requisitos definidos.
+**Validação e Verificação**: Realizamos uma revisão interna das histórias de usuário e critérios de aceitação para garantir que estivessem alinhados com as necessidades dos stakeholders. Obtemos feedback adicional para garantir a clareza e completude dos requisitos definidos.
 
-Definições de Pronto e Preparado (DoD e DoR): Definimos as "Definition of Ready" (DoR) e "Definition of Done" (DoD) da equipe para garantir que todos os itens do backlog estejam bem preparados antes de serem incluídos em uma sprint, e que os critérios para concluir um item estejam claros e alinhados com as expectativas do cliente.
+**Definições de Pronto e Preparado (DoD e DoR)**: Definimos as "Definition of Ready" (DoR) e "Definition of Done" (DoD) da equipe para garantir que todos os itens do backlog estejam bem preparados antes de serem incluídos em uma sprint, e que os critérios para concluir um item estejam claros e alinhados com as expectativas do cliente.
 
 ![Kanban da Sprint 1](../../assets/kanbans/sprint1.jpg)
 
@@ -75,11 +75,11 @@ Na reunião realizada no dia 07/08/24, decidimos em refatorar nosso Backlog de S
 
 #### Atividades de Engenharia de Requisitos:
 
-Revisão e Refinamento do Backlog de Produto: Iniciamos o processo de refatoração do backlog da sprint e do produto. O objetivo foi garantir que todas as histórias de usuário estivessem atualizadas e refletissem os requisitos reais do cliente. A refatoração envolveu a remoção de itens redundantes, atualização de histórias de usuário incompletas ou desatualizadas, e a adição de novos requisitos identificados durante a reunião de validação com o cliente.
+**Revisão e Refinamento do Backlog de Produto**: Iniciamos o processo de refatoração do backlog da sprint e do produto. O objetivo foi garantir que todas as histórias de usuário estivessem atualizadas e refletissem os requisitos reais do cliente. A refatoração envolveu a remoção de itens redundantes, atualização de histórias de usuário incompletas ou desatualizadas, e a adição de novos requisitos identificados durante a reunião de validação com o cliente.
 
-User Story Mapping: Realizamos o mapeamento de histórias de usuário para visualizar o fluxo de valor do produto, ajudando a identificar lacunas e dependências entre as histórias. Essa técnica permitiu uma melhor organização e priorização das histórias no backlog, garantindo que o desenvolvimento fosse orientado pelas necessidades mais importantes do usuário final.
+**User Story Mapping**: Realizamos o mapeamento de histórias de usuário para visualizar o fluxo de valor do produto, ajudando a identificar lacunas e dependências entre as histórias. Essa técnica permitiu uma melhor organização e priorização das histórias no backlog, garantindo que o desenvolvimento fosse orientado pelas necessidades mais importantes do usuário final.
 
-Revisão das Definições de Pronto e Feito (DoR e DoD): Revisamos e ajustamos os critérios de "Definition of Ready" (DoR) e "Definition of Done" (DoD) estabelecidos anteriormente, com base nos aprendizados da sprint anterior. Isso ajudou a garantir que todas as histórias de usuário estivessem devidamente preparadas antes de serem puxadas para a próxima sprint e que todos os critérios necessários para considerar uma história como concluída fossem claros.
+**Revisão das Definições de Pronto e Feito (DoR e DoD)**: Revisamos e ajustamos os critérios de "Definition of Ready" (DoR) e "Definition of Done" (DoD) estabelecidos anteriormente, com base nos aprendizados da sprint anterior. Isso ajudou a garantir que todas as histórias de usuário estivessem devidamente preparadas antes de serem puxadas para a próxima sprint e que todos os critérios necessários para considerar uma história como concluída fossem claros.
 
 ![Kanban da Sprint 2](../../assets/kanbans/sprint2.jpg)
 
@@ -99,13 +99,13 @@ Após definir como iríamos desenvolver as atividades, percebemos nosso prazo cu
 
 #### Atividades de Engenharia de Requisitos:
 
-Aspectos Humanos e Sociais da Engenharia de Requisitos: Focamos na compreensão dos aspectos humanos e sociais para garantir que as necessidades dos usuários finais fossem bem entendidas. 
+**Aspectos Humanos e Sociais da Engenharia de Requisitos**: Focamos na compreensão dos aspectos humanos e sociais para garantir que as necessidades dos usuários finais fossem bem entendidas. 
 
-Modelos de Casos de Uso: Desenvolvemos modelos de casos de uso para representar graficamente as interações entre os usuários e o sistema. Isso ajudou a identificar funcionalidades essenciais e priorizar o desenvolvimento de acordo com o impacto no usuário final. Os casos de uso também foram usados para validar e refinar requisitos específicos, garantindo que fossem claros e completos.
+**Modelos de Casos de Uso**: Desenvolvemos modelos de casos de uso para representar graficamente as interações entre os usuários e o sistema. Isso ajudou a identificar funcionalidades essenciais e priorizar o desenvolvimento de acordo com o impacto no usuário final. Os casos de uso também foram usados para validar e refinar requisitos específicos, garantindo que fossem claros e completos.
 
-Product Backlog Building (PBB): Utilizamos a técnica de PBB (Product Backlog Building) para refinar o backlog do produto, alinhando-o com as necessidades priorizadas dos stakeholders. Criamos histórias de usuário adicionais, detalhando o escopo do trabalho necessário para a entrega da Missão 3, e alinhamos com a visão do produto.
+**Product Backlog Building (PBB)**: Utilizamos a técnica de PBB (Product Backlog Building) para refinar o backlog do produto, alinhando-o com as necessidades priorizadas dos stakeholders. Criamos histórias de usuário adicionais, detalhando o escopo do trabalho necessário para a entrega da Missão 3, e alinhamos com a visão do produto.
 
-Behavior-Driven Development (BDD): Adotamos a abordagem de BDD (Behavior-Driven Development) para definir requisitos de forma colaborativa, usando exemplos práticos de comportamento do sistema a partir da perspectiva do usuário. Isso nos ajudou a criar especificações claras e orientadas a comportamentos, facilitando o desenvolvimento e os testes de funcionalidades.
+**Behavior-Driven Development (BDD)**: Adotamos a abordagem de BDD (Behavior-Driven Development) para definir requisitos de forma colaborativa, usando exemplos práticos de comportamento do sistema a partir da perspectiva do usuário. Isso nos ajudou a criar especificações claras e orientadas a comportamentos, facilitando o desenvolvimento e os testes de funcionalidades.
 
 ![Kanban da Sprint 3](../../assets/kanbans/sprint3.jpg)
 
@@ -123,13 +123,13 @@ Na reunião realizada no dia 20/08/24, discutimos sobre os pontos levantados pel
 
 #### Atividades de Engenharia de Requisitos:
 
-Refinamento do Backlog: Iniciamos um processo de refinamento do backlog, reorganizando e consolidando as histórias de usuário, tarefas, e outros artefatos de projeto. Atualizamos as prioridades com base nos feedbacks recebidos e garantimos que cada item do backlog estivesse alinhado com os objetivos estratégicos do projeto. Esse refinamento também incluiu a redefinição de critérios de aceitação para garantir que as entregas futuras estejam de acordo com as expectativas dos stakeholders.
+**Refinamento do Backlog**: Iniciamos um processo de refinamento do backlog, reorganizando e consolidando as histórias de usuário, tarefas, e outros artefatos de projeto. Atualizamos as prioridades com base nos feedbacks recebidos e garantimos que cada item do backlog estivesse alinhado com os objetivos estratégicos do projeto. Esse refinamento também incluiu a redefinição de critérios de aceitação para garantir que as entregas futuras estejam de acordo com as expectativas dos stakeholders.
 
-Revisão e Atualização da Documentação de Requisitos: Realizamos uma revisão detalhada de toda a documentação de requisitos, centralizando as informações no GitHub Pages para garantir acessibilidade e clareza. Consolidamos documentos redundantes e fragmentados, criando uma estrutura mais coesa e integrada, facilitando a navegação e a compreensão por parte de todos os membros da equipe e stakeholders.
+**Revisão e Atualização da Documentação de Requisitos**: Realizamos uma revisão detalhada de toda a documentação de requisitos, centralizando as informações no GitHub Pages para garantir acessibilidade e clareza. Consolidamos documentos redundantes e fragmentados, criando uma estrutura mais coesa e integrada, facilitando a navegação e a compreensão por parte de todos os membros da equipe e stakeholders.
 
-Revisão de Casos de Uso e Modelagem: Ajustamos os modelos de casos de uso existentes para refletir as mudanças nas prioridades e nos requisitos do produto. Revisamos e refinamos os cenários de uso, garantindo que todos os fluxos de trabalho e interações do usuário estivessem corretamente documentados e alinhados com o escopo atualizado do projeto.
+**Revisão de Casos de Uso e Modelagem**: Ajustamos os modelos de casos de uso existentes para refletir as mudanças nas prioridades e nos requisitos do produto. Revisamos e refinamos os cenários de uso, garantindo que todos os fluxos de trabalho e interações do usuário estivessem corretamente documentados e alinhados com o escopo atualizado do projeto.
 
-Validação e Verificação Contínua: Com base nos feedbacks dos professores e stakeholders, realizamos sessões contínuas de validação e verificação dos requisitos para garantir que as modificações atendiam às necessidades do projeto. Este processo ajudou a identificar e corrigir quaisquer discrepâncias antes que se tornassem problemas maiores no desenvolvimento.
+**Validação e Verificação Contínua**: Com base nos feedbacks dos professores e stakeholders, realizamos sessões contínuas de validação e verificação dos requisitos para garantir que as modificações atendiam às necessidades do projeto. Este processo ajudou a identificar e corrigir quaisquer discrepâncias antes que se tornassem problemas maiores no desenvolvimento.
 
 ![Kanban da Sprint 4](../../assets/kanbans/sprint4.jpg)
 
@@ -154,13 +154,13 @@ Com o novo modelo de MVP em mãos, a equipe foi dividida em times de backend e f
 
 #### Atividades de Engenharia de Requisitos:
 
-Redefinição do MVP: Revisitamos e redefinimos o escopo do MVP, priorizando os requisitos mais críticos e ajustando as expectativas com base nos recursos disponíveis e no tempo restante. Esse processo envolveu a revisão de todas as histórias de usuário e requisitos no backlog, para garantir que o novo MVP representasse um conjunto mínimo de funcionalidades viáveis e alinhadas com a visão do produto.
+**Redefinição do MVP**: Revisitamos e redefinimos o escopo do MVP, priorizando os requisitos mais críticos e ajustando as expectativas com base nos recursos disponíveis e no tempo restante. Esse processo envolveu a revisão de todas as histórias de usuário e requisitos no backlog, para garantir que o novo MVP representasse um conjunto mínimo de funcionalidades viáveis e alinhadas com a visão do produto.
 
-Alinhamento dos Times com os Requisitos: Dividimos a equipe em times de backend e frontend, garantindo que ambos estivessem bem alinhados com os requisitos redefinidos para o MVP. Requisitos específicos foram mapeados para as entregas de cada time, assegurando que todas as funcionalidades críticas fossem cobertas e que o desenvolvimento ocorresse de forma coordenada e integrada.
+**Alinhamento dos Times com os Requisitos**: Dividimos a equipe em times de backend e frontend, garantindo que ambos estivessem bem alinhados com os requisitos redefinidos para o MVP. Requisitos específicos foram mapeados para as entregas de cada time, assegurando que todas as funcionalidades críticas fossem cobertas e que o desenvolvimento ocorresse de forma coordenada e integrada.
 
-Priorização Baseada em Impacto e Viabilidade: Utilizamos uma abordagem de priorização baseada em impacto e viabilidade, identificando quais funcionalidades agregariam maior valor ao usuário final com o menor custo de implementação. Isso permitiu uma melhor alocação dos recursos humanos e técnicos da equipe, otimizando o desenvolvimento dentro do prazo apertado.
+**Priorização Baseada em Impacto e Viabilidade**: Utilizamos uma abordagem de priorização baseada em impacto e viabilidade, identificando quais funcionalidades agregariam maior valor ao usuário final com o menor custo de implementação. Isso permitiu uma melhor alocação dos recursos humanos e técnicos da equipe, otimizando o desenvolvimento dentro do prazo apertado.
 
-Monitoramento Contínuo e Adaptação: Estabelecemos checkpoints regulares para monitorar o progresso de cada time em relação aos requisitos do MVP. Esse monitoramento contínuo permitiu adaptações rápidas, garantindo que os esforços da equipe fossem direcionados para as áreas mais críticas e alinhadas com os objetivos da sprint.
+**Monitoramento Contínuo e Adaptação**: Estabelecemos checkpoints regulares para monitorar o progresso de cada time em relação aos requisitos do MVP. Esse monitoramento contínuo permitiu adaptações rápidas, garantindo que os esforços da equipe fossem direcionados para as áreas mais críticas e alinhadas com os objetivos da sprint.
 
 ![Kanban da Sprint 5](../../assets/kanbans/sprint5.jpg)
 
@@ -180,13 +180,13 @@ Na reunião realizada no dia 02/09/24, conversamos a respeito da entrega da Miss
 
 #### Atividades de Engenharia de Requisitos:
 
-Atualização do Backlog e Revisão de Requisitos: Realizamos uma revisão detalhada do backlog, incorporando ajustes e melhorias com base nos feedbacks recebidos nas sprints anteriores. Atualizamos as histórias de usuário e redefinimos critérios de aceitação para refletir o estado atual do desenvolvimento e as necessidades emergentes do cliente. Isso garantiu que o backlog estivesse completo, claro e alinhado com as expectativas do cliente para a entrega do MVP 1.
+**Atualização do Backlog e Revisão de Requisitos**: Realizamos uma revisão detalhada do backlog, incorporando ajustes e melhorias com base nos feedbacks recebidos nas sprints anteriores. Atualizamos as histórias de usuário e redefinimos critérios de aceitação para refletir o estado atual do desenvolvimento e as necessidades emergentes do cliente. Isso garantiu que o backlog estivesse completo, claro e alinhado com as expectativas do cliente para a entrega do MVP 1.
 
-Validação do Produto com o Cliente: Organizamos uma sessão de validação com o cliente para demonstrar a aplicação desenvolvida. Durante essa sessão, capturamos feedback em tempo real sobre a usabilidade, funcionalidades e possíveis melhorias, e utilizamos essas informações para fazer ajustes finais antes da entrega oficial do MVP.
+**Validação do Produto com o Cliente**: Organizamos uma sessão de validação com o cliente para demonstrar a aplicação desenvolvida. Durante essa sessão, capturamos feedback em tempo real sobre a usabilidade, funcionalidades e possíveis melhorias, e utilizamos essas informações para fazer ajustes finais antes da entrega oficial do MVP.
 
-Preparação e Gravação dos Vídeos: Planejamos e gravamos dois vídeos: um de apresentação do produto, destacando suas funcionalidades principais e o valor entregue, e outro com o cliente validando a solução, reforçando a relevância e a utilidade do produto no contexto de negócio do cliente. Esses vídeos foram organizados de maneira a demonstrar claramente o alinhamento entre o produto final e os requisitos inicialmente definidos.
+**Preparação e Gravação dos Vídeos**: Planejamos e gravamos dois vídeos: um de apresentação do produto, destacando suas funcionalidades principais e o valor entregue, e outro com o cliente validando a solução, reforçando a relevância e a utilidade do produto no contexto de negócio do cliente. Esses vídeos foram organizados de maneira a demonstrar claramente o alinhamento entre o produto final e os requisitos inicialmente definidos.
 
-Deploy da Aplicação: Realizamos o deploy da aplicação, assegurando que o ambiente de produção estivesse corretamente configurado e que o produto funcionasse conforme o esperado. Testes finais foram conduzidos para verificar a estabilidade, segurança e performance da aplicação, garantindo que todos os requisitos técnicos e de qualidade fossem atendidos.
+**Deploy da Aplicação**: Realizamos o deploy da aplicação, assegurando que o ambiente de produção estivesse corretamente configurado e que o produto funcionasse conforme o esperado. Testes finais foram conduzidos para verificar a estabilidade, segurança e performance da aplicação, garantindo que todos os requisitos técnicos e de qualidade fossem atendidos.
 
 ![Kanban da Sprint 6](../../assets/kanbans/sprint6.jpg)
 
