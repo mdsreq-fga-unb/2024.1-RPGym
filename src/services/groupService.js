@@ -3,7 +3,7 @@ const baseUrl = "https://rpgym-backend-862d64fb9e62.herokuapp.com/";
 const getGroups = async () => {
   const userId = localStorage.getItem("userId");
   try {
-    const response = await fetch(`${baseUrl}users/${userId}`);
+    const response = await fetch(`${baseUrl}group/user/${userId}/groups`);
     if (!response) {
       throw new Error("Failed to fetch user");
     }

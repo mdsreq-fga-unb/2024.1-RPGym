@@ -21,6 +21,7 @@ import {
 import { RiAddLine } from "react-icons/ri";
 import ModalGrupos from "../../Modais/ModalGrupos";
 import ModalOpcGrupo from "../../Modais/ModalOpcGrupo";
+import groupService from "../../../services/groupService";
 
 const BancoFalsoGrupos = [];
 
@@ -31,6 +32,10 @@ const Grupos = () => {
   const [isClosing2, setIsClosing2] = useState(false);
   const [fontSize, setFontSize] = useState(1); // Estado para controlar o tamanho da fonte
   const boxListRef = useRef(null); // Ref para o BoxListGroups
+
+  const gruposUsuario = groupService.getGroups();
+  console.log("gruposUsuario");
+  console.log(gruposUsuario);
 
   const CloseHandleModalToggle = () => {
     setIsClosing(true); // Inicia o fechamento
