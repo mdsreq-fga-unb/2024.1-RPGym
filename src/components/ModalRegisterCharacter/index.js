@@ -34,13 +34,29 @@ function ModalRegisterCharacter() {
       return;
     }
 
+    // Valida o peso (deve ser um número decimal entre 0 e 300)
+    const weightNum = parseFloat(weight);
+    if (isNaN(weightNum) || weightNum < 0 || weightNum > 300) {
+      setError("O peso deve ser um número decimal entre 0 e 300 kg.");
+      return;
+    }
+
+    // Valida a altura (deve ser um número decimal entre 0.5 e 3)
+    const heightNum = parseFloat(height);
+    if (isNaN(heightNum) || heightNum < 50 || heightNum > 300) {
+      setError(
+        "A altura deve ser um número decimal entre 50 centimetros e 250 centimetros."
+      );
+      return;
+    }
+
     // Limpa o erro se estiver tudo certo
     setError("");
 
     // Armazena os dados (você pode salvar em localStorage ou em um backend aqui)
     const characterData = {
-      weight,
-      height,
+      weight: weightNum,
+      height: heightNum,
       personagem: selectedPersonagem,
     };
 
@@ -60,12 +76,12 @@ function ModalRegisterCharacter() {
         </DivDescricao>
         <DivFormsBaixo>
           <Input1
-            placeholder="Peso"
+            placeholder="Peso (em kg)"
             value={weight}
             onChange={(e) => setPeso(e.target.value)} // Armazena o weight
           />
           <Input1
-            placeholder="Altura"
+            placeholder="Altura (em cm)"
             value={height}
             onChange={(e) => setAltura(e.target.value)} // Armazena a height
           />
@@ -87,7 +103,7 @@ function ModalRegisterCharacter() {
         </ImagemWrapper>
 
         {/* Exibe mensagem de erro se houver */}
-        {error && <p style={{ color: "red", fontSize:"0.7em"}}>{error}</p>}
+        {error && <p style={{ color: "red", fontSize: "0.7em" }}>{error}</p>}
 
         <Butao onClick={handleRegister}>Vamos lá</Butao>
       </DivForms>

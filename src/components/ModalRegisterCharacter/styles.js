@@ -79,15 +79,14 @@ export const ImagemWrapper = styled.div`
 export const PersonagemDiv = styled.div`
   position: absolute;
   width: 50%;
-  height: 98%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.3); /* Somente para demonstrar */
   cursor: pointer;
   transition: background 0.3s;
-  border-radius: 1.5vw;
-  ${({ selected }) => selected && "background: rgba(255, 255, 255, 0.2);"}
+  border-radius: 1vw;
+  ${({ selected }) => selected && "background: rgba(255, 255, 255, 0.4);"}
   &:hover {
     background: rgba(255, 255, 255, 0.5); /* Efeito de hover */
-    border-radius: 1.5vw;
   }
 `;
 
@@ -107,4 +106,4 @@ export const Input1 = styled.input`
   border-style: solid;
   border-color: #cccccc;
   flex-grow: 1;
-`
+`;
