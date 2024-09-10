@@ -8,9 +8,10 @@ export const HistoryList = styled.ul`
 
 export const ActivityItem = styled.li`
   background-color: #222;
-  padding: 15px;
+  padding: 2em;
   margin-bottom: 10px;
   border-radius: 8px;
+  width: 38em;
 `;
 
 export const ActivityName = styled.h2`
@@ -75,11 +76,13 @@ export const ModalContainer = styled.div`
   padding: 2em;
   border-radius: 0.5em;
   width: 50%;
+  height: 60%;
   box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.3);
   position: relative;
   /* Aplica a animação dependendo do estado do modal */
   animation: ${({ isOpen }) => (isOpen ? scaleIn : scaleOut)} 0.3s forwards;
   transform-origin: center; /* Define o ponto de origem como o centro */
+  overflow-y: auto;
 `;
 
 // Conteúdo do modal
@@ -88,6 +91,7 @@ export const ModalContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 `;
 
 // Botão de fechar o modal

@@ -28,13 +28,7 @@ function ModalHistorico({ isOpen, CloseOnClick }) {
       console.log(response);
       console.log(response.data);
       if (response && response.data) {
-        setAtividades([
-          response.data[0],
-          response.data[1],
-          response.data[2],
-          response.data[3],
-        ]); // Armazena as atividades no estado
-        console.log(response.data.days);
+        setAtividades(response.data); // Armazena as atividades no estado
       } else {
         setError("Erro ao carregar atividades."); // Caso não tenha resposta adequada
       }
