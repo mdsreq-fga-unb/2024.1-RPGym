@@ -57,7 +57,7 @@ function ModalCriarGrupos({ isOpen, CloseOnClick, SuccessOnClick }) {
       console.log(Grupo);
       groupService.createGroup(Grupo);
       SuccessOnClick(Grupo); // Envia os dados para a função SuccessOnClick
-      window.location.reload();
+      // window.location.reload();
     } else {
       alert("Preencha todos os campos antes de registrar!");
     }

@@ -10,6 +10,7 @@ import {
 
 import { MdClose } from "react-icons/md";
 import InputText from "../../inputText";
+import groupService from "../../../services/groupService";
 
 function ModalEditarGrupo({ isOpen, CloseOnClick, SuccessOnClick }) {
   // Estados para armazenar os valores dos inputs
@@ -30,6 +31,7 @@ function ModalEditarGrupo({ isOpen, CloseOnClick, SuccessOnClick }) {
 
   const handleDelete = () => {
     if (confirmAction()) {
+      groupService.removeUserFromGroup();
       // Execute a ação se o usuário confirmar
       console.log("Ação confirmada.");
     } else {
