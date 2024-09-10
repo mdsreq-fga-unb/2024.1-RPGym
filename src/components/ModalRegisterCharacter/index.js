@@ -48,7 +48,7 @@ function ModalRegisterCharacter() {
     const userId = localStorage.getItem("userId");
     await userService.updateUser(userId, characterData);
     // Redireciona para o dashboard
-    window.open("/dashboard", "_blank");
+    window.open("/dashboard", "_self");
   };
 
   return (
