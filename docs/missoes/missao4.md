@@ -10,15 +10,15 @@
 
 ## PBB - HeathNet
 
-[Acesse aqui](missao3.md#Product-Backlog-Building-(PBB))
+[Acesse aqui](missao3.md#product-backlog-building-(pbb))
 
 ## Behavior Driven Development (BDD) - HeathNet
 
-[Acesse aqui](missao3.md#Behavior-Driven-Development-(BDD))
+[Acesse aqui](missao3.md#behavior-driven-development-(bdd))
 
 ### USM - ComumEventos
 
-[Acesse aqui](missao3.md#usm)
+[Acesse aqui](missao3.md#user-toring-mapping)
 
 ## Lições Aprendidas
 
