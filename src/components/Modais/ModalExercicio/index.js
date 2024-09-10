@@ -11,6 +11,7 @@ import {
 import { MdClose } from "react-icons/md";
 import TextAreaExercicio from "../../TextAreaExercicio";
 import InputText from "../../inputText";
+import activityService from "../../../services/activityService";
 
 function ModalExercicio({ isOpen, CloseOnClick, SuccessOnClick }) {
   // Estados para armazenar os valores dos inputs
@@ -29,13 +30,15 @@ function ModalExercicio({ isOpen, CloseOnClick, SuccessOnClick }) {
 
   // Função para lidar com o clique de "Registrar"
   const handleRegistrar = () => {
+    console.log("Registrar", nomeAtividade, tempo, descricao);
     if (areFieldsValid()) {
       const atividade = {
-        nome: nomeAtividade,
-        tempo,
-        descricao,
+        activityName: nomeAtividade,
+        duration: tempo,
+        description: descricao,
       };
-      SuccessOnClick(atividade); // Envia os dados para a função SuccessOnClick
+      activityService.registerActivity(atividade);
+      // SuccessOnClick(atividade); // Envia os dados para a função SuccessOnClick
     } else {
       alert("Preencha todos os campos antes de registrar!");
     }
