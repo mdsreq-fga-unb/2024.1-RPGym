@@ -23,8 +23,6 @@ import ModalGrupos from "../../Modais/ModalGrupos";
 import ModalOpcGrupo from "../../Modais/ModalOpcGrupo";
 import groupService from "../../../services/groupService";
 
-const BancoFalsoGrupos = [];
-
 const Grupos = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpen2, setIsModalOpen2] = useState(false);
@@ -32,11 +30,19 @@ const Grupos = () => {
   const [isClosing2, setIsClosing2] = useState(false);
   const [fontSize, setFontSize] = useState(1); // Estado para controlar o tamanho da fonte
   const boxListRef = useRef(null); // Ref para o BoxListGroups
+  const [gruposUsuario, setGruposUsuario] = useState(null); // Estado para armazenar os grupos
 
-  const gruposUsuario = groupService.getGroups();
-  console.log("gruposUsuario");
-  console.log(gruposUsuario);
-
+  useEffect(() => {
+    const fetchGroups = async () => {
+      const response = await groupService.getGroups(); // Chama o serviço
+      console.log(response); // Verifica a estrutura dos dados retornados
+      setGruposUsuario(response); // Atualiza o estado com os grupos recebidos
+    };
+  
+    fetchGroups(); // Chama a função para buscar os grupos
+  }, []);
+  
+  // Função para calcular o número de membros no grupo
   const getNumeroDeMembros = (grupo) => {
     return grupo.users.length;
   };
@@ -57,22 +63,6 @@ const Grupos = () => {
     }, 300); // Ajuste o tempo para o mesmo da duração da animação de saída
   };
 
-  const SuccessHandleModalToggle = () => {
-    setIsClosing(true);
-    setTimeout(() => {
-      setIsModalOpen(false);
-      setIsClosing(false);
-    }, 300);
-  };
-
-  const SuccessHandleModalToggle2 = () => {
-    setIsClosing2(true);
-    setTimeout(() => {
-      setIsModalOpen2(false);
-      setIsClosing2(false);
-    }, 300);
-  };
-
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -89,6 +79,22 @@ const Grupos = () => {
     } else {
       setFontSize(1); // Retorna ao tamanho normal quando volta ao topo
     }
+  };
+
+  const SuccessHandleModalToggle = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsModalOpen(false);
+      setIsClosing(false);
+    }, 300);
+  };
+
+  const SuccessHandleModalToggle2 = () => {
+    setIsClosing2(true);
+    setTimeout(() => {
+      setIsModalOpen2(false);
+      setIsClosing2(false);
+    }, 300);
   };
 
   useEffect(() => {
@@ -121,12 +127,16 @@ const Grupos = () => {
           </BoxAdd>
         </BoxMore>
         <BoxListGroups ref={boxListRef}>
-          {BancoFalsoGrupos.map((grupo, index) => (
-            <GroupBox key={index}>
+          {gruposUsuario && Array.isArray(gruposUsuario.data) ? (
+          gruposUsuario.data.map((grupo) => (
+            <GroupBox key={grupo._id}>
               <GroupName>{grupo.name}</GroupName>
               <GroupItem>{getNumeroDeMembros(grupo)} Membros</GroupItem>
             </GroupBox>
-          ))}
+          ))
+          ) : (
+            <p style={{fontStyle:"italic"}}>Ops, você não possui nenhum grupo!</p> // Caso os dados não sejam um array ou estejam vazios
+          )}
         </BoxListGroups>
         <BoxButton>
           <ButtonMore onClick={openModal}>Mais detalhes</ButtonMore>
