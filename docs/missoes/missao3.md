@@ -600,11 +600,11 @@ Após readaptar a rotina da equipe, conseguimos por todas as entregas nos trilho
 
 |    Data    | Versão |          Descrição           |                  Autor(es)                   |
 | :--------: | :----: | :--------------------------: | :------------------------------------------: |
-| 22/08/2024 |  1.0   |       Adição da Missão       |  [Mateus Vieira](https://github.com/matix0)  |
+| 22/08/2024 |  1.0   |       Adição da Missão       |  [Mateus Vieira](https://github.com/matix0) |
 | 22/08/2024 |  1.1   | Adição do User Story Mapping | [Dara Maria](https://github.com/daramariabs) |
-| 22/08/2024 |  1.2   | Adição das lições aprendidas |  [Mateus Vieira](https://github.com/matix0)  |
-| 22/08/2024 |  1.3   | Ajustes no PBB |  [Davi Rodrigues](https://github.com/DaviRogs)  |
-| 03/09/2024 |  1.4   | Acresentando as US's e Critérios de aceitação |  [Davi Rodrigues](https://github.com/DaviRogs)  |
-| 08/09/2024 |  1.4   | Adição do BDD |  [Davi Rodrigues](https://github.com/DaviRogs)  |
+| 22/08/2024 |  1.2   | Adição das lições aprendidas |  [Mateus Vieira](https://github.com/matix0) |
+| 22/08/2024 |  1.3   | Ajustes no PBB |  [Davi Rodrigues](https://github.com/DaviRogs) |
+| 03/09/2024 |  1.4   | Acresentando as US's e Critérios de aceitação |  [Davi Rodrigues](https://github.com/DaviRogs) |
+| 08/09/2024 |  1.4   | Adição do BDD |  [Davi Rodrigues](https://github.com/DaviRogs) |
 | 09/09/2024 |  1.5   | Adição da correção do USM | [Dara Maria](https://github.com/daramariabs) |
-| 09/09/2024 |  1.4   | Ajustes no BDD |  [Davi Rodrigues](https://github.com/DaviRogs)  |
+| 09/09/2024 |  1.4   | Ajustes no BDD |  [Davi Rodrigues](https://github.com/DaviRogs) |
