@@ -109,6 +109,24 @@ const joinGroupByCode = async (joinCode) => {
   }
 };
 
+const removeUserFromGroup = async (groupId, userId) => {
+  try {
+    const response = await fetch(`${baseUrl}group/${groupId}/users/${userId}`, {
+      method: "DELETE",
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to remove user from group");
+    }
+
+    const data = await response.json();
+    return { data };
+  } catch (error) {
+    console.error("Error removing user from group:", error);
+    return { data: null };
+  }
+};
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   getGroups,
@@ -117,4 +135,5 @@ export default {
   updateGroup,
   deleteGroup,
   joinGroupByCode,
+  removeUserFromGroup,
 };
