@@ -21,6 +21,7 @@ export const Grid = styled.div`
 
 export const Box = styled.div`
   display: flex;
+  position: relative;
   background-color: #8000ff;
   width: 35em;
   height: 18em;
@@ -44,13 +45,13 @@ export const BoxInfoPerson = styled.div`
   height: 18em;
   border-radius: 10px;
   align-items: center;
-  margin-left: -6.5em;
+  justify-content: center;
 `;
 
 export const ApelidoBox = styled.div`
   display: flex;
   border-color: black;
-  position: relative;
+  position: absolute;
   background-color: #8000ff;
   border-radius: 20px;
   border-color: black;
@@ -65,7 +66,7 @@ export const ApelidoBox = styled.div`
   padding-right: 1em;
   height: 2em;
   top: -1em;
-  left: 3.5em;
+  left: 5.4em;
 `;
 
 export const IMC = styled.div`
@@ -128,6 +129,7 @@ export const AlturaBox = styled.div`
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  margin-left: 1em;
 `;
 
 export const BoxPerson = styled.div`

@@ -19,7 +19,8 @@ function ModalEditarGrupo({ isOpen, CloseOnClick, SuccessOnClick }) {
   // Função para verificar se todos os campos estão preenchidos
   const areFieldsValid = () => {
     return (
-      nomeGrupo.trim() !== ""
+      nomeGrupo.trim() !== "",
+      nomeDescricao.trim() !== ""
     );
   };
 
@@ -28,6 +29,7 @@ function ModalEditarGrupo({ isOpen, CloseOnClick, SuccessOnClick }) {
     if (areFieldsValid()) {
       const Grupo = {
         nome: nomeGrupo,
+        nomeDescricao,
       };
       SuccessOnClick(Grupo); // Envia os dados para a função SuccessOnClick
     } else {
@@ -50,7 +52,13 @@ function ModalEditarGrupo({ isOpen, CloseOnClick, SuccessOnClick }) {
               value={nomeGrupo}
               onChange={(e) => setNomeGrupo(e.target.value)}
             />
-            <ActiveButton onClick={handleRegistrar}>Criar</ActiveButton>
+            <InputText
+              placeholder="Descrição do grupo"
+              type="text"
+              value={nomeDescricao}
+              onChange={(e) => setNomeDescricao(e.target.value)}
+            />
+            <ActiveButton onClick={handleRegistrar}>Editar</ActiveButton>
           </ModalContent>
         </ModalContainer>
       </ModalBackground>

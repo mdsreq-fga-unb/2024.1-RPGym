@@ -22,18 +22,18 @@ import { MdEdit } from "react-icons/md";
 import ModalEditarGrupo from '../ModalEditarGrupo';
 
 const BancoFalsoGrupos = [
-    { nome: "Trabalho", numeroDePessoas: 8 },
-    { nome: "Academia", numeroDePessoas: 5 },
-    { nome: "Igreja", numeroDePessoas: 12 },
-    { nome: "Família", numeroDePessoas: 6 },
-    { nome: "Futebol", numeroDePessoas: 10 },
-    { nome: "Faculdade", numeroDePessoas: 9 },
-    { nome: "Teatro", numeroDePessoas: 7 },
-    { nome: "Dança", numeroDePessoas: 4 },
-    { nome: "Música", numeroDePessoas: 11 },
-    { nome: "Culinária", numeroDePessoas: 3 },
-    { nome: "Viagem", numeroDePessoas: 6 },
-    { nome: "Esportes", numeroDePessoas: 14 },
+    { nome: "Trabalho", Description:"Aqui jaz grupo fdsfsfsgdfgsgsgfgsf", numeroDePessoas: 8 },
+    { nome: "Academia", Description:"Aqui jaz grupo2", numeroDePessoas: 5 },
+    { nome: "Igreja", Description:"Aqui jaz grupo3", numeroDePessoas: 12 },
+    { nome: "Família", Description:"Aqui jaz grupo4", numeroDePessoas: 6 },
+    { nome: "Futebol", Description:"Aqui jaz grupo5", numeroDePessoas: 10 },
+    { nome: "Faculdade", Description:"Aqui jaz grupo6", numeroDePessoas: 9 },
+    { nome: "Teatro", Description:"Aqui jaz grupo7", numeroDePessoas: 7 },
+    { nome: "Dança", Description:"Aqui jaz grupo8", numeroDePessoas: 4 },
+    { nome: "Música", Description:"Aqui jaz grupo9", numeroDePessoas: 11 },
+    { nome: "Culinária", Description:"Aqui jaz grupo10", numeroDePessoas: 3 },
+    { nome: "Viagem", Description:"Aqui jaz grupo11", numeroDePessoas: 6 },
+    { nome: "Esportes", Description:"Aqui jaz grupo12", numeroDePessoas: 14 },
 ];
 
 const BancoFalsoPessoas = [
@@ -301,6 +301,8 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                                 // Exibir detalhes do grupo selecionado, incluindo os integrantes
                                 <div style={{marginRight:"-1em", overflow:"hidden", marginBottom:"1em"}}>
                                     <h2 style={{fontSize:"1em"}}>Detalhes do Grupo: {selectedGroup.nome}</h2>
+                                    <p>Descrição do grupo:</p><br/>
+                                    <p style={{fontStyle:"italic", fontSize:"0.9em", marginLeft:"1em", marginTop:"-1.7em"}}>{selectedGroup.Description}</p>
                                     <p>Número de pessoas: {selectedGroup.numeroDePessoas}</p>
                                     <h3 style={{marginBottom:"-0.01em"}}>Integrantes:</h3>
                                     <div style={{display:"flex", flexDirection:"column", overflowY:"auto", flexShrink:"0", height:"90%", flexGrow: "1"}}>

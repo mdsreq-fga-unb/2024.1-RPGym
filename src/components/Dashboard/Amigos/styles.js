@@ -71,7 +71,7 @@ export const BoxButton = styled.div`
   right: 230px;
   align-items: center;
   justify-content: center;
-  top: 12em;
+  bottom: 1em;
   right: 2em;
 `;
 
