@@ -34,18 +34,13 @@ const Grupos = () => {
 
   useEffect(() => {
     const fetchGroups = async () => {
-      try {
-        const response = await groupService.getGroups(); // Chama o serviço real
-        setGruposUsuario(Array.isArray(response) ? response : []); // Garante que o estado seja um array
-      } catch (error) {
-        console.error("Erro ao buscar grupos", error);
-        setGruposUsuario([]); // Em caso de erro, mantém o estado como array vazio
-      }
+      const response = await groupService.getGroups(); // Chama o serviço
+      setGruposUsuario(response); // Atualiza o estado com os grupos recebidos
     };
-  
+
     fetchGroups(); // Chama a função para buscar os grupos
   }, []);
-  
+
   // Função para calcular o número de membros no grupo
   const getNumeroDeMembros = (grupo) => {
     return grupo.users.length;
@@ -132,16 +127,19 @@ const Grupos = () => {
         </BoxMore>
         <BoxListGroups ref={boxListRef}>
           {gruposUsuario && Array.isArray(gruposUsuario.data) ? (
-          gruposUsuario.data.map((grupo) => (
-            <GroupBox key={grupo._id}>
-              <GroupName>{grupo.name}</GroupName>
-              <GroupItem>{getNumeroDeMembros(grupo)} Membros</GroupItem>
-            </GroupBox>
-          ))
+            gruposUsuario.data.map((grupo) => (
+              <GroupBox key={grupo._id}>
+                <GroupName>{grupo.name}</GroupName>
+                <GroupItem>{getNumeroDeMembros(grupo)} Membros</GroupItem>
+              </GroupBox>
+            ))
           ) : (
-            <p style={{fontStyle:"italic"}}>Ops, você não possui nenhum grupo!</p> // Caso os dados não sejam um array ou estejam vazios
+            <p style={{ fontStyle: "italic" }}>
+              Ops, você não possui nenhum grupo!
+            </p> // Caso os dados não sejam um array ou estejam vazios
           )}
         </BoxListGroups>
+
         <BoxButton>
           <ButtonMore onClick={openModal}>Mais detalhes</ButtonMore>
         </BoxButton>
