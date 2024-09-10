@@ -178,6 +178,10 @@ export const ActiveButton = styled.button`
   }
 `;
 
+export const Historico = styled.button`
+  color: #8000ff;
+`;
+
 export const MoreBox1 = styled.div`
   display: flex;
   position: relative;
@@ -201,6 +205,8 @@ export const CircleBox1 = styled.div`
   bottom: 0.7em;
   cursor: default;
 `;
+
+export const HistoryButton = styled.button``;
 
 export const MoreBox2 = styled.div`
   display: flex;

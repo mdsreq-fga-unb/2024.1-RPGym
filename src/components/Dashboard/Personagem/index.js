@@ -28,6 +28,8 @@ import {
 } from "./styles";
 import { RiAddLine } from "react-icons/ri";
 import ModalExercicio from "../../Modais/ModalExercicio";
+import ModalHistorico from "../../Modais/ModalHistorico";
+import { MdHistory } from "react-icons/md";
 
 const Personagem = ({ userId = localStorage.getItem("userId") }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,6 +38,7 @@ const Personagem = ({ userId = localStorage.getItem("userId") }) => {
   const [userName, setUser] = useState();
   const [peso, setPeso] = useState();
   const [altura, setAltura] = useState();
+  const [isHistoricoOpen, setIsHistoricoOpen] = useState(false);
 
   useEffect(() => {
     console.log(userId);
@@ -112,6 +115,17 @@ const Personagem = ({ userId = localStorage.getItem("userId") }) => {
                 Registrar
               </ActiveButton>
             </ButtonBox>
+            <MdHistory
+              style={{
+                marginTop: "0.5em",
+                cursor: "pointer",
+                alignSelf: "center",
+                height: "5em",
+                width: "5em",
+                color: "#FFA800",
+              }}
+              onClick={() => setIsHistoricoOpen(true)}
+            />
           </BoxInfos>
           <BoxPerson></BoxPerson>
         </BoxInfoPerson>
@@ -121,7 +135,10 @@ const Personagem = ({ userId = localStorage.getItem("userId") }) => {
         <CircleBox2>.</CircleBox2>
         <MoreBox3>+</MoreBox3>
         <CircleBox3>.</CircleBox3>
-
+        <ModalHistorico
+          isOpen={isHistoricoOpen}
+          CloseOnClick={() => setIsHistoricoOpen(false)}
+        />
         {isModalOpen && (
           <ModalExercicio
             isOpen={!isClosing}

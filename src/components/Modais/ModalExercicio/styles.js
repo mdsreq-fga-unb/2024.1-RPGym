@@ -31,13 +31,13 @@ export const ModalBackground = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);  // Cor preta semitransparente
+  background-color: rgba(0, 0, 0, 0.5); // Cor preta semitransparente
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
-  visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
+  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
+  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
   transition: visibility 0.3s, opacity 0.3s;
 `;
 
@@ -82,40 +82,40 @@ export const CloseButton = styled.button`
 `;
 
 export const CaloTem = styled.div`
- display: flex;
- flex-direction: row;
- justify-items: end;
- align-items: center;
- gap: 0.6em;
+  display: flex;
+  flex-direction: row;
+  justify-items: end;
+  align-items: center;
+  gap: 0.6em;
 `;
 
 export const ActiveButton = styled.button`
-    color: rgba(255, 255, 255, 1);
-    border: black;
-    font-weight: 600;
-    font-size: 1.2em;
-    cursor: pointer;
-    background: linear-gradient(180deg, #8000ff, #6000ff);
-    width: 8em;
-    height: 1.7em;
-    border-radius:0.4vw;
-    display: flex;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;    
-    transition: all 0.2s;
-    font-family: Poppins;
-    font-style: normal;
-    margin-top: 1em;
+  color: rgba(255, 255, 255, 1);
+  border: black;
+  font-weight: 600;
+  font-size: 1.2em;
+  cursor: pointer;
+  background: linear-gradient(180deg, #8000ff, #6000ff);
+  width: 8em;
+  height: 1.7em;
+  border-radius: 0.4vw;
+  display: flex;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  font-family: Poppins;
+  font-style: normal;
+  margin-top: 1em;
 
-    &:hover {
-        filter: brightness(1.1); /* Aumenta o brilho em 10% */
-    }
+  &:hover {
+    filter: brightness(1.1); /* Aumenta o brilho em 10% */
+  }
 
-    &:active{
-        transform: translateY(2px);
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
 `;
 
 export const Input = styled.input`
