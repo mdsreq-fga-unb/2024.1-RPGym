@@ -9,6 +9,12 @@ export const Container = styled.div`
   min-height: 68vh;
   background-color: #ffffff;
   box-shadow: 0px 0px 2vw 0.2vw rgba(0, 0, 0, 0.75);
+  @media screen and (max-width: 1000px) {
+    min-height: 75vw;
+    min-width: 80vw;
+    margin: auto;
+    padding: 2em;
+  }
 `;
 
 export const Title = styled.h1`
@@ -17,6 +23,9 @@ export const Title = styled.h1`
   margin-bottom: 1vh;
   font-weight: bold;
   font-weight: 600;
+  @media screen and (max-width: 1000px) {
+    font-size: 8vw;
+  }
 `;
 
 export const Login = styled.button`
@@ -34,13 +43,23 @@ export const Login = styled.button`
   border: none;
   width: 27vw;
   height: 6vh;
+  align-self: center;
   cursor: pointer;
   margin-top: 8vw;
+  @media screen and (max-width: 1000px) {
+    font-size: 4vw;
+  }
 `;
 
 export const DivForms = styled.div`
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1000px) {
+    font-size: 5vw;
+  }
+  ::placeholder {
+    font-size: 2vw;
+  }
 `;
 
 export const DivDescricao = styled.div`
@@ -59,6 +78,9 @@ export const Subtitle = styled.p`
   font-weight: bold;
   font-weight: 600;
   font-size: 1.2vw;
+  @media screen and (max-width: 1000px) {
+    font-size: 4vw;
+  }
 `;
 
 export const SubSubtitle = styled.p`
@@ -68,6 +90,9 @@ export const SubSubtitle = styled.p`
   color: #666666;
   font-weight: 300;
   margin-bottom: 2vw;
+  @media screen and (max-width: 1000px) {
+    font-size: 2vw;
+  }
 `;
 
 export const SubSubSubtitle = styled.p`
@@ -77,6 +102,9 @@ export const SubSubSubtitle = styled.p`
   font-weight: 300;
   margin-top: -0.2vw;
   align-self: flex-end;
+  @media screen and (max-width: 1000px) {
+    font-size: 2vw;
+  }
 `;
 
 export const SubSubSubSubtitle = styled.p`
@@ -87,4 +115,7 @@ export const SubSubSubSubtitle = styled.p`
   margin-top: 1vw;
   align-self: center;
   margin-bottom: 2vw;
+  @media screen and (max-width: 1000px) {
+    font-size: 2vw;
+  }
 `;

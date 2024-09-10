@@ -9,6 +9,12 @@ export const Container = styled.div`
   min-height: 68vh;
   background-color: #ffffff;
   box-shadow: 0px 0px 2vw 0.2vw rgba(0, 0, 0, 0.75);
+  @media screen and (max-width: 1000px) {
+    min-height: 75vw;
+    min-width: 80vw;
+    margin: auto;
+    padding: 3em;
+  }
 `;
 
 export const Title = styled.h1`
@@ -16,6 +22,9 @@ export const Title = styled.h1`
   font-size: 2.8vw;
   margin-bottom: 0.1vh;
   font-weight: 600;
+  @media screen and (max-width: 1000px) {
+    font-size: 8vw;
+  }
 `;
 
 export const Cadastrese = styled.button`
@@ -35,11 +44,23 @@ export const Cadastrese = styled.button`
   height: 6vh;
   cursor: pointer;
   margin-top: 4.5vw;
+  align-self: center;
+  cursor: pointer;
+  margin-top: 8vw;
+  @media screen and (max-width: 1000px) {
+    font-size: 3vw;
+  }
 `;
 
 export const DivForms = styled.div`
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1000px) {
+    font-size: 5vw;
+  }
+  ::placeholder {
+    font-size: 2vw;
+  }
 `;
 
 export const DivDescricao = styled.div`
@@ -49,12 +70,21 @@ export const DivDescricao = styled.div`
 
 export const DivFormsBaixo = styled.div`
   display: flex;
+  @media screen and (max-width: 1000px) {
+    font-size: 5vw;
+  }
+  ::placeholder {
+    font-size: 2vw;
+  }
 `;
 
 export const Subtitle = styled.p`
   font-family: "Poppins", inherit;
   font-weight: 600;
   font-size: 1.2vw;
+  @media screen and (max-width: 1000px) {
+    font-size: 4vw;
+  }
 `;
 
 export const SubSubSubSubtitle = styled.p`
@@ -65,6 +95,9 @@ export const SubSubSubSubtitle = styled.p`
   margin-top: 1vw;
   align-self: center;
   margin-bottom: 2vw;
+  @media screen and (max-width: 1000px) {
+    font-size: 2vw;
+  }
 `;
 
 export const InputText1 = styled.input`
@@ -83,4 +116,7 @@ export const InputText1 = styled.input`
   border-style: solid;
   border-color: #cccccc;
   flex-grow: 1;
-`
+  @media screen and (max-width: 1000px) {
+    font-size: 2vw;
+  }
+`;

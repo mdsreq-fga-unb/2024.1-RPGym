@@ -9,6 +9,12 @@ export const Container = styled.div`
   min-height: 68vh;
   background-color: #ffffff;
   box-shadow: 0px 0px 2vw 0.2vw rgba(0, 0, 0, 0.75);
+  @media screen and (max-width: 1000px) {
+    min-height: 56vw;
+    min-width: 50vw;
+    margin: auto;
+    padding: 2em;
+  }
 `;
 
 export const Title = styled.h1`
@@ -16,6 +22,9 @@ export const Title = styled.h1`
   font-size: 2.8vw;
   margin-bottom: 0.1vh;
   font-weight: bold;
+  @media screen and (max-width: 1000px) {
+    font-size: 8vw;
+  }
 `;
 
 export const Butao = styled.button`
@@ -35,11 +44,24 @@ export const Butao = styled.button`
   cursor: pointer;
   margin-top: 4.5vw;
   margin-bottom: 2.5vw;
+  align-self: center;
+  margin-top: 8vw;
+  @media screen and (max-width: 1000px) {
+    font-size: 4vw;
+  }
 `;
 
 export const DivForms = styled.div`
   display: flex;
   flex-direction: column;
+  ::placeholder {
+    font-size: 1vw;
+  }
+  @media screen and (max-width: 1000px) {
+    ::placeholder {
+      font-size: 2vw;
+    }
+  }
 `;
 
 export const Div = styled.div`
@@ -54,12 +76,23 @@ export const DivDescricao = styled.div`
 export const DivFormsBaixo = styled.div`
   display: flex;
   gap: 2em;
+  @media screen and (max-width: 1000px) {
+    ::placeholder {
+      font-size: 2vw;
+    }
+  }
+  ::placeholder {
+    font-size: 1vw;
+  }
 `;
 
 export const Subtitle = styled.p`
   font-family: "Poppins", inherit;
   font-weight: 600;
   font-size: 1.2vw;
+  @media screen and (max-width: 1000px) {
+    font-size: 4vw;
+  }
 `;
 
 export const ImagemWrapper = styled.div`
@@ -67,9 +100,9 @@ export const ImagemWrapper = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 4.2em;
   width: 20em; /* Ajuste conforme necessário */
   max-width: 100%; /* Ou o tamanho desejado */
+  align-self: center;
   img {
     width: 100%;
     height: auto;
@@ -82,6 +115,7 @@ export const PersonagemDiv = styled.div`
   height: 100%;
   background: rgba(0, 0, 0, 0.3); /* Somente para demonstrar */
   cursor: pointer;
+  align-self: center;
   transition: background 0.3s;
   border-radius: 1vw;
   ${({ selected }) => selected && "background: rgba(255, 255, 255, 0.4);"}
