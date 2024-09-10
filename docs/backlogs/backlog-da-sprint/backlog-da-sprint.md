@@ -178,8 +178,18 @@ Não conseguirmos entregar por completo nenhuma das tarefas propostas inicialmen
 
 Na reunião realizada no dia 02/09/24, conversamos a respeito da entrega da Missão 4, o qual o escopo foi disponibilizado no professor na mesma data, que consistia na entrega da versão atualizada do Backlog, entrega do MVP 1 estabelecido e a realização dos exercícios propostos em sala de aula, além da gravação de dois vídeos sendo um apresentando nosso produto e outro com o cliente validando o mesmo.
 
+#### Atividades de Engenharia de Requisitos:
+
+Atualização do Backlog e Revisão de Requisitos: Realizamos uma revisão detalhada do backlog, incorporando ajustes e melhorias com base nos feedbacks recebidos nas sprints anteriores. Atualizamos as histórias de usuário e redefinimos critérios de aceitação para refletir o estado atual do desenvolvimento e as necessidades emergentes do cliente. Isso garantiu que o backlog estivesse completo, claro e alinhado com as expectativas do cliente para a entrega do MVP 1.
+
+Validação do Produto com o Cliente: Organizamos uma sessão de validação com o cliente para demonstrar a aplicação desenvolvida. Durante essa sessão, capturamos feedback em tempo real sobre a usabilidade, funcionalidades e possíveis melhorias, e utilizamos essas informações para fazer ajustes finais antes da entrega oficial do MVP.
+
+Preparação e Gravação dos Vídeos: Planejamos e gravamos dois vídeos: um de apresentação do produto, destacando suas funcionalidades principais e o valor entregue, e outro com o cliente validando a solução, reforçando a relevância e a utilidade do produto no contexto de negócio do cliente. Esses vídeos foram organizados de maneira a demonstrar claramente o alinhamento entre o produto final e os requisitos inicialmente definidos.
+
+Deploy da Aplicação: Realizamos o deploy da aplicação, assegurando que o ambiente de produção estivesse corretamente configurado e que o produto funcionasse conforme o esperado. Testes finais foram conduzidos para verificar a estabilidade, segurança e performance da aplicação, garantindo que todos os requisitos técnicos e de qualidade fossem atendidos.
+
 ![Kanban da Sprint 6](../../assets/kanbans/sprint6.jpg)
 
 ### Reunião de Retrospectiva
 
-A realizar....
+
