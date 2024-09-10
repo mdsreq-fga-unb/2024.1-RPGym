@@ -1587,7 +1587,7 @@ S (Supportability): Requisitos de manutenibilidade. Especificam a facilidade de 
 <td>F3</td>
 <td>US03</td>
 <td>Eu, como usuário, gostaria de registrar e visualizar minhas atividades físicas para ter uma referência do meu progresso físico ao longo do tempo.</td>
-<td>- Exibição de lista histórica com atividades passadas.<br>- Cada registro deve mostrar a atividade realizada, seu tempo gasto e a descrição da atividade.<br>- Histórico deve ser responsivo para facilitar a navegação.<br>- Deve ter um botão para o cadastro da atividade.</td>
+<td>- Exibição de lista com atividades passadas.<br>- Cada registro deve mostrar a atividade realizada, seu tempo gasto e a descrição da atividade.<br>- Histórico deve ser responsivo para facilitar a navegação.<br>- Deve ter um botão para o cadastro da atividade.</td>
 </tr>
 <tr>
 <td>F4</td>
@@ -1599,7 +1599,7 @@ S (Supportability): Requisitos de manutenibilidade. Especificam a facilidade de 
 <td>F4</td>
 <td>US05</td>
 <td>Eu, como usuário, gostaria de gastar minhas moedas para me inscrever em um dos campeonatos disponíveis.</td>
-<td>- Exibição de lista de campeonatos disponíveis.<br>- Cada campeonato deve mostrar status (Aberto, Em andamento, Finalizado), preço da inscrição, e prêmio.<br>- Capacidade máxima e número de inscritos devem ser visíveis.<br>- Opção de inscrição em campeonatos abertos.</td>
+<td>- Exibição de lista de campeonatos disponíveis.<br>- O sistema deve emitir um alerta quando o saldo do usuario for inferior ao valor do desafio. <br>- Cada campeonato deve mostrar status (Aberto, Em andamento, Finalizado), preço da inscrição, e prêmio.<br>- Capacidade máxima e número de inscritos devem ser visíveis.<br>- Opção de inscrição em campeonatos abertos.</td>
 </tr>
 <tr>
 <td>F8</td>
@@ -1611,7 +1611,7 @@ S (Supportability): Requisitos de manutenibilidade. Especificam a facilidade de 
 <td>F7</td>
 <td>US07</td>
 <td>Eu, como usuário, gostaria de criar um grupo para incentivar uns aos outros a praticar exercícios físicos.</td>
-<td>- Campos obrigatórios: nome do grupo (1-50 caracteres).<br>- Visualização dos integrantes do grupo.<br>- Permissão de criação de grupos por usuário administrador.</td>
+<td>- Campos obrigatórios: nome do grupo (1-50 caracteres).<br>- Visualização dos integrantes do grupo.</td>
 </tr>
 <tr>
 <td>F2</td>
@@ -1622,8 +1622,8 @@ S (Supportability): Requisitos de manutenibilidade. Especificam a facilidade de 
 <tr>
 <td>F7</td>
 <td>US09</td>
-<td>Eu, como usuário, gostaria de acessar as estatísticas de outros usuários.</td>
-<td>- Exibição de nome, data de registro e saldo de moedas do perfil acessado.<br>- Disponível apenas para usuários no mesmo grupo ou com permissão de visualização.</td>
+<td>Eu, como usuário, gostaria de visualizar outro usuario que tem grupos incomuns comigo para facilitar a comunicação.</td>
+<td>- Exibição de nome, data de registro e saldo de moedas do perfil acessado.<br>- Disponível apenas para usuários no mesmo grupo</td>
 </tr>
 <tr>
 <td>F5</td>
@@ -1635,7 +1635,7 @@ S (Supportability): Requisitos de manutenibilidade. Especificam a facilidade de 
 <td>F6</td>
 <td>US11</td>
 <td>Eu, como usuário, gostaria de gastar minhas moedas em customizações na loja da plataforma para personalizar meu personagem.</td>
-<td>- Seção dedicada para customizações na loja.<br>- Variedade de itens com preços.<br>- Moedas para customização distintas das moedas de campeonatos.<br>- Processamento e confirmação de compra.</td>
+<td>- Seção dedicada para customizações na loja.<br>- Variedade de itens com preços. <br>- Processamento e confirmação de compra.</td>
 </tr>
 <tr>
 <td>F3</td>
@@ -1646,8 +1646,8 @@ S (Supportability): Requisitos de manutenibilidade. Especificam a facilidade de 
 <tr>
 <td>F2</td>
 <td>US13</td>
-<td>Eu, como usuário, gostaria de realizar meu login no sistema utilizando meu login e senha previamente cadastrados para acessar as funcionalidades do sistema.</td>
-<td>- Validação de login e senha.<br>- Mensagem de erro para credenciais incorretas.<br>- Acesso às funcionalidades do sistema após login bem-sucedido.</td>
+<td>Eu, como usuário, gostaria de realizar meu login no sistema utilizando email e senha previamente cadastrados para acessar as funcionalidades do sistema.</td>
+<td>- Validação de email e senha.<br>- O campo de login deve aceitar somente email. <br>- Mensagem de erro para credenciais incorretas.<br>- Acesso às funcionalidades do sistema após login bem-sucedido.</td>
 </tr>
 <tr>
 <td>F1</td>
@@ -1665,7 +1665,7 @@ S (Supportability): Requisitos de manutenibilidade. Especificam a facilidade de 
 <td>F7</td>
 <td>US16</td>
 <td>Eu, como usuário, gostaria de editar as informações do meu grupo que criei para refletir mudanças no propósito ou estilo do grupo.</td>
-<td>- Edição do nome do grupo apenas para o administrador.<br>- Confirmação e registro das alterações.<br>- Opção de cancelar pedido de alteração.</td>
+<td>- Somente o criador do grupo pode fazer edição. <br>- Confirmação e registro das alterações.<br>- Opção de cancelar pedido de alteração.</td>
 </tr>
 <tr>
 <td>F7</td>
@@ -1676,8 +1676,8 @@ S (Supportability): Requisitos de manutenibilidade. Especificam a facilidade de 
 <tr>
 <td>F7</td>
 <td>US18</td>
-<td>Eu, como usuário, gostaria de retirar um usuário que está no grupo o qual sou administrador para eliminar um grupo que foi criado por engano ou já não é mais ativo.</td>
-<td>- Exclusão do usuário apenas por administradores.<br>- Confirmação do pedido de expulsão.<br>- Bloqueio de acesso do usuário expulso.</td>
+<td>Eu, como usuário, gostaria de retirar um usuário que está no grupo que eu criei como forma de manter a harmonia do grupo.</td>
+<td>- Exclusão do usuário apenas pelo criador.<br>- Confirmação do pedido de expulsão.<br>- Bloqueio de acesso do usuário expulso.</td>
 </tr>
 <tr>
 <td>F7</td>
@@ -2219,6 +2219,12 @@ S (Supportability): Requisitos de manutenibilidade. Especificam a facilidade de 
 <td style="text-align: center;"><code>3.2</code></td>
 <td style="text-align: center;">Melhorias no Backlog</td>
 <td style="text-align: center;">Lucas Heler</td>
+</tr>
+<tr>
+<td style="text-align: center;">09/09/2024</td>
+<td style="text-align: center;"><code>3.3</code></td>
+<td style="text-align: center;">Revisão de Backlog</td>
+<td style="text-align: center;">Dara Maria</td>
 </tr>
 </tbody>
 </table>
