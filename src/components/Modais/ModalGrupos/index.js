@@ -24,18 +24,18 @@ import { TbDoorExit } from "react-icons/tb";
 import ModalEditarGrupo from '../ModalEditarGrupo';
 
 let BancoFalsoGrupos = [
-    { nome: "Trabalho", Description:"Aqui jaz grupo fdsfsfsgdfgsgsgfgsf", numeroDePessoas: 8 },
-    { nome: "Academia", Description:"Aqui jaz grupo2", numeroDePessoas: 5 },
-    { nome: "Igreja", Description:"Aqui jaz grupo3", numeroDePessoas: 12 },
-    { nome: "Família", Description:"Aqui jaz grupo4", numeroDePessoas: 6 },
-    { nome: "Futebol", Description:"Aqui jaz grupo5", numeroDePessoas: 10 },
-    { nome: "Faculdade", Description:"Aqui jaz grupo6", numeroDePessoas: 9 },
-    { nome: "Teatro", Description:"Aqui jaz grupo7", numeroDePessoas: 7 },
-    { nome: "Dança", Description:"Aqui jaz grupo8", numeroDePessoas: 4 },
-    { nome: "Música", Description:"Aqui jaz grupo9", numeroDePessoas: 11 },
-    { nome: "Culinária", Description:"Aqui jaz grupo10", numeroDePessoas: 3 },
-    { nome: "Viagem", Description:"Aqui jaz grupo11", numeroDePessoas: 6 },
-    { nome: "Esportes", Description:"Aqui jaz grupo12", numeroDePessoas: 14 },
+    { nome: "Trabalho", Description:"Aqui jaz grupo fdsfsfsgdfgsgsgfgsf", Codigo:"AKDJ", numeroDePessoas: 8 },
+    { nome: "Academia", Description:"Aqui jaz grupo2", Codigo:"AIRD", numeroDePessoas: 5 },
+    { nome: "Igreja", Description:"Aqui jaz grupo3", Codigo:"LAMD", numeroDePessoas: 12 },
+    { nome: "Família", Description:"Aqui jaz grupo4", Codigo:"KQWA", numeroDePessoas: 6 },
+    { nome: "Futebol", Description:"Aqui jaz grupo5", Codigo:"ALFJ", numeroDePessoas: 10 },
+    { nome: "Faculdade", Description:"Aqui jaz grupo6", Codigo:"PDKW", numeroDePessoas: 9 },
+    { nome: "Teatro", Description:"Aqui jaz grupo7", Codigo:"IWNF", numeroDePessoas: 7 },
+    { nome: "Dança", Description:"Aqui jaz grupo8", Codigo:"ANMD", numeroDePessoas: 4 },
+    { nome: "Música", Description:"Aqui jaz grupo9", Codigo:"KWEN", numeroDePessoas: 11 },
+    { nome: "Culinária", Description:"Aqui jaz grupo10", Codigo:"AGHQ", numeroDePessoas: 3 },
+    { nome: "Viagem", Description:"Aqui jaz grupo11", Codigo:"QCFD", numeroDePessoas: 6 },
+    { nome: "Esportes", Description:"Aqui jaz grupo12", Codigo:"QAGD", numeroDePessoas: 14 },
 ];
 
 let BancoFalsoPessoas = [
@@ -158,6 +158,8 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                                     <h2 style={{fontSize:"1em"}}>Detalhes do Grupo: {selectedGroup.nome}</h2>
                                     <p>Descrição do grupo:</p><br/>
                                     <p style={{fontStyle:"italic", fontSize:"0.9em", marginLeft:"1em", marginTop:"-1.7em"}}>{selectedGroup.Description}</p>
+                                    <p>Código:</p><br/>
+                                    <p style={{fontStyle:"italic", fontSize:"0.9em", marginLeft:"1em", marginTop:"-1.7em"}}>{selectedGroup.Codigo}</p>
                                     <p>Número de pessoas: {selectedGroup.numeroDePessoas}</p>
                                     <h3 style={{marginBottom:"-0.01em"}}>Integrantes:</h3>
                                     <div style={{display:"flex", flexDirection:"column", overflowY:"auto", flexShrink:"0", height:"90%", flexGrow: "1"}}>

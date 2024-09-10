@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Caixa, BoxMore, BoxAdd, ButtonAdd, BoxListGroups, Grid, BoxButton, DescriptionBox, Title, SubTitle, ButtonMore, GroupBox, GroupName, GroupItem, CircleBox1, MoreBox1, CircleBox2 } from "./styles";
 import { RiAddLine } from "react-icons/ri";
-import ModalGrupos from "../../Modais/ModalGrupos";
-import ModalCriarGrupos from "../../Modais/ModalCriarGrupo";
+import ModalGrupos from "../../Modais/ModalGrupos"
+import ModalOpcGrupo from "../../Modais/ModalOpcGrupo";
 
 const BancoFalsoGrupos = [
     { nome: "Trabalho", numeroDePessoas: 8 },
@@ -105,8 +105,8 @@ const Grupos = () => {
         <BoxListGroups ref={boxListRef}>
             {BancoFalsoGrupos.map((grupo, index) => (
                 <GroupBox key={index}>
-                <GroupName>{grupo.nome}</GroupName>
-                <GroupItem>{grupo.numeroDePessoas} Membros</GroupItem>
+                  <GroupName>{grupo.nome}</GroupName>
+                  <GroupItem>{grupo.numeroDePessoas} Membros</GroupItem>
                 </GroupBox>
             ))}
         </BoxListGroups>
@@ -126,7 +126,7 @@ const Grupos = () => {
         </CircleBox2>
 
         {isModalOpen && <ModalGrupos isOpen={!isClosing} CloseOnClick={CloseHandleModalToggle} SuccessOnClick={SuccessHandleModalToggle}/>}
-        {isModalOpen2 && <ModalCriarGrupos isOpen={!isClosing2} CloseOnClick={CloseHandleModalToggle2} SuccessOnClick={SuccessHandleModalToggle2}/>}
+        {isModalOpen2 && <ModalOpcGrupo isOpen={!isClosing2} CloseOnClick={CloseHandleModalToggle2} SuccessOnClick={SuccessHandleModalToggle2}/>}
       </Caixa>
     </Grid>
   )
