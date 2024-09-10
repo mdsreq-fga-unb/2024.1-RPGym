@@ -69,14 +69,13 @@ const scaleOut = keyframes`
 
 // Container do modal
 export const ModalContainer = styled.div`
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   border-style: solid;
-  border-width: 1px;
+  border-width: 0.05em;
   padding: 2em;
-  border-radius: 10px;
+  border-radius: 0.5em;
   width: 50%;
-  max-width: 500px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.3);
   position: relative;
   /* Aplica a animação dependendo do estado do modal */
   animation: ${({ isOpen }) => (isOpen ? scaleIn : scaleOut)} 0.3s forwards;
@@ -95,8 +94,8 @@ export const ModalContent = styled.div`
 export const CloseButton = styled.button`
   position: absolute;
   color: white;
-  top: 10px;
-  right: 10px;
+  top: 1vh;
+  right: 1vh;
   background: none;
   border: none;
   font-size: 1.5em;
