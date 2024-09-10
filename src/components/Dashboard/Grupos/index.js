@@ -1,26 +1,30 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Caixa, BoxMore, BoxAdd, ButtonAdd, BoxListGroups, Grid, BoxButton, DescriptionBox, Title, SubTitle, ButtonMore, GroupBox, GroupName, GroupItem, CircleBox1, MoreBox1, CircleBox2 } from "./styles";
+import {
+  Caixa,
+  BoxMore,
+  BoxAdd,
+  ButtonAdd,
+  BoxListGroups,
+  Grid,
+  BoxButton,
+  DescriptionBox,
+  Title,
+  SubTitle,
+  ButtonMore,
+  GroupBox,
+  GroupName,
+  GroupItem,
+  CircleBox1,
+  MoreBox1,
+  CircleBox2,
+} from "./styles";
 import { RiAddLine } from "react-icons/ri";
-import ModalGrupos from "../../Modais/ModalGrupos"
+import ModalGrupos from "../../Modais/ModalGrupos";
 import ModalOpcGrupo from "../../Modais/ModalOpcGrupo";
 
-const BancoFalsoGrupos = [
-    { nome: "Trabalho", numeroDePessoas: 8 },
-    { nome: "Academia", numeroDePessoas: 5 },
-    { nome: "Igreja", numeroDePessoas: 12 },
-    { nome: "Família", numeroDePessoas: 6 },
-    { nome: "Futebol", numeroDePessoas: 10 },
-    { nome: "Faculdade", numeroDePessoas: 9 },
-    { nome: "Teatro", numeroDePessoas: 7 },
-    { nome: "Dança", numeroDePessoas: 4 },
-    { nome: "Música", numeroDePessoas: 11 },
-    { nome: "Culinária", numeroDePessoas: 3 },
-    { nome: "Viagem", numeroDePessoas: 6 },
-    { nome: "Esportes", numeroDePessoas: 14 }
-  ];
+const BancoFalsoGrupos = [];
 
 const Grupos = () => {
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpen2, setIsModalOpen2] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
@@ -92,44 +96,53 @@ const Grupos = () => {
     <Grid>
       <Caixa>
         <BoxMore>
-            <DescriptionBox style={{ fontSize: `${fontSize}em`, transition: 'font-size 0.2s ease' }}>
-              <Title>Seus Grupos</Title>
-              <SubTitle>Veja os seus grupos!</SubTitle>
-            </DescriptionBox>
-            <BoxAdd>
-                <ButtonAdd onClick={openModal2}>
-                    <RiAddLine size={"100%"}/>  
-                </ButtonAdd>
-            </BoxAdd>
+          <DescriptionBox
+            style={{
+              fontSize: `${fontSize}em`,
+              transition: "font-size 0.2s ease",
+            }}
+          >
+            <Title>Seus Grupos</Title>
+            <SubTitle>Veja os seus grupos!</SubTitle>
+          </DescriptionBox>
+          <BoxAdd>
+            <ButtonAdd onClick={openModal2}>
+              <RiAddLine size={"100%"} />
+            </ButtonAdd>
+          </BoxAdd>
         </BoxMore>
         <BoxListGroups ref={boxListRef}>
-            {BancoFalsoGrupos.map((grupo, index) => (
-                <GroupBox key={index}>
-                  <GroupName>{grupo.nome}</GroupName>
-                  <GroupItem>{grupo.numeroDePessoas} Membros</GroupItem>
-                </GroupBox>
-            ))}
+          {BancoFalsoGrupos.map((grupo, index) => (
+            <GroupBox key={index}>
+              <GroupName>{grupo.nome}</GroupName>
+              <GroupItem>{grupo.numeroDePessoas} Membros</GroupItem>
+            </GroupBox>
+          ))}
         </BoxListGroups>
         <BoxButton>
-          <ButtonMore onClick={openModal}>
-            Mais detalhes
-          </ButtonMore>
+          <ButtonMore onClick={openModal}>Mais detalhes</ButtonMore>
         </BoxButton>
-        <CircleBox1>
-          .
-        </CircleBox1>
-        <MoreBox1>
-          +
-        </MoreBox1>
-        <CircleBox2>
-          .
-        </CircleBox2>
+        <CircleBox1>.</CircleBox1>
+        <MoreBox1>+</MoreBox1>
+        <CircleBox2>.</CircleBox2>
 
-        {isModalOpen && <ModalGrupos isOpen={!isClosing} CloseOnClick={CloseHandleModalToggle} SuccessOnClick={SuccessHandleModalToggle}/>}
-        {isModalOpen2 && <ModalOpcGrupo isOpen={!isClosing2} CloseOnClick={CloseHandleModalToggle2} SuccessOnClick={SuccessHandleModalToggle2}/>}
+        {isModalOpen && (
+          <ModalGrupos
+            isOpen={!isClosing}
+            CloseOnClick={CloseHandleModalToggle}
+            SuccessOnClick={SuccessHandleModalToggle}
+          />
+        )}
+        {isModalOpen2 && (
+          <ModalOpcGrupo
+            isOpen={!isClosing2}
+            CloseOnClick={CloseHandleModalToggle2}
+            SuccessOnClick={SuccessHandleModalToggle2}
+          />
+        )}
       </Caixa>
     </Grid>
-  )
+  );
 };
 
 export default Grupos;
