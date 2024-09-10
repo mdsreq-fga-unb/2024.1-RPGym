@@ -10,11 +10,13 @@ import {
     GroupItem,
     ModalHeader,
     ModalScrollableContent,
-    BtnButton
+    BtnButton,
+    BtnButton2
 } from "./styles";
 
 import { MdClose } from "react-icons/md";
 import { IoArrowBack } from "react-icons/io5";
+import { MdDeleteOutline } from "react-icons/md";
 
 const BancoFalsoGrupos = [
     { nome: "Trabalho", numeroDePessoas: 8 },
@@ -243,6 +245,18 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
         );
     };
 
+    // Função para deletar o grupo selecionado
+    const handleGroupDelete = () => {
+        if (selectedGroup) {
+            // Remove o grupo da lista
+            const updatedGroups = BancoFalsoGrupos.filter(grupo => grupo.nome !== selectedGroup.nome);
+            // Atualize o estado com a nova lista de grupos
+            BancoFalsoGrupos = updatedGroups;
+            // Limpa a seleção do grupo
+            setSelectedGroup(null);
+        }
+    };
+
     return (
         <div>
             <ModalBackground isOpen={isOpen}>
@@ -274,6 +288,9 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                                     <BtnButton onClick={() => setSelectedGroup(null)}>
                                         <IoArrowBack />
                                     </BtnButton>
+                                    <BtnButton2 onClick={handleGroupDelete}>
+                                        <MdDeleteOutline />
+                                    </BtnButton2 >
                                 </div>
                             ) : (
                                 // Listar todos os grupos quando nenhum estiver selecionado

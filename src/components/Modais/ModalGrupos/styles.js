@@ -174,3 +174,21 @@ export const BtnButton = styled.button`
     color: #ca9012
   }
 `
+
+export const BtnButton2 = styled.button`
+  display: flex;
+  position: absolute;
+  flex-shrink: 0;
+  color: white;
+  z-index: 10;
+  top: 1.35em;
+  right: 3.9em;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+
+  &:hover {
+    color: #ec5353
+  }
+`

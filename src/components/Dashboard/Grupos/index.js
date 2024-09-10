@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Caixa, BoxMore, BoxAdd, ButtonAdd, BoxListGroups, Grid, BoxButton, DescriptionBox, Title, SubTitle, ButtonMore, GroupBox, GroupName, GroupItem, CircleBox1, MoreBox1, CircleBox2 } from "./styles";
 import { RiAddLine } from "react-icons/ri";
 import ModalGrupos from "../../Modais/ModalGrupos";
+import ModalCriarGrupos from "../../Modais/ModalCriarGrupo";
 
 const BancoFalsoGrupos = [
     { nome: "Trabalho", numeroDePessoas: 8 },
@@ -21,7 +22,9 @@ const BancoFalsoGrupos = [
 const Grupos = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen2, setIsModalOpen2] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+  const [isClosing2, setIsClosing2] = useState(false);
   const [fontSize, setFontSize] = useState(1); // Estado para controlar o tamanho da fonte
   const boxListRef = useRef(null); // Ref para o BoxListGroups
 
@@ -33,6 +36,14 @@ const Grupos = () => {
     }, 300); // Ajuste o tempo para o mesmo da duração da animação de saída
   };
 
+  const CloseHandleModalToggle2 = () => {
+    setIsClosing2(true); // Inicia o fechamento
+    setTimeout(() => {
+      setIsModalOpen2(false); // Fecha o modal após a animação
+      setIsClosing2(false); // Reseta o estado de fechamento
+    }, 300); // Ajuste o tempo para o mesmo da duração da animação de saída
+  };
+
   const SuccessHandleModalToggle = () => {
     setIsClosing(true);
     setTimeout(() => {
@@ -41,8 +52,20 @@ const Grupos = () => {
     }, 300);
   };
 
+  const SuccessHandleModalToggle2 = () => {
+    setIsClosing2(true);
+    setTimeout(() => {
+      setIsModalOpen2(false);
+      setIsClosing2(false);
+    }, 300);
+  };
+
   const openModal = () => {
     setIsModalOpen(true);
+  };
+
+  const openModal2 = () => {
+    setIsModalOpen2(true);
   };
 
   // Função que atualiza o tamanho da fonte com base no scroll
@@ -74,7 +97,7 @@ const Grupos = () => {
               <SubTitle>Veja os seus grupos!</SubTitle>
             </DescriptionBox>
             <BoxAdd>
-                <ButtonAdd>
+                <ButtonAdd onClick={openModal2}>
                     <RiAddLine size={"100%"}/>  
                 </ButtonAdd>
             </BoxAdd>
@@ -103,6 +126,7 @@ const Grupos = () => {
         </CircleBox2>
 
         {isModalOpen && <ModalGrupos isOpen={!isClosing} CloseOnClick={CloseHandleModalToggle} SuccessOnClick={SuccessHandleModalToggle}/>}
+        {isModalOpen2 && <ModalCriarGrupos isOpen={!isClosing2} CloseOnClick={CloseHandleModalToggle2} SuccessOnClick={SuccessHandleModalToggle2}/>}
       </Caixa>
     </Grid>
   )
