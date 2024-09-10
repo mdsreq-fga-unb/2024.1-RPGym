@@ -45,7 +45,7 @@ export const ModalBackground = styled.div`
 export const ModalContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   border-style: solid;
   border-width: 1px;
   padding-left: 2em;

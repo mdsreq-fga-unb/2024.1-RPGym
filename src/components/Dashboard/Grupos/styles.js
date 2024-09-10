@@ -78,7 +78,7 @@ export const BoxButton = styled.div`
   right: 230px;
   align-items: center;
   justify-content: center;
-  top: 12em;
+  bottom: 1em;
   right: 2em;
 `;
 
@@ -100,7 +100,7 @@ export const BoxAdd = styled.div`
   transition: all 0.2s;
   font-family: Poppins;
   font-style: normal;
-  margin-left: 23em;
+  right: 1em;
   top: 1.6em; /* Mantém a posição vertical fixa */
   transform: translateY(-50%); /* Centraliza verticalmente */
 
@@ -109,7 +109,7 @@ export const BoxAdd = styled.div`
   }
 
   &:active {
-    transform: translateY(2px);
+    transform: translateY(-0.7em);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
 `;
