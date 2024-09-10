@@ -23,6 +23,10 @@ Seção destinada à informações referentes as nossas Sprints de trabalho, con
 
 Na reunião realizada no dia 02/04/24, abrimos uma exceção quanto à realização de uma Sprint com duração de 2 semanas para a realização das atividades propostas a serem entregues na [Missão 1](../../missoes/missao1.md), definimos que nesse período iríamos nos conhecer melhor como equipe e adotar uma abordagem proativa de execução de tarefas, com autonomia de escolha para desenvolvimento.
 
+#### Atividades de Engenharia de Requisitos:
+Elicitação de Requisitos: Durante esta sprint inicial, realizamos workshops e sessões de brainstorming com os stakeholders para entender as necessidades e expectativas principais do produto. Entrevistas com partes interessadas chave foram conduzidas para coletar requisitos iniciais e alinhar a visão do projeto.
+
+
 ![Kanban da Sprint 0](../../assets/kanbans/sprint0.jpg)
 
 ### Reunião de Retrospectiva
