@@ -91,7 +91,7 @@ const Personagem = ({ userId = localStorage.getItem("userId") }) => {
     <Grid>
       <Box>
         <ApelidoBox>
-          dsdfasdfdfasd
+          {userName !== null ? userName : "Carregando..."}
         </ApelidoBox>
         <BoxInfoPerson>
           <BoxInfos>
