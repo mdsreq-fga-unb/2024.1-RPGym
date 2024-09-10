@@ -23,9 +23,31 @@ function ModalRegister() {
   const [successMessage, setSuccessMessage] = useState(null); // Estado para mensagens de sucesso
 
   const handleCadastro = async () => {
-    console.log(nome, email, senha, confirmarSenha, idade);
+    // Validações dos campos
+    if (nome.trim().length < 1 || nome.trim().length > 50) {
+      setError("O nome deve ter entre 1 e 50 caracteres.");
+      return;
+    }
+
+    // Validação de e-mail com expressão regular
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError("O e-mail fornecido não é válido.");
+      return;
+    }
+
+    if (senha.length < 8 || senha.length > 20) {
+      setError("A senha deve ter entre 8 e 20 caracteres.");
+      return;
+    }
+
     if (senha !== confirmarSenha) {
-      alert("As senhas não coincidem!");
+      setError("As senhas não coincidem!");
+      return;
+    }
+
+    if (idade < 1 || idade > 99) {
+      setError("A idade deve estar entre 1 e 99 anos.");
       return;
     }
 
