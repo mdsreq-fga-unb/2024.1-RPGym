@@ -37,6 +37,10 @@ const Grupos = () => {
   console.log("gruposUsuario");
   console.log(gruposUsuario);
 
+  const getNumeroDeMembros = (grupo) => {
+    return grupo.users.length;
+  };
+
   const CloseHandleModalToggle = () => {
     setIsClosing(true); // Inicia o fechamento
     setTimeout(() => {
@@ -119,8 +123,8 @@ const Grupos = () => {
         <BoxListGroups ref={boxListRef}>
           {BancoFalsoGrupos.map((grupo, index) => (
             <GroupBox key={index}>
-              <GroupName>{grupo.nome}</GroupName>
-              <GroupItem>{grupo.numeroDePessoas} Membros</GroupItem>
+              <GroupName>{grupo.name}</GroupName>
+              <GroupItem>{getNumeroDeMembros(grupo)} Membros</GroupItem>
             </GroupBox>
           ))}
         </BoxListGroups>
