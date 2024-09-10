@@ -45,6 +45,18 @@ Na reunião realizada no dia 25/07/24, revisamos os combinados de equipe adaptan
 
 Discutimos sobre como iriamos definir o Backlog do Produto, então realizamos o processo de [Elicitação e Descoberta de Requisitos](../backlog-do-produto/visao-do-produto/elicitacao-e-descoberta.md) além de definir nossas definições de [Pronto e Prepraparado](../backlog-do-produto/visao-do-produto/elicitacao-e-descoberta.md#definition-of-done-dod-e-definition-of-ready-dor).
 
+#### Atividades de Engenharia de Requisitos:
+
+Análise de Requisitos: Após a coleta de requisitos, fizemos uma análise detalhada para entender a viabilidade técnica e o impacto de cada requisito no projeto. Os requisitos foram priorizados de acordo com o valor de negócio e esforço necessário.
+
+Definição do Backlog do Produto: Com base nos requisitos coletados e analisados, iniciamos a definição do backlog do produto. Transformamos os requisitos em histórias de usuário claras, cada uma com critérios de aceitação bem definidos, para garantir que todos os itens no backlog fossem compreendidos e prontos para desenvolvimento.
+
+Especificação de Requisitos: Refinamos as histórias de usuário resultantes, detalhando-as para incluir critérios de aceitação específicos e condições de "Definition of Ready" (DoR) para garantir que todos os itens estivessem prontos para serem puxados para sprints futuras.
+
+Validação e Verificação: Realizamos uma revisão interna das histórias de usuário e critérios de aceitação para garantir que estivessem alinhados com as necessidades dos stakeholders. Obtemos feedback adicional para garantir a clareza e completude dos requisitos definidos.
+
+Definições de Pronto e Preparado (DoD e DoR): Definimos as "Definition of Ready" (DoR) e "Definition of Done" (DoD) da equipe para garantir que todos os itens do backlog estejam bem preparados antes de serem incluídos em uma sprint, e que os critérios para concluir um item estejam claros e alinhados com as expectativas do cliente.
+
 ![Kanban da Sprint 1](../../assets/kanbans/sprint1.jpg)
 
 ### Reunião de Retrospectiva
