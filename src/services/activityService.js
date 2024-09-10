@@ -23,6 +23,23 @@ const registerActivity = async (requestBody) => {
     console.error("Error creating activity:", error);
   }
 };
+const getActivities = async () => {
+  try {
+    const userId = localStorage.getItem("userId");
+    console.log(userId);
+    const response = await fetch(`${baseUrl}activities/${userId}`);
+    console.log(response);
+    if (!response) {
+      throw new Error("Failed to fetch user");
+    }
+    const data = await response.json();
+    // console.log(data);
 
+    return { data };
+  } catch (error) {
+    console.error("Error fetching user:", error);
+    return { data: null };
+  }
+};
 // eslint-disable-next-line import/no-anonymous-default-export
-export default { registerActivity };
+export default { registerActivity, getActivities };
