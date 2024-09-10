@@ -149,6 +149,9 @@ export const BoxPerson = styled.div`
 
 export const ButtonBox = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
 `;
 
 export const ActiveButton = styled.button`

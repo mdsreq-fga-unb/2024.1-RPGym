@@ -114,18 +114,18 @@ const Personagem = ({ userId = localStorage.getItem("userId") }) => {
                 <RiAddLine style={{ marginRight: "0.3em" }} />
                 Registrar
               </ActiveButton>
+              <MdHistory
+                style={{
+                  marginTop: "0.5em",
+                  cursor: "pointer",
+                  alignSelf: "center",
+                  height: "2em",
+                  width: "5em",
+                  color: "#FFA800",
+                }}
+                onClick={() => setIsHistoricoOpen(true)}
+              />
             </ButtonBox>
-            <MdHistory
-              style={{
-                marginTop: "0.5em",
-                cursor: "pointer",
-                alignSelf: "center",
-                height: "5em",
-                width: "5em",
-                color: "#FFA800",
-              }}
-              onClick={() => setIsHistoricoOpen(true)}
-            />
           </BoxInfos>
           <BoxPerson></BoxPerson>
         </BoxInfoPerson>

@@ -87,7 +87,7 @@ function ModalRegisterCharacter() {
         </ImagemWrapper>
 
         {/* Exibe mensagem de erro se houver */}
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {error && <p style={{ color: "red", fontSize:"0.7em"}}>{error}</p>}
 
         <Butao onClick={handleRegister}>Vamos lá</Butao>
       </DivForms>
