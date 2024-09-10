@@ -4,6 +4,8 @@ O RPGym é um projeto que visa incentivar o público de academia, entretanto, ne
 
 O projeto em questão foi desenvolvido pelos dicentes que cursam a disciplina de Requisitos de Software na Universidade de Brasília (UnB).
 
+O acesso da aplicação está sendo pelo seguinte link: https://rpgym.vercel.app/
+
 ## Integrantes
 
 <center>
