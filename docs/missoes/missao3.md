@@ -4,7 +4,7 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zUhLnLLlheU" frameborder="0" allowfullscreen></iframe>
 
-## Product Backlog Building (PBB)
+## Product Backlog Building 
 
 O Product Backlog Building (PBB) é um método utilizado para criar e elaborar um Product Backlog de forma colaborativa. O Canvas PBB é uma ferramenta que facilita esse processo. O principal objetivo do PBB é auxiliar na construção e refinamento do Product Backlog, garantindo um entendimento compartilhado do produto entre todos os envolvidos e preparando o backlog para que a equipe possa iniciar o trabalho de forma ágil e eficiente.
 
@@ -493,7 +493,7 @@ Formula de prioridade (+) frequência (+) valor
 - O relatório exportado deve manter o layout, formatação, e conteúdo do relatório visualizado na plataforma, incluindo gráficos, tabelas, e quaisquer elementos visuais;
 - Após a exportação, o usuário deve ser capaz de baixar o relatório diretamente para seu dispositivo. 
 
-## Behavior Driven Development (BDD)
+## Behavior Driven Development
 
 O **Behavior Driven Development (BDD)** é uma técnica que transforma os critérios de aceitação de uma história em especificações executáveis. Essa prática utiliza uma linguagem simples e natural, permitindo que todos os envolvidos no projeto compreendam facilmente os requisitos. O BDD segue uma abordagem baseada em especificações e ajuda a validar se um sistema atende aos critérios estabelecidos para cada funcionalidade.
 
