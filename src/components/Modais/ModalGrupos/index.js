@@ -22,90 +22,7 @@ import { MdDeleteOutline } from "react-icons/md";
 import { MdEdit } from "react-icons/md";
 import { TbDoorExit } from "react-icons/tb";
 import ModalEditarGrupo from "../ModalEditarGrupo";
-
-let BancoFalsoGrupos = [
-  {
-    nome: "Trabalho",
-    Description: "Aqui jaz grupo fdsfsfsgdfgsgsgfgsf",
-    Codigo: "AKDJ",
-    numeroDePessoas: 8,
-  },
-  {
-    nome: "Academia",
-    Description: "Aqui jaz grupo2",
-    Codigo: "AIRD",
-    numeroDePessoas: 5,
-  },
-  {
-    nome: "Igreja",
-    Description: "Aqui jaz grupo3",
-    Codigo: "LAMD",
-    numeroDePessoas: 12,
-  },
-  {
-    nome: "Família",
-    Description: "Aqui jaz grupo4",
-    Codigo: "KQWA",
-    numeroDePessoas: 6,
-  },
-  {
-    nome: "Futebol",
-    Description: "Aqui jaz grupo5",
-    Codigo: "ALFJ",
-    numeroDePessoas: 10,
-  },
-  {
-    nome: "Faculdade",
-    Description: "Aqui jaz grupo6",
-    Codigo: "PDKW",
-    numeroDePessoas: 9,
-  },
-  {
-    nome: "Teatro",
-    Description: "Aqui jaz grupo7",
-    Codigo: "IWNF",
-    numeroDePessoas: 7,
-  },
-  {
-    nome: "Dança",
-    Description: "Aqui jaz grupo8",
-    Codigo: "ANMD",
-    numeroDePessoas: 4,
-  },
-  {
-    nome: "Música",
-    Description: "Aqui jaz grupo9",
-    Codigo: "KWEN",
-    numeroDePessoas: 11,
-  },
-  {
-    nome: "Culinária",
-    Description: "Aqui jaz grupo10",
-    Codigo: "AGHQ",
-    numeroDePessoas: 3,
-  },
-  {
-    nome: "Viagem",
-    Description: "Aqui jaz grupo11",
-    Codigo: "QCFD",
-    numeroDePessoas: 6,
-  },
-  {
-    nome: "Esportes",
-    Description: "Aqui jaz grupo12",
-    Codigo: "QAGD",
-    numeroDePessoas: 14,
-  },
-];
-
-let BancoFalsoPessoas = [
-  { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-  { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-  { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-  { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-  { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-  { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-];
+import groupService from "../../../services/groupService"; // Ajuste o caminho para o seu serviço real
 
 function ModalGrupos({ isOpen, CloseOnClick }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -115,6 +32,36 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
   const [marginTop, setMarginTop] = useState(1);
   const [selectedGroup, setSelectedGroup] = useState(null); // Estado para armazenar o grupo selecionado
   const [integrantes, setIntegrantes] = useState([]); // Estado para armazenar os integrantes do grupo
+  const [gruposUsuario, setGruposUsuario] = useState([]); // Estado para armazenar os grupos
+
+  // Carregar grupos do backend
+  useEffect(() => {
+    const fetchGroups = async () => {
+      try {
+        const response = await groupService.getGroups(); // Chama o serviço real
+        setGruposUsuario(response); // Atualiza o estado com os grupos recebidos
+      } catch (error) {
+        console.error("Erro ao buscar grupos", error);
+      }
+    };
+  
+    fetchGroups(); // Chama a função para buscar os grupos
+  }, []);
+
+  // Obter o número de membros de um grupo
+  const getNumeroDeMembros = (grupo) => {
+    return grupo.users ? grupo.users.length : 0;
+  };
+
+  // Carregar integrantes de um grupo selecionado
+  const fetchIntegrantes = async (groupId) => {
+    try {
+      const response = await groupService.getGroupMembers(groupId); // Chama o serviço real para buscar os membros
+      setIntegrantes(response); // Atualiza o estado com os membros do grupo
+    } catch (error) {
+      console.error("Erro ao buscar integrantes", error);
+    }
+  };
 
   const CloseHandleModalToggle = () => {
     setIsClosing(true); // Inicia o fechamento
@@ -161,49 +108,36 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
   // Função para tratar o clique em um grupo
   const handleGroupClick = (group) => {
     setSelectedGroup(group); // Define o grupo clicado
-    setIntegrantes(getIntegrantesDoGrupo(group.nome)); // Atualiza os integrantes do grupo selecionado
-  };
-
-  // Filtrar os integrantes do grupo selecionado
-  const getIntegrantesDoGrupo = (groupName) => {
-    return BancoFalsoPessoas.filter((pessoa) =>
-      pessoa.gruposComuns.includes(groupName)
-    );
+    fetchIntegrantes(group.id); // Carrega os integrantes do grupo selecionado
   };
 
   // Função para deletar o grupo selecionado
-  const handleGroupDelete = () => {
+  const handleGroupDelete = async () => {
     if (selectedGroup) {
-      // Remove o grupo da lista
-      const updatedGroups = BancoFalsoGrupos.filter(
-        (grupo) => grupo.nome !== selectedGroup.nome
-      );
-      // Atualize o estado com a nova lista de grupos
-      BancoFalsoGrupos = updatedGroups;
-      // Limpa a seleção do grupo
-      setSelectedGroup(null);
+      try {
+        await groupService.deleteGroup(selectedGroup.id); // Deleta o grupo no backend
+        const updatedGroups = gruposUsuario.filter(
+          (grupo) => grupo.id !== selectedGroup.id
+        );
+        setGruposUsuario(updatedGroups); // Atualiza o estado com a nova lista de grupos
+        setSelectedGroup(null); // Limpa a seleção do grupo
+      } catch (error) {
+        console.error("Erro ao deletar grupo", error);
+      }
     }
   };
 
   // Função para expulsar um integrante do grupo
-  const handleExpulsarIntegrante = (nome) => {
-    // Atualiza a lista de integrantes removendo o usuário expulso
-    const updatedIntegrantes = integrantes.filter(
-      (pessoa) => pessoa.nome !== nome
-    );
-    setIntegrantes(updatedIntegrantes);
-
-    // Remove o grupo do membro expulso no BancoFalsoPessoas
-    BancoFalsoPessoas = BancoFalsoPessoas.map((pessoa) =>
-      pessoa.nome === nome
-        ? {
-            ...pessoa,
-            gruposComuns: pessoa.gruposComuns.filter(
-              (grupo) => grupo !== selectedGroup.nome
-            ),
-          }
-        : pessoa
-    );
+  const handleExpulsarIntegrante = async (nome) => {
+    try {
+      await groupService.removeMember(selectedGroup.id, nome); // Remove o membro no backend
+      const updatedIntegrantes = integrantes.filter(
+        (pessoa) => pessoa.nome !== nome
+      );
+      setIntegrantes(updatedIntegrantes); // Atualiza a lista de integrantes localmente
+    } catch (error) {
+      console.error("Erro ao expulsar integrante", error);
+    }
   };
 
   return (
@@ -272,7 +206,7 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                   >
                     {selectedGroup.Codigo}
                   </p>
-                  <p>Número de pessoas: {selectedGroup.numeroDePessoas}</p>
+                  <p>Número de pessoas: {getNumeroDeMembros(selectedGroup)}</p>
                   <h3 style={{ marginBottom: "-0.01em" }}>Integrantes:</h3>
                   <div
                     style={{
@@ -311,43 +245,45 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                   <BtnButton3 onClick={openModal}>
                     <MdEdit />
                   </BtnButton3>
+                  <ModalEditarGrupo
+                    isOpen={isModalOpen}
+                    onClose={CloseHandleModalToggle}
+                    onSuccess={SuccessHandleModalToggle}
+                  />
                 </div>
               ) : (
-                // Listar todos os grupos quando nenhum estiver selecionado
-                BancoFalsoGrupos.map((grupo, index) => (
-                  <GroupBox
-                    key={index}
-                    onClick={() => handleGroupClick(grupo)}
-                    style={{ cursor: "pointer" }}
-                  >
-                    <GroupName>{grupo.nome}</GroupName>
-                    <GroupItem>
-                      <p
-                        style={{
-                          fontSize: "0.9em",
-                          fontWeight: "200",
-                          marginRight: "1em",
-                          fontStyle: "normal",
-                        }}
-                      >
-                        Quantidade:
-                      </p>{" "}
-                      {grupo.numeroDePessoas} Membros
-                    </GroupItem>
-                  </GroupBox>
-                ))
+                // Verificar se gruposUsuario é um array antes de usar .map()
+                Array.isArray(gruposUsuario) && gruposUsuario.length > 0 ? (
+                  gruposUsuario.map((grupo, index) => (
+                    <GroupBox
+                      key={index}
+                      onClick={() => handleGroupClick(grupo)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <GroupName>{grupo.nome}</GroupName>
+                      <GroupItem>
+                        <p
+                          style={{
+                            fontSize: "0.9em",
+                            fontWeight: "200",
+                            marginRight: "1em",
+                            fontStyle: "normal",
+                          }}
+                        >
+                          Quantidade:
+                        </p>{" "}
+                        {grupo.numeroDePessoas} Membros
+                      </GroupItem>
+                    </GroupBox>
+                  ))
+                ) : (
+                  <p style={{fontStyle:"italic"}}>Você não está em nenhum grupo!</p> // Mensagem quando não há grupos
+                )
               )}
             </BoxListPersons>
           </ModalScrollableContent>
         </ModalContainer>
       </ModalBackground>
-      {isModalOpen && (
-        <ModalEditarGrupo
-          isOpen={!isClosing}
-          CloseOnClick={CloseHandleModalToggle}
-          SuccessOnClick={SuccessHandleModalToggle}
-        />
-      )}
     </div>
   );
 }

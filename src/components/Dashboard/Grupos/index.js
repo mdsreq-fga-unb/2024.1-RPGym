@@ -30,13 +30,17 @@ const Grupos = () => {
   const [isClosing2, setIsClosing2] = useState(false);
   const [fontSize, setFontSize] = useState(1); // Estado para controlar o tamanho da fonte
   const boxListRef = useRef(null); // Ref para o BoxListGroups
-  const [gruposUsuario, setGruposUsuario] = useState(null); // Estado para armazenar os grupos
+  const [gruposUsuario, setGruposUsuario] = useState([]); // Array vazio como valor inicial
 
   useEffect(() => {
     const fetchGroups = async () => {
-      const response = await groupService.getGroups(); // Chama o serviço
-      console.log(response); // Verifica a estrutura dos dados retornados
-      setGruposUsuario(response); // Atualiza o estado com os grupos recebidos
+      try {
+        const response = await groupService.getGroups(); // Chama o serviço real
+        setGruposUsuario(Array.isArray(response) ? response : []); // Garante que o estado seja um array
+      } catch (error) {
+        console.error("Erro ao buscar grupos", error);
+        setGruposUsuario([]); // Em caso de erro, mantém o estado como array vazio
+      }
     };
   
     fetchGroups(); // Chama a função para buscar os grupos
