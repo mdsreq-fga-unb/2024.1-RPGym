@@ -152,6 +152,189 @@ _Incentivar o público de academia_
 | 15  | Cancelar inscrições em Campeonatos              | Média
 | 19  | Chat de Grupo: Implementar a função de Chat para que os usuários possam conversar entre si.                          | Alta
 
+## Definition of Done (DoD) e Definition of Ready (DoR)
+
+### DOR
+
+**US01** - Eu, como usuário, gostaria de realizar meu cadastro de conta no sistema para acessar o sistema. 
+| Critério                                                                                                           | Checklist |
+|-------------------------------------------------------------------------------------------------------------------|-----------|
+| Todos compreenderam o Requisito?                                                                           | [ ✅]       |
+| Documentação do levantamento dos requisitos feita de forma objetiva e clara, de forma que possa ser consultada depois? | [ ✅]       |
+| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [✅ ]       |
+| O Product Owner aceitou e validou o requisito?                                                                    | [✅ ]       |
+
+US02 - Eu, como usuário, gostaria de inserir e verificar meu peso e altura para visualizar meu IMC. 
+
+| Critério                                                                                                           | Checklist |
+|-------------------------------------------------------------------------------------------------------------------|-----------|
+| Todos compreenderam o Requisito?                                                                           | [ ✅]       |
+| Documentação do levantamento dos requisitos feita de forma objetiva e clara, de forma que possa ser consultada depois? | [ ✅]       |
+| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [✅ ]       |
+| O Product Owner aceitou e validou o requisito?                                                                    | [✅ ]       |
+
+US03 - Eu, como usuário, gostaria de registrar e visualizar minhas atividades físicas para ter uma referência do meu progresso físico ao longo do tempo.
+
+| Critério                                                                                                           | Checklist |
+|-------------------------------------------------------------------------------------------------------------------|-----------|
+| Todos compreenderam o Requisito?                                                                           | [ ✅]       |
+| Documentação do levantamento dos requisitos feita de forma objetiva e clara, de forma que possa ser consultada depois? | [ ✅]       |
+| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [✅ ]       |
+| O Product Owner aceitou e validou o requisito?                                                                    | [✅ ]       |
+
+US07 - Eu, como usuário, gostaria de criar um grupo para incentivar uns aos outros a praticar exercícios físicos. 
+
+| Critério                                                                                                           | Checklist |
+|-------------------------------------------------------------------------------------------------------------------|-----------|
+| Todos compreenderam o Requisito?                                                                           | [ ✅]       |
+| Documentação do levantamento dos requisitos feita de forma objetiva e clara, de forma que possa ser consultada depois? | [ ✅]       |
+| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [✅ ]       |
+| O Product Owner aceitou e validou o requisito?                                                                    | [✅ ]       |
+
+US13 - Eu, como usuário, gostaria de realizar meu login no sistema utilizando email e senha previamente cadastrados para acessar as funcionalidades do sistema.
+
+| Critério                                                                                                           | Checklist |
+|-------------------------------------------------------------------------------------------------------------------|-----------|
+| Todos compreenderam o Requisito?                                                                           | [ ✅]       |
+| Documentação do levantamento dos requisitos feita de forma objetiva e clara, de forma que possa ser consultada depois? | [ ✅]       |
+| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [✅ ]       |
+| O Product Owner aceitou e validou o requisito?                                                                    | [✅ ]       |
+
+US14 - Eu, como usuário, gostaria de editar minhas informações na plataforma para corrigir dados incorretos ou desatualizados. 
+
+| Critério                                                                                                           | Checklist |
+|-------------------------------------------------------------------------------------------------------------------|-----------|
+| Todos compreenderam o Requisito?                                                                           | [ ✅]       |
+| Documentação do levantamento dos requisitos feita de forma objetiva e clara, de forma que possa ser consultada depois? | [ ✅]       |
+| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [✅ ]       |
+| O Product Owner aceitou e validou o requisito?                                                                    | [✅ ]       |
+
+US16 - Eu, como usuário, gostaria de editar as informações do meu grupo que criei para refletir mudanças no propósito ou estilo do grupo. 
+
+| Critério                                                                                                           | Checklist |
+|-------------------------------------------------------------------------------------------------------------------|-----------|
+| Todos compreenderam o Requisito?                                                                           | [ ✅]       |
+| Documentação do levantamento dos requisitos feita de forma objetiva e clara, de forma que possa ser consultada depois? | [ ✅]       |
+| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [✅ ]       |
+| O Product Owner aceitou e validou o requisito?                                                                    | [✅ ]       |
+
+US17 - Eu, como usuário, gostaria de excluir um grupo que criei anteriormente para eliminar um grupo que foi criado por engano ou já não é mais ativo.
+
+| Critério                                                                                                           | Checklist |
+|-------------------------------------------------------------------------------------------------------------------|-----------|
+| Todos compreenderam o Requisito?                                                                           | [ ✅]       |
+| Documentação do levantamento dos requisitos feita de forma objetiva e clara, de forma que possa ser consultada depois? | [ ✅]       |
+| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [✅ ]       |
+| O Product Owner aceitou e validou o requisito?                                                                    | [✅ ]       |
+
+US18 - Eu, como usuário, gostaria de retirar um usuário que está no grupo que eu criei como forma de manter a harmonia do grupo.
+
+| Critério                                                                                                           | Checklist |
+|-------------------------------------------------------------------------------------------------------------------|-----------|
+| Todos compreenderam o Requisito?                                                                           | [ ✅]       |
+| Documentação do levantamento dos requisitos feita de forma objetiva e clara, de forma que possa ser consultada depois? | [ ✅]       |
+| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [✅ ]       |
+| O Product Owner aceitou e validou o requisito?                                                                    | [✅ ]       |
+
+### DOD
+
+**US01** - Eu, como usuário, gostaria de realizar meu cadastro de conta no sistema para acessar o sistema. 
+| Critério                                                                                                  | Checklist |
+|-----------------------------------------------------------------------------------------------------------|-----------|
+| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+
+
+US02 - Eu, como usuário, gostaria de inserir e verificar meu peso e altura para visualizar meu IMC. 
+
+| Critério                                                                                                  | Checklist |
+|-----------------------------------------------------------------------------------------------------------|-----------|
+| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+
+
+US03 - Eu, como usuário, gostaria de registrar e visualizar minhas atividades físicas para ter uma referência do meu progresso físico ao longo do tempo.
+
+| Critério                                                                                                  | Checklist |
+|-----------------------------------------------------------------------------------------------------------|-----------|
+| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+
+
+US07 - Eu, como usuário, gostaria de criar um grupo para incentivar uns aos outros a praticar exercícios físicos. 
+
+| Critério                                                                                                  | Checklist |
+|-----------------------------------------------------------------------------------------------------------|-----------|
+| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+
+
+US13 - Eu, como usuário, gostaria de realizar meu login no sistema utilizando email e senha previamente cadastrados para acessar as funcionalidades do sistema.
+
+| Critério                                                                                                  | Checklist |
+|-----------------------------------------------------------------------------------------------------------|-----------|
+| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+
+
+US14 - Eu, como usuário, gostaria de editar minhas informações na plataforma para corrigir dados incorretos ou desatualizados. 
+
+|Critério                                                                                                  | Checklist |
+|-----------------------------------------------------------------------------------------------------------|-----------|
+| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+
+US16 - Eu, como usuário, gostaria de editar as informações do meu grupo que criei para refletir mudanças no propósito ou estilo do grupo. 
+
+| Critério                                                                                                  | Checklist |
+|-----------------------------------------------------------------------------------------------------------|-----------|
+| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+
+
+US17 - Eu, como usuário, gostaria de excluir um grupo que criei anteriormente para eliminar um grupo que foi criado por engano ou já não é mais ativo.
+
+| Critério                                                                                                  | Checklist |
+|-----------------------------------------------------------------------------------------------------------|-----------|
+| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+
+US18 - Eu, como usuário, gostaria de retirar um usuário que está no grupo que eu criei como forma de manter a harmonia do grupo.
+
+| Critério                                                                                                  | Checklist |
+|-----------------------------------------------------------------------------------------------------------|-----------|
+| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+
+
+
 ## Níveis de Prioridade
 
 Na matriz apresentada, foram consideradas três dimensões para avaliar cada feature: perspectiva de negócios, entendimento técnico e urgência.
