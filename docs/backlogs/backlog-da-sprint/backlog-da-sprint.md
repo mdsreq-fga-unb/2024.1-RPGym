@@ -98,6 +98,7 @@ Na reunião realizada no dia 14/08/24, discutimos primariamente sobre como cada 
 Após definir como iríamos desenvolver as atividades, percebemos nosso prazo curto quanto ao desenvolvimento do Produto em termos de software, então atualizamos as tecnologias utilizadas tanto em questão de projeto quanto produto visto que não estávamos utilizando tudo que propomos inicialmente, tornando nossa documentação centralizada totalmente no GitHub Pages.
 
 #### Atividades de Engenharia de Requisitos:
+
 Aspectos Humanos e Sociais da Engenharia de Requisitos: Focamos na compreensão dos aspectos humanos e sociais para garantir que as necessidades dos usuários finais fossem bem entendidas. 
 
 Modelos de Casos de Uso: Desenvolvemos modelos de casos de uso para representar graficamente as interações entre os usuários e o sistema. Isso ajudou a identificar funcionalidades essenciais e priorizar o desenvolvimento de acordo com o impacto no usuário final. Os casos de uso também foram usados para validar e refinar requisitos específicos, garantindo que fossem claros e completos.
@@ -120,6 +121,16 @@ A equipe se mostrou pela primeira vez alinhada totalmente, nossas engrenagens fi
 
 Na reunião realizada no dia 20/08/24, discutimos sobre os pontos levantados pela Professora Cristiane após nossa reunião de controle presencial acerca do projeto e realizamos um levantamento dos pontos necessários no refinamento do nosso Backlog geral (Produto, Projeto e Sprint) e chegamos a conclusão que necessitávamos de uma repaginada geral na nossa documentação, visto que nossos documentos estavam desorganizados entre si e muito granularizados.
 
+#### Atividades de Engenharia de Requisitos:
+
+Refinamento do Backlog: Iniciamos um processo de refinamento do backlog, reorganizando e consolidando as histórias de usuário, tarefas, e outros artefatos de projeto. Atualizamos as prioridades com base nos feedbacks recebidos e garantimos que cada item do backlog estivesse alinhado com os objetivos estratégicos do projeto. Esse refinamento também incluiu a redefinição de critérios de aceitação para garantir que as entregas futuras estejam de acordo com as expectativas dos stakeholders.
+
+Revisão e Atualização da Documentação de Requisitos: Realizamos uma revisão detalhada de toda a documentação de requisitos, centralizando as informações no GitHub Pages para garantir acessibilidade e clareza. Consolidamos documentos redundantes e fragmentados, criando uma estrutura mais coesa e integrada, facilitando a navegação e a compreensão por parte de todos os membros da equipe e stakeholders.
+
+Revisão de Casos de Uso e Modelagem: Ajustamos os modelos de casos de uso existentes para refletir as mudanças nas prioridades e nos requisitos do produto. Revisamos e refinamos os cenários de uso, garantindo que todos os fluxos de trabalho e interações do usuário estivessem corretamente documentados e alinhados com o escopo atualizado do projeto.
+
+Validação e Verificação Contínua: Com base nos feedbacks dos professores e stakeholders, realizamos sessões contínuas de validação e verificação dos requisitos para garantir que as modificações atendiam às necessidades do projeto. Este processo ajudou a identificar e corrigir quaisquer discrepâncias antes que se tornassem problemas maiores no desenvolvimento.
+
 ![Kanban da Sprint 4](../../assets/kanbans/sprint4.jpg)
 
 ### Reunião de Retrospectiva
@@ -139,7 +150,17 @@ O feedback positivo foi essencial para o levantamento do moral da equipe que no 
 
 Na reunião realizada no dia 27/08/24, a equipe optou por revisitar o MVP, levando em consideração todo o replanejamento ocorrido ao longo das últimas Sprints identificamos que o que estava definido anteriormente não seria possível de ser realizado com contigente reduzido fora o pouco tempo disponível.
 
-Com o novo modelo de MVP realizado, a equipe se dividiu em times de backend e frontend para a realização das features necessárias para a entrega do MVP 1, respeitando nosso combinado de autonomia dentro da equipe.
+Com o novo modelo de MVP em mãos, a equipe foi dividida em times de backend e frontend, cada um focado em desenvolver as features necessárias para a entrega do MVP 1, respeitando o nosso combinado de autonomia dentro da equipe. O foco foi em entregar o valor máximo dentro das capacidades atuais, priorizando as funcionalidades de maior impacto para os usuários e stakeholders.
+
+#### Atividades de Engenharia de Requisitos:
+
+Redefinição do MVP: Revisitamos e redefinimos o escopo do MVP, priorizando os requisitos mais críticos e ajustando as expectativas com base nos recursos disponíveis e no tempo restante. Esse processo envolveu a revisão de todas as histórias de usuário e requisitos no backlog, para garantir que o novo MVP representasse um conjunto mínimo de funcionalidades viáveis e alinhadas com a visão do produto.
+
+Alinhamento dos Times com os Requisitos: Dividimos a equipe em times de backend e frontend, garantindo que ambos estivessem bem alinhados com os requisitos redefinidos para o MVP. Requisitos específicos foram mapeados para as entregas de cada time, assegurando que todas as funcionalidades críticas fossem cobertas e que o desenvolvimento ocorresse de forma coordenada e integrada.
+
+Priorização Baseada em Impacto e Viabilidade: Utilizamos uma abordagem de priorização baseada em impacto e viabilidade, identificando quais funcionalidades agregariam maior valor ao usuário final com o menor custo de implementação. Isso permitiu uma melhor alocação dos recursos humanos e técnicos da equipe, otimizando o desenvolvimento dentro do prazo apertado.
+
+Monitoramento Contínuo e Adaptação: Estabelecemos checkpoints regulares para monitorar o progresso de cada time em relação aos requisitos do MVP. Esse monitoramento contínuo permitiu adaptações rápidas, garantindo que os esforços da equipe fossem direcionados para as áreas mais críticas e alinhadas com os objetivos da sprint.
 
 ![Kanban da Sprint 5](../../assets/kanbans/sprint5.jpg)
 
