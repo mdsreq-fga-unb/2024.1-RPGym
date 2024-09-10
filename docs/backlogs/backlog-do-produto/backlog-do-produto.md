@@ -156,7 +156,7 @@ _Incentivar o público de academia_
 
 ### DOR
 
-**US01** - Eu, como usuário, gostaria de realizar meu cadastro de conta no sistema para acessar o sistema. 
+US01 - Eu, como usuário, gostaria de realizar meu cadastro de conta no sistema para acessar o sistema. 
 | Critério                                                                                                           | Checklist |
 |-------------------------------------------------------------------------------------------------------------------|-----------|
 | Todos compreenderam o Requisito?                                                                           | [ ✅]       |
@@ -215,7 +215,7 @@ US16 - Eu, como usuário, gostaria de editar as informações do meu grupo que c
 |-------------------------------------------------------------------------------------------------------------------|-----------|
 | Todos compreenderam o Requisito?                                                                           | [ ✅]       |
 | Documentação do levantamento dos requisitos feita de forma objetiva e clara, de forma que possa ser consultada depois? | [ ✅]       |
-| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [✅ ]       |
+| A equipe é capaz de realizar o desenvolvimento desse Requisito?                                                   | [ ✅ ]       |
 | O Product Owner aceitou e validou o requisito?                                                                    | [✅ ]       |
 
 US17 - Eu, como usuário, gostaria de excluir um grupo que criei anteriormente para eliminar um grupo que foi criado por engano ou já não é mais ativo.
@@ -306,32 +306,32 @@ US16 - Eu, como usuário, gostaria de editar as informações do meu grupo que c
 
 | Critério                                                                                                  | Checklist |
 |-----------------------------------------------------------------------------------------------------------|-----------|
-| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
-| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
-| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
-| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
-| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+| O Requisito atende aos critérios do backlog?                                                              | [❌]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [❌]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [❌]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [❌]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [❌]      |
 
 
 US17 - Eu, como usuário, gostaria de excluir um grupo que criei anteriormente para eliminar um grupo que foi criado por engano ou já não é mais ativo.
 
 | Critério                                                                                                  | Checklist |
 |-----------------------------------------------------------------------------------------------------------|-----------|
-| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
-| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
-| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
-| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
-| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+| O Requisito atende aos critérios do backlog?                                                              | [❌]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [❌]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [❌]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [❌]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [❌]      |
 
 US18 - Eu, como usuário, gostaria de retirar um usuário que está no grupo que eu criei como forma de manter a harmonia do grupo.
 
 | Critério                                                                                                  | Checklist |
 |-----------------------------------------------------------------------------------------------------------|-----------|
-| O Requisito atende aos critérios do backlog?                                                              | [✅]      |
-| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [✅]      |
-| O Requisito não causou alguma instabilidade no sistema?                                                   | [✅]      |
-| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [✅]      |
-| O código foi integrado ao repositório principal sem conflitos.                                            | [✅]      |
+| O Requisito atende aos critérios do backlog?                                                              | [❌]      |
+| Todas as funcionalidades foram implementadas e estão operacionais conforme descrito?                      | [❌]      |
+| O Requisito não causou alguma instabilidade no sistema?                                                   | [❌]      |
+| Testes manuais foram realizados para verificar que o fluxo de trabalho funciona conforme esperado?        | [❌]      |
+| O código foi integrado ao repositório principal sem conflitos.                                            | [❌]      |
 
 
 
