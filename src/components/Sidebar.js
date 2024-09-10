@@ -3,7 +3,6 @@ import campeonato from "../assets/images/icones/campeonatos.png";
 import home from "../assets/images/icones/home.png";
 import ranking from "../assets/images/icones/ranking.png";
 import sobre from "../assets/images/icones/sobre.png";
-import usuario from "../assets/images/icones/usuario.png";
 import configuracoes from "../assets/images/icones/configuracoes.png";
 import ModalPerfil from "../components/Modais/ModalPerfil";
 
@@ -59,9 +58,7 @@ const Sidebar = () => {
         <img src={sobre} alt="sobre" />
       </div>
       <div className="UsuarioPadding"></div>
-      <div className="IconUsuario">
-        <img src={usuario} alt="usuario" />
-      </div>
+      <div className="IconUsuario"></div>
       <div className="Usuario">
         <div className="UsuarioTexto">Usuário</div>
         <div className="Configuracoes">

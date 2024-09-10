@@ -17,8 +17,21 @@ function ModalCriarGrupos({ isOpen, CloseOnClick, SuccessOnClick }) {
   const [nomeDescricao, setNomeDescricao] = useState("");
   const userId = localStorage.getItem("userId");
   // Função para verificar se todos os campos estão preenchidos
+  // Função para verificar se todos os campos estão preenchidos
   const areFieldsValid = () => {
-    return nomeGrupo.trim() !== "", nomeDescricao.trim() !== "";
+    // Valida o nome do grupo (deve ter entre 1 e 50 caracteres)
+    if (nomeGrupo.trim().length < 1 || nomeGrupo.trim().length > 50) {
+      alert("O nome do grupo deve ter entre 1 e 50 caracteres.");
+      return false;
+    }
+
+    // Valida se a descrição não está vazia
+    if (nomeDescricao.trim() === "") {
+      alert("A descrição do grupo não pode estar vazia.");
+      return false;
+    }
+
+    return true;
   };
   const generateJoinCode = (length = 3) => {
     const charset =
@@ -30,6 +43,7 @@ function ModalCriarGrupos({ isOpen, CloseOnClick, SuccessOnClick }) {
     }
     return joinCode;
   };
+
   // Função para lidar com o clique de "Registrar"
   const handleRegistrar = () => {
     if (areFieldsValid()) {

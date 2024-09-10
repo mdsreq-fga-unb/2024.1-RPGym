@@ -18,20 +18,38 @@ function ModalEditarGrupo({ isOpen, CloseOnClick, SuccessOnClick }) {
 
   // Função para verificar se todos os campos estão preenchidos
   const areFieldsValid = () => {
-    return (
-      nomeGrupo.trim() !== "",
-      nomeDescricao.trim() !== ""
+    return nomeGrupo.trim() !== "", nomeDescricao.trim() !== "";
+  };
+
+  const confirmAction = () => {
+    const confirmed = window.confirm(
+      "Tem certeza que deseja continuar a ação?"
     );
+    return confirmed;
+  };
+
+  const handleDelete = () => {
+    if (confirmAction()) {
+      // Execute a ação se o usuário confirmar
+      console.log("Ação confirmada.");
+    } else {
+      // Cancelar a ação
+      console.log("Ação cancelada.");
+    }
   };
 
   // Função para lidar com o clique de "Registrar"
   const handleRegistrar = () => {
     if (areFieldsValid()) {
-      const Grupo = {
-        nome: nomeGrupo,
-        nomeDescricao,
-      };
-      SuccessOnClick(Grupo); // Envia os dados para a função SuccessOnClick
+      if (window.confirm("Tem certeza que deseja continuar a ação?")) {
+        const Grupo = {
+          nome: nomeGrupo,
+          nomeDescricao,
+        };
+        SuccessOnClick(Grupo); // Envia os dados para a função SuccessOnClick
+      } else {
+        alert("Ação cancelada!");
+      }
     } else {
       alert("Preencha todos os campos antes de registrar!");
     }
