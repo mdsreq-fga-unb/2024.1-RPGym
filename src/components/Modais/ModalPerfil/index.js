@@ -13,9 +13,8 @@ import {
 
 import { useNavigate } from "react-router-dom";
 import { MdClose } from "react-icons/md";
-
+import userService from "../../../services/userService";
 function ModalPerfil({ isOpen, CloseOnClick, SuccessOnClick }) {
-  // Estados para armazenar os valores dos inputs
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [nome, setNome] = useState("");
@@ -25,7 +24,6 @@ function ModalPerfil({ isOpen, CloseOnClick, SuccessOnClick }) {
 
   const navigate = useNavigate();
 
-  // Função para verificar se todos os campos estão preenchidos
   const areFieldsValid = () => {
     return (
       email.trim() !== "" &&
@@ -37,28 +35,27 @@ function ModalPerfil({ isOpen, CloseOnClick, SuccessOnClick }) {
     );
   };
 
-  // Função para lidar com o clique de "Registrar"
   const handleRegistrar = () => {
+    const userId = localStorage.getItem("userId");
     if (areFieldsValid()) {
       const registro = {
         email: email,
-        senha,
-        nome,
-        idade,
-        altura,
-        peso,
+        password: senha,
+        name: nome,
+        age: idade,
+        height: altura,
+        weight: peso,
       };
-      SuccessOnClick(registro); // Envia os dados para a função SuccessOnClick
+      userService.updateUser(userId, registro);
+      SuccessOnClick(registro);
+      window.location.reload();
     } else {
       alert("Preencha todos os campos antes de registrar!");
     }
   };
   const handleLogout = () => {
-    // Limpar a sessão do usuário
     localStorage.removeItem("id");
     sessionStorage.removeItem("id");
-
-    // Redirecionar para a página de login
     navigate("/");
   };
 

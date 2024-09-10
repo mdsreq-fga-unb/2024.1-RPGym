@@ -1,8 +1,7 @@
+const baseUrl = "https://rpgym-backend-862d64fb9e62.herokuapp.com/";
 const getIMC = async (userId) => {
   try {
-    const response = await fetch(
-      `http://localhost:3001/activities/${userId}/imc`
-    );
+    const response = await fetch(`${baseUrl}activities/${userId}/imc`);
     if (!response.ok) {
       throw new Error("Failed to fetch IMC");
     }
@@ -15,7 +14,7 @@ const getIMC = async (userId) => {
 };
 const getUserMetrics = async (userId) => {
   try {
-    const response = await fetch(`http://localhost:3001/users/${userId}`);
+    const response = await fetch(`${baseUrl}users/${userId}`);
     if (!response.ok) {
       throw new Error("Failed to fetch user metrics");
     }
@@ -31,7 +30,7 @@ const getUserMetrics = async (userId) => {
 };
 const getUser = async (userId) => {
   try {
-    const response = await fetch(`http://localhost:3001/users/${userId}`);
+    const response = await fetch(`${baseUrl}users/${userId}`);
     if (!response) {
       throw new Error("Failed to fetch user");
     }
@@ -46,7 +45,7 @@ const getUser = async (userId) => {
 };
 const getUserByEmail = async (email) => {
   try {
-    const response = await fetch(`http://localhost:3001/users/email/${email}`);
+    const response = await fetch(`${baseUrl}users/email/${email}`);
     if (!response) {
       throw new Error("Failed to fetch user");
     }
@@ -61,7 +60,7 @@ const getUserByEmail = async (email) => {
 };
 const login = async (email, password) => {
   try {
-    const response = await fetch(`http://localhost:3001/login/`, {
+    const response = await fetch(`${baseUrl}login/`, {
       method: "POST", // Mudando o método para POST
       headers: {
         "Content-Type": "application/json", // Indicando que o corpo da requisição é JSON
@@ -85,7 +84,7 @@ const login = async (email, password) => {
 };
 const createUser = async (userData) => {
   try {
-    const response = await fetch("http://localhost:3001/users/", {
+    const response = await fetch(`${baseUrl}users/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -108,8 +107,8 @@ const updateUser = async (userId, userData) => {
   console.log("userData");
   console.log(userData);
   try {
-    const response = await fetch(`http://localhost:3001/users/${userId}`, {
-      method: "PUT",
+    const response = await fetch(`${baseUrl}users/${userId}`, {
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${localStorage.getItem("token")}`,
