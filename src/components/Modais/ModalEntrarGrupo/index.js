@@ -10,6 +10,7 @@ import {
 
 import { MdClose } from "react-icons/md";
 import InputText from "../../inputText";
+import groupService from "../../../services/groupService";
 
 function ModalEntrarGrupo({ isOpen, CloseOnClick, SuccessOnClick }) {
   // Estados para armazenar os valores dos inputs
@@ -17,18 +18,15 @@ function ModalEntrarGrupo({ isOpen, CloseOnClick, SuccessOnClick }) {
 
   // Função para verificar se todos os campos estão preenchidos
   const areFieldsValid = () => {
-    return (
-      nomeCodigo.trim() !== ""
-    );
+    return nomeCodigo.trim() !== "";
   };
 
   // Função para lidar com o clique de "Registrar"
   const handleRegistrar = () => {
     if (areFieldsValid()) {
-      const Grupo = {
-        nome: nomeCodigo,
-      };
-      SuccessOnClick(Grupo); // Envia os dados para a função SuccessOnClick
+      groupService.joinGroupByCode(nomeCodigo);
+      SuccessOnClick(nomeCodigo); // Envia os dados para a função SuccessOnClick
+      window.location.reload();
     } else {
       alert("Preencha todos os campos antes de registrar!");
     }

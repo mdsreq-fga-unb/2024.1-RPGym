@@ -86,17 +86,21 @@ const deleteGroup = async (groupId) => {
 
 const joinGroupByCode = async (joinCode) => {
   const userId = localStorage.getItem("userId");
+  console.log(userId);
+  console.log(joinCode);
   try {
-    const response = await fetch(`${baseUrl}group/join`, {
+    const response = await fetch(`${baseUrl}group/${userId}/join/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ joinCode, userId }),
+      body: JSON.stringify({ joinCode }),
     });
+
     if (!response.ok) {
       throw new Error("Failed to join group");
     }
+
     const data = await response.json();
     return { data };
   } catch (error) {
