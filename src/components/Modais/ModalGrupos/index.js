@@ -38,13 +38,13 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
   useEffect(() => {
     const fetchGroups = async () => {
       try {
-        const response = await groupService.getGroups(); // Chama o serviço real
-        setGruposUsuario(response); // Atualiza o estado com os grupos recebidos
+        const response = await groupService.getGroups(); // Chama o serviço
+        setGruposUsuario(response.data); // Atualiza o estado com os grupos recebidos
       } catch (error) {
         console.error("Erro ao buscar grupos", error);
       }
     };
-  
+
     fetchGroups(); // Chama a função para buscar os grupos
   }, []);
 
@@ -57,7 +57,7 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
   const fetchIntegrantes = async (groupId) => {
     try {
       const response = await groupService.getGroupMembers(groupId); // Chama o serviço real para buscar os membros
-      setIntegrantes(response); // Atualiza o estado com os membros do grupo
+      setIntegrantes(response.data); // Atualiza o estado com os membros do grupo
     } catch (error) {
       console.error("Erro ao buscar integrantes", error);
     }
@@ -180,7 +180,7 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                   }}
                 >
                   <h2 style={{ fontSize: "1em" }}>
-                    Detalhes do Grupo: {selectedGroup.nome}
+                    Detalhes do Grupo: {selectedGroup.name}
                   </h2>
                   <p>Descrição do grupo:</p>
                   <br />
@@ -192,7 +192,7 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                       marginTop: "-1.7em",
                     }}
                   >
-                    {selectedGroup.Description}
+                    {selectedGroup.description}
                   </p>
                   <p>Código:</p>
                   <br />
@@ -204,7 +204,7 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                       marginTop: "-1.7em",
                     }}
                   >
-                    {selectedGroup.Codigo}
+                    {selectedGroup.joinCode}
                   </p>
                   <p>Número de pessoas: {getNumeroDeMembros(selectedGroup)}</p>
                   <h3 style={{ marginBottom: "-0.01em" }}>Integrantes:</h3>
@@ -224,10 +224,10 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                           key={index}
                           style={{ display: "flex", flexDirection: "row" }}
                         >
-                          <li style={{ marginBottom: "1em" }}>{pessoa.nome}</li>
+                          <li style={{ marginBottom: "1em" }}>{pessoa.name}</li>
                           <BtnButton4
                             onClick={() =>
-                              handleExpulsarIntegrante(pessoa.nome)
+                              handleExpulsarIntegrante(pessoa.users)
                             }
                           >
                             <TbDoorExit size={"0.7em"} />
@@ -260,7 +260,7 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                       onClick={() => handleGroupClick(grupo)}
                       style={{ cursor: "pointer" }}
                     >
-                      <GroupName>{grupo.nome}</GroupName>
+                      <GroupName>{grupo.name}</GroupName>
                       <GroupItem>
                         <p
                           style={{
@@ -272,7 +272,7 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                         >
                           Quantidade:
                         </p>{" "}
-                        {grupo.numeroDePessoas} Membros
+                        {getNumeroDeMembros(grupo)} Membros
                       </GroupItem>
                     </GroupBox>
                   ))
