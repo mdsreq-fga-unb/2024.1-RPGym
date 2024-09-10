@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import MalePerson from "../../../assets/images/Personagens/MalePerson.png";
+import FemalePerson from "../../../assets/images/Personagens/FemalePerson.png"
 
 // Defina a animação de subir e descer
 const moveUpDown = keyframes`
@@ -28,6 +29,7 @@ export const Box = styled.div`
   border-radius: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 `;
+
 export const BoxInfos = styled.div`
   display: flex;
   margin-left: 0.2em;
@@ -131,10 +133,11 @@ export const AlturaBox = styled.div`
   margin-left: 1em;
 `;
 
+//1 male - 2 female
 export const BoxPerson = styled.div`
   display: flex;
   position: relative;
-  background-image: url(${MalePerson});
+  background-image: url(${(props) => props.personagemType === 1 ? MalePerson : FemalePerson}); // Usa a imagem baseada no tipo
   border-radius: 10px;
   background-size: cover;
   background-position: center;

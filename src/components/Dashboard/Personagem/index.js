@@ -39,12 +39,13 @@ const Personagem = ({ userId = localStorage.getItem("userId") }) => {
   const [peso, setPeso] = useState();
   const [altura, setAltura] = useState();
   const [isHistoricoOpen, setIsHistoricoOpen] = useState(false);
+  const [personagemType, setPersonagemType] = useState(null); // 1 para masculino, 2 para feminino
 
   useEffect(() => {
     console.log(userId);
     const fetchUser = async () => {
       const { name } = await userService.getUser(userId);
-      // console.log(name);
+      console.log(name);
       setUser(name);
       // console.log(user);
     };
@@ -61,10 +62,16 @@ const Personagem = ({ userId = localStorage.getItem("userId") }) => {
       setAltura(altura);
     };
 
+    const fetchPersonagemType = async () => {
+      const { personagem } = await userService.getUser(userId);
+      setPersonagemType(personagem.personagem);
+    };
+
     // Chama as funções quando o componente for montado
     fetchIMC();
     fetchMetrics();
     fetchUser();
+    fetchPersonagemType();
   }, [userId]);
 
   const CloseHandleModalToggle = () => {
@@ -127,7 +134,7 @@ const Personagem = ({ userId = localStorage.getItem("userId") }) => {
               />
             </ButtonBox>
           </BoxInfos>
-          <BoxPerson></BoxPerson>
+          <BoxPerson personagemType={personagemType}></BoxPerson>
         </BoxInfoPerson>
         <MoreBox1>+</MoreBox1>
         <CircleBox1>.</CircleBox1>
