@@ -43,7 +43,7 @@ function ModalEditarGrupo({ isOpen, CloseOnClick, SuccessOnClick }) {
             <MdClose />
           </CloseButton>
           <ModalContent>
-            <h1 style={{ color: "white" }}>Crie seu grupo!</h1>
+            <h1 style={{ color: "white" }}>Edite o seu grupo</h1>
             <InputText
               placeholder="Nome do grupo"
               type="text"
