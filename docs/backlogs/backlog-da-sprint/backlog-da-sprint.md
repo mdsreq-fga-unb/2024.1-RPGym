@@ -192,4 +192,4 @@ Deploy da Aplicação: Realizamos o deploy da aplicação, assegurando que o amb
 
 ### Reunião de Retrospectiva
 
-
+Durante a retrospectiva, cada integrante do grupo relatou suas entregas conforme o combinado na planning. Discutimos os pontos fortes e as áreas que poderiam ser melhoradas, destacando a importância do trabalho colaborativo e da comunicação contínua ao longo da sprint. O deploy bem-sucedido da aplicação foi celebrado como um marco importante, e a sessão de feedback com o cliente foi vista como uma oportunidade valiosa para ajustar e refinar o produto antes da entrega final.
