@@ -56,9 +56,10 @@ export const DivForms = styled.div`
   flex-direction: column;
   @media screen and (max-width: 1000px) {
     font-size: 5vw;
-  }
-  ::placeholder {
-    font-size: 2vw;
+
+    ::placeholder {
+      font-size: 2vw;
+    }
   }
 `;
 
