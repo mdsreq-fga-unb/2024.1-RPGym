@@ -12,16 +12,18 @@ import {
     ModalScrollableContent,
     BtnButton,
     BtnButton2,
-    BtnButton3
+    BtnButton3,
+    BtnButton4
 } from "./styles";
 
 import { MdClose } from "react-icons/md";
 import { IoArrowBack } from "react-icons/io5";
 import { MdDeleteOutline } from "react-icons/md";
 import { MdEdit } from "react-icons/md";
+import { TbDoorExit } from "react-icons/tb";
 import ModalEditarGrupo from '../ModalEditarGrupo';
 
-const BancoFalsoGrupos = [
+let BancoFalsoGrupos = [
     { nome: "Trabalho", Description:"Aqui jaz grupo fdsfsfsgdfgsgsgfgsf", numeroDePessoas: 8 },
     { nome: "Academia", Description:"Aqui jaz grupo2", numeroDePessoas: 5 },
     { nome: "Igreja", Description:"Aqui jaz grupo3", numeroDePessoas: 12 },
@@ -36,169 +38,7 @@ const BancoFalsoGrupos = [
     { nome: "Esportes", Description:"Aqui jaz grupo12", numeroDePessoas: 14 },
 ];
 
-const BancoFalsoPessoas = [
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
-    { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
-    { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
-    { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
-    { nome: "Ana Barbosa", gruposComuns: ["Teatro", "Dança"] },
-    { nome: "Carlos de Andrade", gruposComuns: ["Música", "Culinária"] },
-    { nome: "Fernanda Leandrina", gruposComuns: ["Viagem", "Esportes"] },
+let BancoFalsoPessoas = [
     { nome: "João da Silva", gruposComuns: ["Trabalho", "Academia"] },
     { nome: "Maria Jocinta", gruposComuns: ["Igreja", "Família"] },
     { nome: "Pedro Alkimin", gruposComuns: ["Futebol", "Faculdade"] },
@@ -208,13 +48,13 @@ const BancoFalsoPessoas = [
 ];
 
 function ModalGrupos({ isOpen, CloseOnClick }) {
-
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
     const [fontSize, setFontSize] = useState(1); // Estado para controlar o tamanho da fonte
     const boxListRef = useRef(null); // Ref para o BoxListGroups
     const [marginTop, setMarginTop] = useState(1);
     const [selectedGroup, setSelectedGroup] = useState(null); // Estado para armazenar o grupo selecionado
+    const [integrantes, setIntegrantes] = useState([]); // Estado para armazenar os integrantes do grupo
 
     const CloseHandleModalToggle = () => {
         setIsClosing(true); // Inicia o fechamento
@@ -261,6 +101,7 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
     // Função para tratar o clique em um grupo
     const handleGroupClick = (group) => {
         setSelectedGroup(group); // Define o grupo clicado
+        setIntegrantes(getIntegrantesDoGrupo(group.nome)); // Atualiza os integrantes do grupo selecionado
     };
 
     // Filtrar os integrantes do grupo selecionado
@@ -280,6 +121,20 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
             // Limpa a seleção do grupo
             setSelectedGroup(null);
         }
+    };
+
+    // Função para expulsar um integrante do grupo
+    const handleExpulsarIntegrante = (nome) => {
+        // Atualiza a lista de integrantes removendo o usuário expulso
+        const updatedIntegrantes = integrantes.filter(pessoa => pessoa.nome !== nome);
+        setIntegrantes(updatedIntegrantes);
+
+        // Remove o grupo do membro expulso no BancoFalsoPessoas
+        BancoFalsoPessoas = BancoFalsoPessoas.map(pessoa =>
+            pessoa.nome === nome
+                ? { ...pessoa, gruposComuns: pessoa.gruposComuns.filter(grupo => grupo !== selectedGroup.nome) }
+                : pessoa
+        );
     };
 
     return (
@@ -307,8 +162,13 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                                     <h3 style={{marginBottom:"-0.01em"}}>Integrantes:</h3>
                                     <div style={{display:"flex", flexDirection:"column", overflowY:"auto", flexShrink:"0", height:"90%", flexGrow: "1"}}>
                                         <ul>
-                                            {getIntegrantesDoGrupo(selectedGroup.nome).map((pessoa, index) => (
-                                                <li key={index} style={{marginBottom:"1em"}}>{pessoa.nome}</li>
+                                            {integrantes.map((pessoa, index) => (
+                                                <div key={index} style={{display:"flex", flexDirection: 'row'}}>
+                                                    <li style={{marginBottom:"1em"}}>{pessoa.nome}</li>
+                                                    <BtnButton4 onClick={() => handleExpulsarIntegrante(pessoa.nome)}>
+                                                        <TbDoorExit size={"0.7em"}/>
+                                                    </BtnButton4 >
+                                                </div>
                                             ))}
                                         </ul>
                                     </div>

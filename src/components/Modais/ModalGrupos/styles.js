@@ -210,3 +210,20 @@ export const BtnButton3 = styled.button`
     color: #ca9012
   }
 `
+
+export const BtnButton4 = styled.button`
+  display: flex;
+  flex-shrink: 0;
+  color: white;
+  z-index: 10;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  opacity: 0;
+
+  &:hover {
+    color: #ca9012;
+    opacity: 100;
+  }
+`

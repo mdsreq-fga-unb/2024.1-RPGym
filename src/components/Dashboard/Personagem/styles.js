@@ -60,7 +60,6 @@ export const ApelidoBox = styled.div`
   justify-content: center;
   align-items: center;
   min-width: 4.5vw;
-  max-width: 4.5vw;
   text-overflow: ellipsis " [..]";
   padding-left: 1em;
   padding-right: 1em;
