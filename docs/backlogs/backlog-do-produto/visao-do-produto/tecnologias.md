@@ -1,8 +1,8 @@
 ### Tecnologias a Serem Utilizadas
 
-| **Backend** | **Frontend** | **Integração Contínua** | **Documentação** | **Comunicação** |
-| ----------------- | ------------------ | -------------------------------- | ------------------------ | ----------------------- |
-| NodeJS            | React              | GitHub Actions                   | Miro, Google Docs        | WhatsApp, Discord       |
+| **Backend** | **Frontend** | Banco de Dados | **Documentação** | **Comunicação** |
+| :---------------: | :----------------: | :------------: | :----------------------: | ----------------------- |
+|      NodeJS      |       React       |    MongoDB    |        Git Pages        | WhatsApp, Discord       |
 
 ## Histórico de Versão
 
