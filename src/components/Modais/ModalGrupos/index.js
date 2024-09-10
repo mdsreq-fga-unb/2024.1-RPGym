@@ -11,12 +11,15 @@ import {
     ModalHeader,
     ModalScrollableContent,
     BtnButton,
-    BtnButton2
+    BtnButton2,
+    BtnButton3
 } from "./styles";
 
 import { MdClose } from "react-icons/md";
 import { IoArrowBack } from "react-icons/io5";
 import { MdDeleteOutline } from "react-icons/md";
+import { MdEdit } from "react-icons/md";
+import ModalEditarGrupo from '../ModalEditarGrupo';
 
 const BancoFalsoGrupos = [
     { nome: "Trabalho", numeroDePessoas: 8 },
@@ -206,11 +209,33 @@ const BancoFalsoPessoas = [
 
 function ModalGrupos({ isOpen, CloseOnClick }) {
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isClosing, setIsClosing] = useState(false);
     const [fontSize, setFontSize] = useState(1); // Estado para controlar o tamanho da fonte
     const boxListRef = useRef(null); // Ref para o BoxListGroups
     const [marginTop, setMarginTop] = useState(1);
     const [selectedGroup, setSelectedGroup] = useState(null); // Estado para armazenar o grupo selecionado
 
+    const CloseHandleModalToggle = () => {
+        setIsClosing(true); // Inicia o fechamento
+        setTimeout(() => {
+          setIsModalOpen(false); // Fecha o modal após a animação
+          setIsClosing(false); // Reseta o estado de fechamento
+        }, 300); // Ajuste o tempo para o mesmo da duração da animação de saída
+      };
+
+      const SuccessHandleModalToggle = () => {
+        setIsClosing(true);
+        setTimeout(() => {
+          setIsModalOpen(false);
+          setIsClosing(false);
+        }, 300);
+      };
+
+      const openModal = () => {
+        setIsModalOpen(true);
+      };
+    
     // Função que atualiza o tamanho da fonte com base no scroll
     const handleScroll = () => {
         const scrollTop = boxListRef.current.scrollTop;
@@ -291,6 +316,9 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                                     <BtnButton2 onClick={handleGroupDelete}>
                                         <MdDeleteOutline />
                                     </BtnButton2 >
+                                    <BtnButton3 onClick={openModal}>
+                                        <MdEdit />
+                                    </BtnButton3 >
                                 </div>
                             ) : (
                                 // Listar todos os grupos quando nenhum estiver selecionado
@@ -307,6 +335,7 @@ function ModalGrupos({ isOpen, CloseOnClick }) {
                     </ModalScrollableContent>
                 </ModalContainer>
             </ModalBackground>
+            {isModalOpen && <ModalEditarGrupo isOpen={!isClosing} CloseOnClick={CloseHandleModalToggle} SuccessOnClick={SuccessHandleModalToggle}/>}
         </div>
     );
 }

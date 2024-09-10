@@ -11,10 +11,10 @@ import {
 import { MdClose } from "react-icons/md";
 import InputText from "../../inputText";
 
-function ModalCriarGrupos({ isOpen, CloseOnClick, SuccessOnClick }) {
+function ModalEditarGrupo({ isOpen, CloseOnClick, SuccessOnClick }) {
   // Estados para armazenar os valores dos inputs
   const [nomeGrupo, setNomeGrupo] = useState("");
-  const [nomeDescricao, setNomeDescicao] = useState("");
+  const [nomeDescricao, setNomeDescricao] = useState("");
 
   // Função para verificar se todos os campos estão preenchidos
   const areFieldsValid = () => {
@@ -58,4 +58,4 @@ function ModalCriarGrupos({ isOpen, CloseOnClick, SuccessOnClick }) {
   );
 }
 
-export default ModalCriarGrupos;
+export default ModalEditarGrupo;
