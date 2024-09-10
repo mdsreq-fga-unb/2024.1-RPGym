@@ -10,15 +10,15 @@
 
 ## PBB - HeathNet
 
-[Ir para Critérios de Aceitação](missao3.md#Product-Backlog-Building-(PBB))
+[Acesse aqui](missao3.md#Product-Backlog-Building-(PBB))
 
 ## Behavior Driven Development (BDD) - HeathNet
 
-
+[Acesse aqui](missao3.md#Behavior-Driven-Development-(BDD))
 
 ### USM - ComumEventos
 
-<iframe width="768" height="432" src="https://miro.com/app/board/uXjVKu-S1ZE=/?moveToWidget=3458764599366838792&cot=14" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+[Acesse aqui](missao3.md#usm)
 
 ## Lições Aprendidas
 

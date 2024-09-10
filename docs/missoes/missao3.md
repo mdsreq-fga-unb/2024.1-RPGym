@@ -587,7 +587,8 @@ O USM fornece uma visão ampla do produto, permitindo que as equipes identifique
    - **Objetivo:** Usar o mapa como uma ferramenta dinâmica, revisando e atualizando-o conforme o projeto evolui.
    - **Como Fazer:** Realize revisões regulares do USM com toda a equipe e stakeholders, ajustando prioridades e adicionando ou removendo histórias conforme necessário, com base no feedback dos usuários e nas necessidades do negócio.
 
-### USM - ComumEventos
+## USM
+#### ComumEventos
 
 <iframe width="768" height="432" src="https://miro.com/app/board/uXjVKu-S1ZE=/?moveToWidget=3458764599366838792&cot=14" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
